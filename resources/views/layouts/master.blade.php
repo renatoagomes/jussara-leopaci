@@ -12,14 +12,13 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="icon" type="image/png" href="">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- CSS/SASS -->
         <link rel="stylesheet" href="/css/normalize.css">
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">       
         @yield('css')
     </head>
     <body>
-        <div class="container">
-            @yield('content')
-        </div>
+        @yield('content')
+        @yield('js')
     </body>
 </html>
