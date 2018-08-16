@@ -22,3 +22,7 @@
     @include('partials.footer')
 
 @endsection
+
+@section('js')
+        <script src="/js/homepage.js" ></script>
+@endsection

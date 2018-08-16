@@ -1,4 +1,5 @@
 <section id="apresentacao" class="container">
+    <a id="apresentacao" href="#"></a>
     <div class="text-center pt-4">
         <span class="detalhe-top sem-respiro">__________</span>
         <h2 class="mt-4 mb-0">Apresentação</h2>

@@ -10,11 +10,11 @@
         </div>
 
         <div class="d-flex flex-column mt-3">
-            <a href="/home/">Home</a> 
-            <a href="#apresentacao/">Apresentacao</a> 
-            <a href="#atuacao/">Atuacao</a> 
-            <a href="/perinatal/">Perinatal</a> 
-            <a href="#contato/">Contato</a> 
+            <a href="/">Home</a> 
+            <a href="#apresentacao">Apresentação</a> 
+            <a href="#atuacao">Atuação</a> 
+            <a href="/perinatal">Perinatal</a> 
+            <a href="#contato">Contato</a> 
         </div>
     </div>
     
