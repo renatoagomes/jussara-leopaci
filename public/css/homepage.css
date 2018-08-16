@@ -18,19 +18,22 @@
 
 h1,
 p,
-span {
+span,
+a {
   letter-spacing: 0.5px;
 }
 
 h1.sem-respiro,
 p.sem-respiro,
-span.sem-respiro {
+span.sem-respiro,
+a.sem-respiro {
   letter-spacing: 0px;
 }
 
 h1.subtitulo,
 p.subtitulo,
-span.subtitulo {
+span.subtitulo,
+a.subtitulo {
   font-size: 14px;
 }
 
@@ -89,22 +92,66 @@ h3 {
   font-family: 'Muli', sans-serif;
 }
 
-#apresentacao {
-  padding: 0rem 5rem;
+#apresentacao,
+#atuacao {
+  padding: 0rem 5rem 3rem 5rem;
   font-family: 'Street Corner', sans-serif;
 }
 
-#apresentacao .detalhe-top {
+#apresentacao .detalhe-top,
+#atuacao .detalhe-top {
   color: rgba(0, 0, 0, 0.2);
 }
 
-#apresentacao h2 {
+#apresentacao h2,
+#atuacao h2 {
   color: #000;
 }
 
 #apresentacao span,
 #apresentacao p,
-#apresentacao li {
+#apresentacao li,
+#atuacao span,
+#atuacao p,
+#atuacao li {
   color: rgba(0, 0, 0, 0.4);
+}
+
+#atuacao {
+  background-color: #f0f0f0;
+  height: 80vh;
+}
+
+#atuacao ul.nav {
+  width: 85%;
+}
+
+#atuacao ul.nav li.nav-item {
+  width: 24%;
+}
+
+#atuacao ul.nav li.nav-item a {
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 0rem;
+  color: rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid #cecece;
+  background-color: #e7e7e7;
+}
+
+#atuacao ul.nav li.nav-item a:hover {
+  color: #3f00e1;
+  background-color: #eee7f1;
+  border-bottom: 2px solid #d2c4ed;
+}
+
+#atuacao ul.nav li.nav-item a.active {
+  color: #3f00e1;
+  border-bottom: 2px solid #3f00e1;
+  background-color: #e1d3f2;
+}
+
+#atuacao .tab-content {
+  width: 85%;
 }
 
