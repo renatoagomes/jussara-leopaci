@@ -171,6 +171,17 @@ h3 { font-size:1.45rem; }
 }
 
 footer {
-    min-height: 30vh;
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    color: $branco;
+    border-top: 20px solid #fff5ad;
+    background-color: #9e97cb;
+    padding: 2rem;
+
+    a {
+        font-size: 0.8rem;
+        color: $branco;
+    }
+
 }
 

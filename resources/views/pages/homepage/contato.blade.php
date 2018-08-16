@@ -19,10 +19,10 @@
                 {!! Form::text('telefone', null, ['class' => 'form-control']) !!}
             </div>
 
-            <!-- Password Field -->
+            <!-- Mensagem Field -->
             <div class="form-group col-12 mt-5">
                 {!! Form::label('mensagem', 'Mensagem') !!}
-                {!! Form::textarea('mensagem', null, ['class' => 'form-control', 'rows' => 4]) !!}
+                {!! Form::textarea('mensagem', null, ['class' => 'form-control', 'rows' => 5]) !!}
             </div>
 
             <!-- Submit Field -->

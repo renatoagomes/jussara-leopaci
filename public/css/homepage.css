@@ -208,6 +208,16 @@ h3 {
 }
 
 footer {
-  min-height: 30vh;
+  font-family: 'Muli', sans-serif;
+  font-style: italic;
+  color: #fff;
+  border-top: 20px solid #fff5ad;
+  background-color: #9e97cb;
+  padding: 2rem;
+}
+
+footer a {
+  font-size: 0.8rem;
+  color: #fff;
 }
 
