@@ -25,16 +25,19 @@
 
         <div class="tab-content mx-auto">
             <div class="tab-pane fade show active" id="tab-psicanalitica" role="tabpanel" aria-labelledby="tab-psicanalitica-tab">
-                <h1>TAB1</h1>
+                @include('pages.homepage.conteudo-tab-psicanalitica')
             </div>
+
             <div class="tab-pane fade" id="tab-social" role="tabpanel" aria-labelledby="tab-social-tab">
-                <h1>TAB2</h1>
+                @include('pages.homepage.conteudo-tab-social')
             </div>
+
             <div class="tab-pane fade" id="tab-perinatal" role="tabpanel" aria-labelledby="tab-perinatal-tab">
-                <h1>TAB3</h1>
+                @include('pages.homepage.conteudo-tab-perinatal')
             </div>
+
             <div class="tab-pane fade" id="tab-eventos" role="tabpanel" aria-labelledby="tab-eventos-tab">
-                <h1>TAB4</h1>
+                @include('pages.homepage.conteudo-tab-eventos')
             </div>
         </div>
 

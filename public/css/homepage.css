@@ -37,6 +37,14 @@ a.subtitulo {
   font-size: 14px;
 }
 
+h1.citacao,
+p.citacao,
+span.citacao,
+a.citacao {
+  font-family: 'Palatino', sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 h2,
 h3 {
   letter-spacing: 0.25px;
@@ -114,12 +122,12 @@ h3 {
 #atuacao span,
 #atuacao p,
 #atuacao li {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 #atuacao {
   background-color: #f0f0f0;
-  height: 80vh;
+  min-height: 120vh;
 }
 
 #atuacao ul.nav {
@@ -134,7 +142,7 @@ h3 {
   padding: 0.75rem;
   font-size: 0.8rem;
   border-radius: 0rem;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.6);
   border-bottom: 2px solid #cecece;
   background-color: #e7e7e7;
 }
@@ -153,5 +161,10 @@ h3 {
 
 #atuacao .tab-content {
   width: 85%;
+}
+
+#atuacao .tab-content p.citacao {
+  font-size: 1.45rem;
+  line-height: 1.7rem;
 }
 
