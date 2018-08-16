@@ -2,7 +2,7 @@
     <div class="text-center pt-4">
         <span class="detalhe-top sem-respiro">__________</span>
         <h2 class="mt-4 mb-0">Apresentação</h2>
-        <span class="subtitulo">Um pouco sobre mim e meu histórico profissional</span>
+        <span class="subtitulo mt-2">Um pouco sobre mim e meu histórico profissional</span>
     </div>
     <p class="mt-4 col"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus quam, ultricies vitae felis eu, euismod sagittis tellus. Duis vel vestibulum purus,consectetur adipiscing elit. Quisque tellus quam, ultricies vitae  consequat tristique lectus. Curabitur eget tortor orci. Integer ex magna, ullamcorper quis hendrerit ornare, ultricies sed arcu.  </p>
     <h3 class="mt-5 col">Curriculum resumido</h3>

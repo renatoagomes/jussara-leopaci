@@ -21,3 +21,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('users', 'UserController');
+
+
+Route::post('contato', function() {
+    dd('chegou', \Request::all());
+})->name('contato');

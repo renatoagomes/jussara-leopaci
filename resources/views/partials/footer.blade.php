@@ -1,3 +1,3 @@
-<section id="Footer">
+<footer id="footer">
     <h2>Footer</h2>
-</section>
+</footer>
