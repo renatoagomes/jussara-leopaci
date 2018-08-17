@@ -78,11 +78,11 @@ module.exports = __webpack_require__(38);
 
 
 //Dando require no JS de Smooth scroll to link
-__webpack_require__(50);
+__webpack_require__(39);
 
 /***/ }),
 
-/***/ 50:
+/***/ 39:
 /***/ (function(module, exports) {
 
 

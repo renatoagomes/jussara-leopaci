@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600');
 
 @font-face {
     font-family: 'Street Corner';
@@ -24,6 +24,7 @@ $cinza: rgba(0,0,0,0.6);
 $cinza-claro: rgba(0,0,0,0.2);
 $bg-atuacao: #f0f0f0;
 $cor-roxo-atuacao: #3f00e1;
+$cor-borda-link: #fff5ad;
 
 
 /** Default Styles **/
@@ -50,11 +51,27 @@ h3 { font-size:1.45rem; }
     height:100vh;
     max-width:100vw;
 
-    nav a {
-        margin-top: 2rem;
-        color: $branco;
-        font-style: italic;
-        font-family: 'Muli', sans-serif;
+    .container {
+        padding: 0 5rem;
+    }
+
+
+    nav {
+        a {
+            height:26px;
+            margin-top: 2rem;
+            color: $branco;
+            font-style: italic;
+            font-family: 'Muli', sans-serif;
+            &:hover {
+                border-bottom: 2px solid $cor-borda-link;
+                text-decoration:none;
+            }
+        }
+        .container-links {
+            width:60%;
+        }
+        
     }
 
     .container-texto {
