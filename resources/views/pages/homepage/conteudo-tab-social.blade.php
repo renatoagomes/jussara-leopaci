@@ -1,6 +1,6 @@
 <h3 class="mt-5">Clínica Social</h3>
 
-<p class="citacao mt-4">Descricao Clinica Social ...</p>
+<p class="citacao mt-4">Atendimento clínico individual com duração média de 50 minutos oferecido para pessoas que necessitam de condições especiais de pagamento.</p>
 
 <hr class="mt-4 mb-4">
 
@@ -31,7 +31,8 @@
     </div>
 
     <div class="col-7">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus quam, ultricies vitae felis eu, euismod sagittis tellus. Duis vel vestibulum purus,consectetur adipiscing elit. Quisque tellus quam, ultricies vitae consequat tristique lectus. Curabitur eget tortor orci. Integer ex magna, ullamcorper quis hendrerit ornare, ultricies sed arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus quam, ultricies vitae felis eu, euismod sagittis tellus. Duis vel vestibulum purus,consectetur adipiscing elit. Quisque tellus quam, ultricies vitae consequat tristique lectus. Curabitur eget tortor orci. Integer ex magna, ullamcorper quis hendrerit ornare, ultricies sed arcu.  </p>
+        <p>A Clínica Social de Psicanálise Helio Pellegrino é uma organização que reúne profissionais da psicanálise que atuam em diferentes cidades do estado de São Paulo. Não se configura como instituição de caridade ou clínica de baixo custo, mas um espaço com o propósito de estabelecer contatos e relações justas entre os profissionais e quem procura atendimento, além da divulgação da psicanálise e da clínica psicanalítica. Para ser atendido, é necessário preencher a ficha de cadastro disponível no site da Clínica.</p>
+        <a target="_blank" href="https://www.clinicasocial.org/">SAIBA MAIS</a>
     </div>
 
 </div>

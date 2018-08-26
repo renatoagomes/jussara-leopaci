@@ -1,6 +1,6 @@
 <h3 class="mt-5"> Eventos</h3>
 
-<p class="citacao mt-4">Descricao Eventos ...</p>
+<p class="citacao mt-4">Participação em eventos e palestras sobre área clínica, psicanálise e perinatalidade. </p>
 
 <hr class="mt-4 mb-4">
 
@@ -31,7 +31,7 @@
     </div>
 
     <div class="col-7">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus quam, ultricies vitae felis eu, euismod sagittis tellus. Duis vel vestibulum purus,consectetur adipiscing elit. Quisque tellus quam, ultricies vitae consequat tristique lectus. Curabitur eget tortor orci. Integer ex magna, ullamcorper quis hendrerit ornare, ultricies sed arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus quam, ultricies vitae felis eu, euismod sagittis tellus. Duis vel vestibulum purus,consectetur adipiscing elit. Quisque tellus quam, ultricies vitae consequat tristique lectus. Curabitur eget tortor orci. Integer ex magna, ullamcorper quis hendrerit ornare, ultricies sed arcu.  </p>
+        <p>Palestras, grupos de apoio e orientação, rodas de conversa, são ferramentas que podem possibilitar um espaço de debate e reflexão, auxiliando um grupo de pessoas em eventos, empresas, hospitais. Ofereço esses serviços dentro das temáticas da perinatalidade e da saúde da mulher, tendo a psicanálise como referencial teórico. Para saber mais, entre em contato pelo e-mail abaixo.</p>
     </div>
 
 </div>

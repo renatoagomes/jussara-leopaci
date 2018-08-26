@@ -31,7 +31,8 @@
     </div>
 
     <div class="col-7">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus quam, ultricies vitae felis eu, euismod sagittis tellus. Duis vel vestibulum purus,consectetur adipiscing elit. Quisque tellus quam, ultricies vitae consequat tristique lectus. Curabitur eget tortor orci. Integer ex magna, ullamcorper quis hendrerit ornare, ultricies sed arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus quam, ultricies vitae felis eu, euismod sagittis tellus. Duis vel vestibulum purus,consectetur adipiscing elit. Quisque tellus quam, ultricies vitae consequat tristique lectus. Curabitur eget tortor orci. Integer ex magna, ullamcorper quis hendrerit ornare, ultricies sed arcu.  </p>
+        <p> A entrevista é o procedimento incial de uma análise pessoal, podendo ser realizada em um ou mais encontros, que tem o objetivo de esclarecer a demanda de quem buscou atendimento, avaliar as motivações para iniciar o processo e a disponibilidade do analista e do analisante em realizar o trabalho. Para início do processo, é firmado um contrato verbal combinando horário, frequência, honorários, férias, etc.  </p>
+        <p> A dupla que se forma entre analista e analisando procura desvendar o universo psíquico daquele que buscou análise, compreendendo que cada ser é único e é este ser único que buscamos (re)conhecer.</p>
     </div>
 
 </div>

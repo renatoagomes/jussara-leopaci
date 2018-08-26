@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Muli:400,600);@font-face {
+@import url(https://fonts.googleapis.com/css?family=Muli:400,600,800);@font-face {
   font-family: 'Street Corner';
   src: url("/fonts/StreetCornerBold.woff2") format("woff2"), url("/fonts/StreetCornerBold.woff") format("woff");
   font-weight: bold;
@@ -42,7 +42,7 @@ p.citacao,
 span.citacao,
 a.citacao {
   font-family: 'Palatino', sans-serif;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 h2,
@@ -82,6 +82,7 @@ h3 {
 }
 
 #header-home nav a {
+  font-size: 0.9rem;
   height: 26px;
   margin-top: 2rem;
   color: #fff;
@@ -101,7 +102,7 @@ h3 {
 #header-home .container-texto {
   font-family: 'Street Corner', sans-serif;
   text-align: right;
-  margin-top: 5rem;
+  margin-top: 8rem;
   float: right;
   color: #fff;
 }
@@ -142,7 +143,26 @@ h3 {
 #contato span,
 #contato p,
 #contato li {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+
+#apresentacao p,
+#apresentacao li {
+  letter-spacing: 0.5px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+}
+
+#apresentacao a.link-lattes {
+  font-weight: bold;
+  color: #646464;
+  border-bottom: 2px solid #fff5ad;
+}
+
+#apresentacao a.link-lattes:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #646464;
 }
 
 #atuacao {
@@ -156,13 +176,15 @@ h3 {
 
 #atuacao ul.nav li.nav-item {
   width: 24%;
+  text-align: center;
+  font-family: 'Street Corner', sans-serif;
 }
 
 #atuacao ul.nav li.nav-item a {
   padding: 0.75rem;
   font-size: 0.8rem;
   border-radius: 0rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #cecece;
   background-color: #e7e7e7;
 }
@@ -188,9 +210,24 @@ h3 {
   line-height: 1.7rem;
 }
 
+#atuacao .tab-content a {
+  font-weight: bold;
+  color: #646464;
+  border-bottom: 2px solid #fff5ad;
+}
+
+#atuacao .tab-content a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #646464;
+}
+
 #contato {
   border-top: 20px solid #e2e2f1;
   min-height: 50vh;
+}
+
+#contato p {
+  text-align: center;
 }
 
 #contato label {
