@@ -1,47 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,600,800');
+@import 'geral';
 
-@font-face {
-    font-family: 'Street Corner';
-    src: url('/fonts/StreetCornerBold.woff2') format('woff2'),
-        url('/fonts/StreetCornerBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
+@import 'menu-principal';
 
-@font-face {
-    font-family: 'Palatino';
-    src: url('/fonts/Palatino-Italic.woff2') format('woff2'),
-        url('/fonts/Palatino-Italic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
+@import 'footer';
 
-/** Variaveis **/
-
-$branco: #fff;
-$preto: #000;
-$cinza: rgba(0,0,0,0.5);
-$cinza-claro: rgba(0,0,0,0.2);
-$bg-atuacao: #f0f0f0;
-$cor-roxo-atuacao: #3f00e1;
-$cor-borda-link: #fff5ad;
-
-
-/** Default Styles **/
-
-h1, p, span, a{
-    letter-spacing:0.5px;
-    &.sem-respiro { letter-spacing:0px; }
-    &.subtitulo { font-size: 14px; }
-    &.citacao { font-family: 'Palatino', sans-serif; color: $cinza; }
-}
-h2,h3 {
-    letter-spacing:0.25px;
-    &.sem-respiro { letter-spacing:0px; }
-    &.subtitulo { font-size: 14px; }
-}
-p { font-size:1.05rem; }
-h3 { font-size:1.45rem; }
 
 /** HEADER / Banner **/
 
@@ -53,26 +15,6 @@ h3 { font-size:1.45rem; }
 
     .container {
         padding: 0 5rem;
-    }
-
-
-    nav {
-        a {
-            font-size: 0.9rem;
-            height:26px;
-            margin-top: 2rem;
-            color: $branco;
-            font-style: italic;
-            font-family: 'Muli', sans-serif;
-            &:hover {
-                border-bottom: 2px solid $cor-borda-link;
-                text-decoration:none;
-            }
-        }
-        .container-links {
-            width:60%;
-        }
-        
     }
 
     .container-texto {
@@ -228,20 +170,5 @@ h3 { font-size:1.45rem; }
         }
 
     }
-}
-
-footer {
-    font-family: 'Muli', sans-serif;
-    font-style: italic;
-    color: $branco;
-    border-top: 20px solid #fff5ad;
-    background-color: #9e97cb;
-    padding: 2rem;
-
-    a {
-        font-size: 0.8rem;
-        color: $branco;
-    }
-
 }
 

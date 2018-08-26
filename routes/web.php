@@ -15,13 +15,11 @@ Route::get('/', function () {
     return view('pages.homepage');
 });
 
+Route::get('/perinatal', function () {
+    return view('pages.perinatal');
+});
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Route::resource('users', 'UserController');
-
 
 Route::post('contato', function() {
     dd('chegou', \Request::all());

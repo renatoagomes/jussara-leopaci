@@ -1,0 +1,31 @@
+
+/** Estilos do Menu principal **/
+
+nav#menu-principal {
+    a {
+        text-shadow: 1px 2px 5px rgba(0,0,0,0.55);
+        font-size: 0.9rem;
+        height:26px;
+        margin-top: 2rem;
+        color: $branco;
+        font-style: italic;
+        font-family: 'Muli', sans-serif;
+        &:hover {
+            border-bottom: 2px solid $cor-borda-link;
+            text-decoration:none;
+        }
+        &.active {
+            border-bottom: 2px solid $cor-borda-link;
+            text-decoration:none;
+            &:hover {
+                border-bottom: 2px solid $branco;
+                text-decoration:none;
+            }
+        }
+
+    }
+    .container-links {
+        width:60%;
+    }
+}
+

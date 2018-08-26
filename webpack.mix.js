@@ -13,5 +13,7 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/homepage.js', 'public/js')
+    .js('resources/assets/js/perinatal.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
-   .sass('resources/assets/sass/homepage.scss', 'public/css');
+   .sass('resources/assets/sass/homepage.scss', 'public/css')
+   .sass('resources/assets/sass/perinatal.scss', 'public/css');

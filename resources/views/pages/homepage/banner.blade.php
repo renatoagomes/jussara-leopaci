@@ -2,7 +2,9 @@
     <div class="container">
 
         {{-- Incluindo o menu principal --}}
-        @include ('partials.nav-principal')
+        @include ('partials.nav-principal', [
+            'active' => 'home'
+        ])
 
         <div class="container-texto ">
             <h2>Lorem ipsum dolor <br> sit amet consectetur</h2>

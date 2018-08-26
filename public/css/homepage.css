@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Muli:400,600,800);@font-face {
+@import url(https://fonts.googleapis.com/css?family=Muli:400,600,800);/** Fontes **/
+
+@font-face {
   font-family: 'Street Corner';
   src: url("/fonts/StreetCornerBold.woff2") format("woff2"), url("/fonts/StreetCornerBold.woff") format("woff");
   font-weight: bold;
@@ -12,15 +14,15 @@
   font-style: italic;
 }
 
-/** Variaveis **/
+/** Cores e variaveis **/
 
-/** Default Styles **/
+/* Estilos Gerais */
 
 h1,
 p,
 span,
 a {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 }
 
 h1.sem-respiro,
@@ -61,11 +63,56 @@ h3.subtitulo {
 }
 
 p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 h3 {
   font-size: 1.45rem;
+}
+
+/** Estilos do Menu principal **/
+
+nav#menu-principal a {
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  font-size: 0.9rem;
+  height: 26px;
+  margin-top: 2rem;
+  color: #fff;
+  font-style: italic;
+  font-family: 'Muli', sans-serif;
+}
+
+nav#menu-principal a:hover {
+  border-bottom: 2px solid #fff5ad;
+  text-decoration: none;
+}
+
+nav#menu-principal a.active {
+  border-bottom: 2px solid #fff5ad;
+  text-decoration: none;
+}
+
+nav#menu-principal a.active:hover {
+  border-bottom: 2px solid #fff;
+  text-decoration: none;
+}
+
+nav#menu-principal .container-links {
+  width: 60%;
+}
+
+footer {
+  font-family: 'Muli', sans-serif;
+  font-style: italic;
+  color: #fff;
+  border-top: 20px solid #fff5ad;
+  background-color: #9e97cb;
+  padding: 2rem;
+}
+
+footer a {
+  font-size: 0.8rem;
+  color: #fff;
 }
 
 /** HEADER / Banner **/
@@ -79,24 +126,6 @@ h3 {
 
 #header-home .container {
   padding: 0 5rem;
-}
-
-#header-home nav a {
-  font-size: 0.9rem;
-  height: 26px;
-  margin-top: 2rem;
-  color: #fff;
-  font-style: italic;
-  font-family: 'Muli', sans-serif;
-}
-
-#header-home nav a:hover {
-  border-bottom: 2px solid #fff5ad;
-  text-decoration: none;
-}
-
-#header-home nav .container-links {
-  width: 60%;
 }
 
 #header-home .container-texto {
@@ -256,19 +285,5 @@ h3 {
 
 #contato .btn.btn-custom:hover {
   background-color: #e1d3f2;
-}
-
-footer {
-  font-family: 'Muli', sans-serif;
-  font-style: italic;
-  color: #fff;
-  border-top: 20px solid #fff5ad;
-  background-color: #9e97cb;
-  padding: 2rem;
-}
-
-footer a {
-  font-size: 0.8rem;
-  color: #fff;
 }
 
