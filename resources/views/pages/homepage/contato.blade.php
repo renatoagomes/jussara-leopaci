@@ -4,7 +4,7 @@
             <h2 class="mt-4 mb-0"> Contato </h2>
             <p class="subtitulo mt-2">Entre em contato e em breve retornarei sua mensagem</p>
         </div>
-        <div class="mx-auto w-50 mt-5">
+        <div class="mx-auto mt-5 form-container">
             {!! Form::open(['route' => 'contato']) !!}
 
             <!-- Nome Field -->

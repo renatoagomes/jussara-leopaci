@@ -116,19 +116,29 @@
 
 
 #atuacao {
-
     background-color: $bg-atuacao;
     min-height: 120vh;
 
     ul.nav {
         width:85%;
+        border-bottom: none;
 
         li.nav-item {
-            width: 24%;
+            width: 50%;
+
+            @include breakpoint(lg) {
+                width: 24%;
+            }
+
             text-align:center;
             font-family: 'Street Corner', sans-serif;
 
             a {
+                height: 65px;
+                @include breakpoint(lg) {
+                    height: inherit;
+                }
+                margin: 5px;
                 padding: 0.75rem;
                 font-size: 0.8rem;
                 border-radius: 0rem;
@@ -178,6 +188,13 @@
 #contato {
     border-top: 20px solid #e2e2f1;
     min-height: 50vh;
+
+    .form-container {
+        @include breakpoint(lg) {
+            width: 50%;
+        }
+    }
+    
 
     p {
         text-align:center;

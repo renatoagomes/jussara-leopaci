@@ -4,8 +4,8 @@
 
 <hr class="mt-4 mb-4">
 
-<div class="d-flex">
-    <div class="col-5">
+<div class="d-flex row">
+    <div class="col-lg-5 col-md-12">
         <div class="row mt-2">
             <div class="col-12">
                 <img class="img-fluid" src="https://res.cloudinary.com/tesseract/image/upload/v1535248400/jussara/Cl%C3%ADnica_perinatal_02.jpg" alt="">
@@ -28,7 +28,7 @@
         <p class="subtitulo mt-3">Sessões de terapia com pacientes</p>
     </div>
 
-    <div class="col-7">
+    <div class="col-lg-7 col-md-12">
         <p>A perinatalidade é um conceito relacionado às questões da reprodução humana e que compreende os momentos que precedem e sucedem o surgimento de um filho (tentativas, concepção, gestação, parto, processo de adoção, fertilização, amamentação, lutos, etc). Desse modo, a Psicologia Perinatal é um campo de atuação e estudo das temáticas emocionais envolvidas nessa fase da vida para cada sujeito.</p>
 <a href="/perinatal">SAIBA MAIS</a> 
     </div>

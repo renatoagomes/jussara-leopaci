@@ -357,21 +357,36 @@ footer a {
 
 #atuacao ul.nav {
   width: 85%;
+  border-bottom: none;
 }
 
 #atuacao ul.nav li.nav-item {
-  width: 24%;
+  width: 50%;
   text-align: center;
   font-family: 'Street Corner', sans-serif;
 }
 
+@media (min-width: 1200px) {
+  #atuacao ul.nav li.nav-item {
+    width: 24%;
+  }
+}
+
 #atuacao ul.nav li.nav-item a {
+  height: 65px;
+  margin: 5px;
   padding: 0.75rem;
   font-size: 0.8rem;
   border-radius: 0rem;
   color: rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #cecece;
   background-color: #e7e7e7;
+}
+
+@media (min-width: 1200px) {
+  #atuacao ul.nav li.nav-item a {
+    height: inherit;
+  }
 }
 
 #atuacao ul.nav li.nav-item a:hover {
@@ -409,6 +424,12 @@ footer a {
 #contato {
   border-top: 20px solid #e2e2f1;
   min-height: 50vh;
+}
+
+@media (min-width: 1200px) {
+  #contato .form-container {
+    width: 50%;
+  }
 }
 
 #contato p {
