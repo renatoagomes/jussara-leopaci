@@ -1,11 +1,34 @@
 
+@import 'geral';
+
 /** Estilos do Menu principal **/
 
 nav#menu-principal {
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        a {
+            &.active, &:hover {
+                border:none;
+            }
+        }
+        @include breakpoint(lg) {
+            width:80%;
+        }
+    }
+
+    .navbar-toggler {
+        height: 42px;
+        border: 1px solid $branco!important;
+        color: $branco!important;
+    }
+
     a {
         text-shadow: 1px 2px 5px rgba(0,0,0,0.55);
         font-size: 0.9rem;
-        height:26px;
+        height:25px;
+        padding:0;
         margin-top: 2rem;
         color: $branco;
         font-style: italic;

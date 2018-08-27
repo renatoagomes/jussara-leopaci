@@ -8,8 +8,8 @@
     <p class="mt-4 col">Sou psicóloga clínica e trabalho com atendimento individual de adolescentes, adultos, idosos, pais/mães, gestantes e puérperas tendo a psicanálise como referencial teórico.
 Também ofereço atendimento clínico a díade pai/mãe-bebê e grupos relacionados à perinatalidade. </p>
     <h3 class="mt-5 col">Curriculum resumido</h3>
-    <div class="d-flex">
-        <div class="col-8">
+    <div class="row d-flex">
+        <div class="col-lg-8 col-md-12">
             <ul class="pl-1">
                 <li class="m-3 ml-4">Pós-graduação em Psicanálise na Perinatalidade e Parentalidade pelo Instituto Brasileiro de Psicologia Perinatal – Gerar (2018-presente).</li>
                 <li class="m-3 ml-4">Psicóloga clínica pela Clínica Social Hélio Pellegrino (2016-presente).</li>
@@ -22,8 +22,8 @@ Também ofereço atendimento clínico a díade pai/mãe-bebê e grupos relaciona
                 <li class="m-3 ml-4 ">Saiba mais - <a target="_blank" href="http://lattes.cnpq.br/8838224350810664" class="link-lattes">Curriculum Lattes</a> </li>
             </ul>
         </div>
-        <div class="col-4 mt-3 text-right">
-            <img class="img-fluid" src="http://res.cloudinary.com/vivala/image/upload/q_auto/v1534378650/Jussara-Leopaci/2k2SE9d.png" alt="Foto Jussara Leopaci">
+        <div class="container-foto col-lg-4 col-md-12">
+            <img class="foto-jussara" src="http://res.cloudinary.com/vivala/image/upload/q_auto/v1534378650/Jussara-Leopaci/2k2SE9d.png" alt="Foto Jussara Leopaci">
             <p class="subtitulo mt-2">Jussara Leopaci - Psicológa clínica</p>
         </div>
     </div>

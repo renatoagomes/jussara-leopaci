@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Muli:400,600,800);/** Fontes **/
+@import url(https://fonts.googleapis.com/css?family=Muli:400,600,800);@charset "UTF-8";
+
+/** Fontes **/
 
 @font-face {
   font-family: 'Street Corner';
@@ -70,12 +72,111 @@ h3 {
   font-size: 1.45rem;
 }
 
+/** Breakpoints para a responsividade  - Mobile First (usar breakpoints para exções do desktop) **/
+
+/** Fontes **/
+
+@font-face {
+  font-family: 'Street Corner';
+  src: url("/fonts/StreetCornerBold.woff2") format("woff2"), url("/fonts/StreetCornerBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Palatino';
+  src: url("/fonts/Palatino-Italic.woff2") format("woff2"), url("/fonts/Palatino-Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/** Cores e variaveis **/
+
+/* Estilos Gerais */
+
+h1,
+p,
+span,
+a {
+  letter-spacing: 0.2px;
+}
+
+h1.sem-respiro,
+p.sem-respiro,
+span.sem-respiro,
+a.sem-respiro {
+  letter-spacing: 0px;
+}
+
+h1.subtitulo,
+p.subtitulo,
+span.subtitulo,
+a.subtitulo {
+  font-size: 14px;
+}
+
+h1.citacao,
+p.citacao,
+span.citacao,
+a.citacao {
+  font-family: 'Palatino', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h2,
+h3 {
+  letter-spacing: 0.25px;
+}
+
+h2.sem-respiro,
+h3.sem-respiro {
+  letter-spacing: 0px;
+}
+
+h2.subtitulo,
+h3.subtitulo {
+  font-size: 14px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+/** Breakpoints para a responsividade  - Mobile First (usar breakpoints para exções do desktop) **/
+
 /** Estilos do Menu principal **/
+
+nav#menu-principal .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+nav#menu-principal .navbar-nav a.active,
+nav#menu-principal .navbar-nav a:hover {
+  border: none;
+}
+
+@media (min-width: 1200px) {
+  nav#menu-principal .navbar-nav {
+    width: 80%;
+  }
+}
+
+nav#menu-principal .navbar-toggler {
+  height: 42px;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
 
 nav#menu-principal a {
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
   font-size: 0.9rem;
-  height: 26px;
+  height: 25px;
+  padding: 0;
   margin-top: 2rem;
   color: #fff;
   font-style: italic;

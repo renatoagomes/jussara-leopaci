@@ -1,5 +1,5 @@
 <section id="header-perinatal" class="row">
-    <div class="container">
+    <div class="container-fluid">
 
         {{-- Incluindo o menu principal --}}
         @include ('partials.nav-principal', [
