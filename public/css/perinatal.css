@@ -223,6 +223,7 @@ footer a {
   background-size: cover;
   height: 65vh;
   max-width: 100vw;
+  background-position-x: 80%;
 }
 
 #header-perinatal .container {
@@ -237,13 +238,24 @@ footer a {
 }
 
 #header-perinatal .container-texto h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  #header-perinatal .container-texto h2 {
+    font-size: 3.5rem;
+  }
 }
 
 #contexto {
   font-family: 'Muli', sans-serif;
   min-height: 120vh;
-  padding: 0rem 5rem 3rem 5rem;
+}
+
+@media (min-width: 1200px) {
+  #contexto {
+    padding: 0rem 5rem 3rem 5rem;
+  }
 }
 
 #contexto .detalhe-top {
@@ -269,8 +281,10 @@ footer a {
   min-height: 120vh;
 }
 
-#momentos .container {
-  padding: 0rem 5rem 3rem 5rem;
+@media (min-width: 1200px) {
+  #momentos .container {
+    padding: 0rem 5rem 3rem 5rem;
+  }
 }
 
 #momentos .detalhe-top {
