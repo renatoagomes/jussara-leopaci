@@ -7,24 +7,18 @@
 <div class="d-flex row">
     <div class="col-lg-5 col-md-12">
         <div class="row">
-            <div class="col-6">
-                <img class="img-fluid" src="https://res.cloudinary.com/vivala/image/upload/v1534396967/Jussara-Leopaci/DzSa8yv.png" alt="">
+            <div class="col-12">
+                <img class="img-fluid" src="http://res.cloudinary.com/tesseract/image/upload/c_scale,q_auto,w_800/v1535989140/jussara/Eventos_1.jpg" alt="">
             </div>
+        </div>
+        <div class="row mt-2">
             <div class="col-6">
-                <img class="img-fluid" src="https://res.cloudinary.com/vivala/image/upload/v1534396967/Jussara-Leopaci/DzSa8yv.png" alt="">
+                <img class="img-fluid" src="http://res.cloudinary.com/tesseract/image/upload/c_scale,h_500,q_auto/v1535989146/jussara/Eventos_2.jpg" alt="">
             </div>
         </div>
         <div class="row mt-2">
             <div class="col-12">
-                <img class="img-fluid" src="https://res.cloudinary.com/vivala/image/upload/v1534397092/Jussara-Leopaci/r94CBE5.png" alt="">
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-6">
-                <img class="img-fluid" src="https://res.cloudinary.com/vivala/image/upload/v1534396967/Jussara-Leopaci/DzSa8yv.png" alt="">
-            </div>
-            <div class="col-6">
-                <img class="img-fluid" src="https://res.cloudinary.com/vivala/image/upload/v1534396967/Jussara-Leopaci/DzSa8yv.png" alt="">
+                <img class="img-fluid" src="http://res.cloudinary.com/tesseract/image/upload/c_scale,q_auto,w_800/v1535989144/jussara/Eventos_3.jpg" alt="">
             </div>
         </div>
         <p class="subtitulo mt-3">Sessões de terapia com pacientes</p>
