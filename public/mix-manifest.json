@@ -1,8 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/js/perinatal.js": "/js/perinatal.js",
-    "/js/homepage.js": "/js/homepage.js",
     "/css/homepage.css": "/css/homepage.css",
-    "/css/perinatal.css": "/css/perinatal.css"
+    "/css/perinatal.css": "/css/perinatal.css",
+    "/js/perinatal.js": "/js/perinatal.js",
+    "/js/homepage.js": "/js/homepage.js"
 }

@@ -2,7 +2,7 @@
 @if (\Agent::isDesktop())
 <div class="container">
     <nav id="menu-principal" class="w-100 navbar navbar-expand-lg navbar-light align-items-start">
-        <img class="img-fluid" src="http://res.cloudinary.com/vivala/image/upload/q_auto/v1534369782/Jussara-Leopaci/logo.png" alt="Logo Jussara Leopaci"/>
+        <img class="img-fluid" src="/logo.png" alt="Logo Jussara Leopaci"/>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
