@@ -155,11 +155,6 @@ nav#menu-principal .navbar-nav {
   text-align: center;
 }
 
-nav#menu-principal .navbar-nav a.active,
-nav#menu-principal .navbar-nav a:hover {
-  border: none;
-}
-
 @media (min-width: 1200px) {
   nav#menu-principal .navbar-nav {
     width: 80%;
@@ -177,7 +172,8 @@ nav#menu-principal a {
   font-size: 0.9rem;
   height: 25px;
   padding: 0;
-  margin-top: 2rem;
+  margin: 2rem auto auto auto;
+  max-width: 100px;
   color: #fff;
   font-style: italic;
   font-family: 'Muli', sans-serif;

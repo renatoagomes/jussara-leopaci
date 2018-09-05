@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="col-lg-7 col-md-12  mt-3">
+    <div class="col-lg-7 col-md-12 mt-3 mb-3">
         <p>A perinatalidade é um conceito relacionado às questões da reprodução humana e que compreende os momentos que precedem e sucedem o surgimento de um filho (tentativas, concepção, gestação, parto, processo de adoção, fertilização, amamentação, lutos, etc). Desse modo, a Psicologia Perinatal é um campo de atuação e estudo das temáticas emocionais envolvidas nessa fase da vida para cada sujeito.</p>
 <a href="/perinatal">SAIBA MAIS</a> 
     </div>

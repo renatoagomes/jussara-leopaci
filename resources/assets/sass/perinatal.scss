@@ -37,7 +37,12 @@ $cor-cinza-bg:#f2f2f4;
 
 #contexto {
     font-family: 'Muli', sans-serif;
-    min-height: 120vh;
+    text-align:center;
+    padding-bottom: 2rem;
+    @include breakpoint(md) {
+        text-align:inherit;
+    }
+    
     @include breakpoint(lg) {
         padding: 0rem 5rem 3rem 5rem;
     }
@@ -59,7 +64,6 @@ $cor-cinza-bg:#f2f2f4;
 #momentos {
     background-color: $cor-cinza-bg;
     font-family: 'Muli', sans-serif;
-    min-height: 120vh;
     padding-bottom: 1rem;
     
     .container {
@@ -98,6 +102,7 @@ $cor-cinza-bg:#f2f2f4;
 
 #como-funciona {
     font-family: 'Muli', sans-serif;
+    padding-bottom: 2rem;
     @include breakpoint(lg) {
         padding: 0rem 5rem 3rem 5rem;
     }

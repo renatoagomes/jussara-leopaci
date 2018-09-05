@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="col-lg-7 col-md-12 mt-3">
+    <div class="col-lg-7 col-md-12 mt-3 mb-3">
         <p>A Clínica Social de Psicanálise Helio Pellegrino é uma organização que reúne profissionais da psicanálise que atuam em diferentes cidades do estado de São Paulo. Não se configura como instituição de caridade ou clínica de baixo custo, mas um espaço com o propósito de estabelecer contatos e relações justas entre os profissionais e quem procura atendimento, além da divulgação da psicanálise e da clínica psicanalítica. Para ser atendido, é necessário preencher a ficha de cadastro disponível no site da Clínica.</p>
         <a target="_blank" href="https://www.clinicasocial.org/">SAIBA MAIS</a>
     </div>

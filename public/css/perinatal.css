@@ -155,11 +155,6 @@ nav#menu-principal .navbar-nav {
   text-align: center;
 }
 
-nav#menu-principal .navbar-nav a.active,
-nav#menu-principal .navbar-nav a:hover {
-  border: none;
-}
-
 @media (min-width: 1200px) {
   nav#menu-principal .navbar-nav {
     width: 80%;
@@ -177,7 +172,8 @@ nav#menu-principal a {
   font-size: 0.9rem;
   height: 25px;
   padding: 0;
-  margin-top: 2rem;
+  margin: 2rem auto auto auto;
+  max-width: 100px;
   color: #fff;
   font-style: italic;
   font-family: 'Muli', sans-serif;
@@ -253,7 +249,14 @@ footer a.link-footer {
 
 #contexto {
   font-family: 'Muli', sans-serif;
-  min-height: 120vh;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  #contexto {
+    text-align: inherit;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -282,7 +285,6 @@ footer a.link-footer {
 #momentos {
   background-color: #f2f2f4;
   font-family: 'Muli', sans-serif;
-  min-height: 120vh;
   padding-bottom: 1rem;
 }
 
@@ -324,6 +326,7 @@ footer a.link-footer {
 
 #como-funciona {
   font-family: 'Muli', sans-serif;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 1200px) {
