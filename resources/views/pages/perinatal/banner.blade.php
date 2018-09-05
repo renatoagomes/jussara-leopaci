@@ -4,7 +4,7 @@
         'active' => 'perinatal'
     ])
 
-    <div class="row">
+    <div>
         <div class="container">
             <div class="container-texto ">
                 <h2>Perinatalidade</h2>
