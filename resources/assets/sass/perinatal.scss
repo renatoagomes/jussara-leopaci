@@ -60,6 +60,7 @@ $cor-cinza-bg:#f2f2f4;
     background-color: $cor-cinza-bg;
     font-family: 'Muli', sans-serif;
     min-height: 120vh;
+    padding-bottom: 1rem;
     
     .container {
         @include breakpoint(lg) {
@@ -95,4 +96,23 @@ $cor-cinza-bg:#f2f2f4;
 
 }
 
+#como-funciona {
+    font-family: 'Muli', sans-serif;
+    @include breakpoint(lg) {
+        padding: 0rem 5rem 3rem 5rem;
+    }
+
+    .detalhe-top {
+        color:$cinza-claro;
+    }
+
+    h2, h3 {
+        font-family: 'Street Corner', sans-serif;
+        color: $preto;
+    }
+    span, p, li {
+        color:$cinza;
+        text-align: justify;
+    }
+}
 

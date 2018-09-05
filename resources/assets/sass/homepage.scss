@@ -74,6 +74,14 @@
         font-weight:600;
     }
 
+    li {
+        &:last-child {
+            list-style:none;
+        }
+    }
+
+    
+
     a.link-lattes {
         font-weight:bold;
         color: #646464;
@@ -163,6 +171,25 @@
 
     .tab-content {
         width:85%;
+
+        .container-img-landscape {
+            .col-12 {
+                padding: 0 10px;
+            }
+        }
+
+        .container-img-portrait {
+            img {
+                max-height:245px;
+            }
+
+            .col-6 {
+                padding: 0 10px;
+                &:last-child {
+                    text-align:right;
+                }
+            }
+        }
 
         p.citacao {
             font-size: 1.45rem;

@@ -15,6 +15,10 @@
     {{-- Incluindo Seção 'Em Que Momentos..' --}}
     @include('pages.perinatal.momentos')
 
+    {{-- Incluindo Seção 'Como funciona' --}}
+    @include('pages.perinatal.como_funciona')
+    
+
     {{-- Incluindo Footer --}}
     @include('partials.footer')
 

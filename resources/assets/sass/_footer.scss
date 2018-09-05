@@ -6,11 +6,15 @@ footer {
     color: $branco;
     border-top: 20px solid #fff5ad;
     background-color: #9e97cb;
-    padding: 2rem;
+    padding: 2rem 0;
 
     a {
         font-size: 0.8rem;
         color: $branco;
+
+        &.link-footer {
+            width:100px;
+        }
     }
 
 }

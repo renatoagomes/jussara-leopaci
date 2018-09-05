@@ -208,12 +208,16 @@ footer {
   color: #fff;
   border-top: 20px solid #fff5ad;
   background-color: #9e97cb;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 footer a {
   font-size: 0.8rem;
   color: #fff;
+}
+
+footer a.link-footer {
+  width: 100px;
 }
 
 /** HEADER / Banner **/
@@ -279,6 +283,7 @@ footer a {
   background-color: #f2f2f4;
   font-family: 'Muli', sans-serif;
   min-height: 120vh;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 1200px) {
@@ -315,5 +320,32 @@ footer a {
 
 #momentos .rodape-abnt a {
   color: inherit;
+}
+
+#como-funciona {
+  font-family: 'Muli', sans-serif;
+}
+
+@media (min-width: 1200px) {
+  #como-funciona {
+    padding: 0rem 5rem 3rem 5rem;
+  }
+}
+
+#como-funciona .detalhe-top {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#como-funciona h2,
+#como-funciona h3 {
+  font-family: 'Street Corner', sans-serif;
+  color: #000;
+}
+
+#como-funciona span,
+#como-funciona p,
+#como-funciona li {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
 }
 

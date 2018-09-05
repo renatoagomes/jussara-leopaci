@@ -3,7 +3,6 @@
         <div class="text-center pt-4">
             <p class="text-center"> <span class="detalhe-top sem-respiro">__________</span> </p>
             <h2>Em que momentos a Psicoterapia Perinatal pode ajudar?</h2>
-            <span class="subtitulo mt-2">Fique por dentro de como a Psicoterapia Perinatal pode ser sua aliada </span>
         </div>
 
         <p class="mt-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -22,7 +21,6 @@
             <li>Infertilidade e tratamentos</li>
             <li>Depressão na gestação</li>
             <li>Depressão no pós-parto</li>
-            <li>Adoção</li>
         </ul>
 
         <br>

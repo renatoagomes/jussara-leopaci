@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
+        
+        <link rel="icon" type="image/png" href="/logo_favicon.png">
+        <link rel="shortcut icon" href="/logo_favicon.png" type="image/x-icon" />
 
         <title>Jussara Leopaci</title>
 

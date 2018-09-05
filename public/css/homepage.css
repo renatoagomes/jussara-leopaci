@@ -208,12 +208,16 @@ footer {
   color: #fff;
   border-top: 20px solid #fff5ad;
   background-color: #9e97cb;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 footer a {
   font-size: 0.8rem;
   color: #fff;
+}
+
+footer a.link-footer {
+  width: 100px;
 }
 
 /** HEADER / Banner **/
@@ -310,6 +314,10 @@ footer a {
   font-weight: 600;
 }
 
+#apresentacao li:last-child {
+  list-style: none;
+}
+
 #apresentacao a.link-lattes {
   font-weight: bold;
   color: #646464;
@@ -403,6 +411,22 @@ footer a {
 
 #atuacao .tab-content {
   width: 85%;
+}
+
+#atuacao .tab-content .container-img-landscape .col-12 {
+  padding: 0 10px;
+}
+
+#atuacao .tab-content .container-img-portrait img {
+  max-height: 245px;
+}
+
+#atuacao .tab-content .container-img-portrait .col-6 {
+  padding: 0 10px;
+}
+
+#atuacao .tab-content .container-img-portrait .col-6:last-child {
+  text-align: right;
 }
 
 #atuacao .tab-content p.citacao {

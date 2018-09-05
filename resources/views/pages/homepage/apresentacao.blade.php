@@ -5,8 +5,8 @@
         <h2 class="mt-4 mb-0">Apresentação</h2>
         <span class="subtitulo mt-2">Um pouco sobre mim e meu histórico profissional</span>
     </div>
-    <p class="mt-4 col">Sou psicóloga clínica e trabalho com atendimento individual de adolescentes, adultos, idosos, pais/mães, gestantes e puérperas tendo a psicanálise como referencial teórico.
-Também ofereço atendimento clínico a díade pai/mãe-bebê e grupos relacionados à perinatalidade. </p>
+    <p class="mt-4 col">Sou psicóloga e trabalho com atendimento individual de adolescentes, adultos, idosos, pais/mães, gestantes  tendo a psicanálise como referencial teórico.
+Também ofereço atendimento clínico à díade pai/mãe-bebê e grupos relacionados à perinatalidade. </p>
     <h3 class="mt-5 col">Curriculum resumido</h3>
     <div class="row d-flex">
         <div class="col-lg-8 col-md-12">
