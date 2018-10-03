@@ -77,9 +77,16 @@ $cor-cinza-bg:#f2f2f4;
             object-fit:cover;
         }
 
-        .card-header, .card-footer {
+        .card-header, .card-footer, .card-body {
             h3 {
                 font-size: 1.35rem;
+            }
+            p { text-indent: 2rem; }
+            a {
+                color:$cinza; 
+                &.titulo {
+                    color:inherit;
+                }
             }
             background-color:white;
             border: none;
