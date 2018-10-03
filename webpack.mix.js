@@ -16,4 +16,5 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/perinatal.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
    .sass('resources/assets/sass/homepage.scss', 'public/css')
-   .sass('resources/assets/sass/perinatal.scss', 'public/css');
+   .sass('resources/assets/sass/perinatal.scss', 'public/css')
+   .sass('resources/assets/sass/blog.scss', 'public/css');

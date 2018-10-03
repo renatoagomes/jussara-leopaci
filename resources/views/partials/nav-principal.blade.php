@@ -13,6 +13,7 @@
                 <a class="nav-item nav-link" href="/#atuacao">Atuação</a> 
                 <a class="nav-item nav-link @if(isset($active) && $active == 'perinatal') active @endif" href="/perinatal">Perinatal</a> 
                 <a class="nav-item nav-link" href="/#contato">Contato</a> 
+                <a class="nav-item nav-link  @if(isset($active) && $active == 'blog') active @endif" href="/blog">Blog</a> 
             </div>
         </div>
     </nav>

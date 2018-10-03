@@ -11,6 +11,8 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('pages.homepage');
 });
@@ -19,7 +21,9 @@ Route::get('/perinatal', function () {
     return view('pages.perinatal');
 });
 
-Auth::routes();
+Route::get('/blog', function () {
+    return view('pages.blog');
+});
 
 Route::post('contato', function() {
     dd('chegou', \Request::all());
