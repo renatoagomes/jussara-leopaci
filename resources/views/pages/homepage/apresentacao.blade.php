@@ -5,8 +5,7 @@
         <h2 class="mt-4 mb-0">Apresentação</h2>
         <span class="subtitulo mt-2">Um pouco sobre mim e meu histórico profissional</span>
     </div>
-    <p class="mt-4 col">Sou psicóloga e trabalho com atendimento individual de adolescentes, adultos, idosos, pais/mães, gestantes  tendo a psicanálise como referencial teórico.
-Também ofereço atendimento clínico à díade pai/mãe-bebê e grupos relacionados à perinatalidade. </p>
+    <p class="mt-4 col">Sou psicóloga e trabalho com atendimento individual de adolescentes, adultos, idosos, pais/mães, gestantes e puérperas, tendo a psicanálise como referencial teórico. Também ofereço atendimento clínico à díade pai/mãe-bebê e grupos relacionados à perinatalidade. </p>
     <h3 class="mt-5 col">Curriculum resumido</h3>
     <div class="row d-flex">
         <div class="col-lg-8 col-md-12">
@@ -23,7 +22,7 @@ Também ofereço atendimento clínico à díade pai/mãe-bebê e grupos relacion
             </ul>
         </div>
         <div class="container-foto col-lg-4 col-md-12">
-            <img class="foto-jussara" src="http://res.cloudinary.com/vivala/image/upload/q_auto/v1534378650/Jussara-Leopaci/2k2SE9d.png" alt="Foto Jussara Leopaci">
+            <img class="foto-jussara" src="https://res.cloudinary.com/tesseract/image/upload/c_crop,g_center,h_2864,w_2000/c_scale,w_500/v1538533747/jussara/IMG_0122a.jpg" alt="Foto Jussara Leopaci">
             <p class="subtitulo mt-2">Jussara Leopaci - Psicológa clínica</p>
         </div>
     </div>

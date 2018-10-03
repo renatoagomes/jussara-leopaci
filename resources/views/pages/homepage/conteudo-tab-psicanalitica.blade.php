@@ -23,7 +23,7 @@
     </div>
 
     <div class="col-lg-7 col-md-12  mt-3">
-        <p> A entrevista é o procedimento inicial de uma análise pessoal, podendo ser realizada em um ou mais encontros, que tem o objetivo de esclarecer a demanda de quem buscou atendimento, avaliar as motivações para iniciar o processo e a disponibilidade do analista e do analisante em realizar o trabalho. Para início do processo, é firmado um contrato verbal combinando horário, frequência, honorários, férias, etc.  </p>
+        <p>A entrevista é o procedimento que dá início ao processo analítico, sendo um espaço que possibilita a manifestação e o esclarecimento da demanda de quem procurou pelo atendimento e suas motivações para buscar esse processo. A entrevista pode se estender por mais de um encontro e também nesse momento, é estabelecido um contrato verbal, combinando horário, frequência, honorários, férias.</p>
         <p> A dupla que se forma entre analista e analisando procura desvendar o universo psíquico daquele que buscou análise, compreendendo que cada ser é único e é este ser único que buscamos (re)conhecer.</p>
     </div>
 

@@ -8,9 +8,17 @@
         <div class="container">
 
             <div class="container-texto ">
-                <h2>Lorem ipsum dolor <br> sit amet consectetur</h2>
-                <p>Lorem Analise kasjd sldkk optu lalala xpto <br> kasjd sldkk optu lalala xpto <br> xsksk optu lalala xpto</p>
+                <div class="slide active">
+                    <h4>"(...) mas afinal é preciso começar a amar, <br> para não adoecer" </h4>
+                    <p>Freud (1914)</p>
+                </div>
+                <div class="slide" style="display:none">
+                    <h4>"A história não é o passado. A história é o passado <br>na medida em que é historiado no presente - <br>historiado no presente porque foi vivido no passado."</h4>
+                    <p>Lacan (1954)</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+

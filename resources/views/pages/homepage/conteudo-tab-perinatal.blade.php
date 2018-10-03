@@ -6,17 +6,17 @@
 
 <div class="d-flex row">
     <div class="col-lg-5 col-md-12">
-        <div class="row mt-3 container-img-landscape">
-            <div class="col-12">
-                <img class="img-fluid" src="https://res.cloudinary.com/tesseract/image/upload/v1535248400/jussara/Cl%C3%ADnica_perinatal_02.jpg" alt="">
-            </div>
-        </div>
         <div class="mt-3 row d-flex justify-content-center align-items-center container-img-portrait">
             <div class="col-6">
                 <img class="img-fluid" src="http://res.cloudinary.com/tesseract/image/upload/c_crop,g_east,h_200,w_230/v1535248406/jussara/Cl%C3%ADnica_perinatal_03.jpg" alt="">
             </div>
             <div class="col-6">
                 <img class="img-fluid" src="http://res.cloudinary.com/tesseract/image/upload/c_crop,g_east,h_200,w_230/v1536112948/jussara/Cl%C3%ADnica_perinatal_01.jpg" alt="">
+            </div>
+        </div>
+        <div class="row mt-3 container-img-landscape">
+            <div class="col-12">
+                <img class="img-fluid" src="https://res.cloudinary.com/tesseract/image/upload/v1535248400/jussara/Cl%C3%ADnica_perinatal_02.jpg" alt="">
             </div>
         </div>
     </div>
