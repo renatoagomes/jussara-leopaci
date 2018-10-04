@@ -151,13 +151,20 @@ h3 {
 /** Estilos do Menu principal **/
 
 nav#menu-principal .navbar-nav {
+  margin-top: -40px;
   width: 100%;
   text-align: center;
 }
 
+@media (min-width: 992px) {
+  nav#menu-principal .navbar-nav {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   nav#menu-principal .navbar-nav {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -250,13 +257,39 @@ footer a.link-footer {
   }
 }
 
+@media (min-width: 1600px) {
+  #header-home .container-texto {
+    margin-top: 18rem;
+    text-align: right;
+    float: right;
+  }
+}
+
 #header-home .container-texto h2 {
   font-size: 2.5rem;
 }
 
 @media (min-width: 1200px) {
   #header-home .container-texto h2 {
+    font-size: 2.1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  #header-home .container-texto h2 {
     font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header-home .container-texto h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  #header-home .container-texto h4 {
+    font-size: 2.5rem;
   }
 }
 

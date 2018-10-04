@@ -10,7 +10,7 @@
     @include('pages.blog.banner')
 
     {{-- Incluindo listagem de posts --}}
-    @include('pages.blog.listagem')
+    @include('pages.blog.interna')
 
     {{-- Incluindo Footer --}}
     @include('partials.footer')

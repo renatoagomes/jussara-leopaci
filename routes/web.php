@@ -25,6 +25,10 @@ Route::get('/blog', function () {
     return view('pages.blog');
 });
 
+Route::get('/blog/{slug}', function () {
+    return view('pages.blog-interna');
+});
+
 Route::post('contato', function() {
     dd('chegou', \Request::all());
 })->name('contato');

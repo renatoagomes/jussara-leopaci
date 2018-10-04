@@ -6,14 +6,18 @@
 nav#menu-principal {
 
     .navbar-nav {
+        margin-top: -40px;
         width: 100%;
         text-align: center;
         a {
             &.active, &:hover {
             }
         }
+        @include breakpoint(md) {
+            margin-top:0;
+        }
         @include breakpoint(lg) {
-            width:80%;
+            width:90%;
         }
     }
 

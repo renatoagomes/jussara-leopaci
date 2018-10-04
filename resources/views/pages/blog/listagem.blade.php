@@ -11,8 +11,9 @@
                 <div class="post-card card">
                 
                     <div class="card-header">
-                        <a href="#link-post" class="titulo">
+                        <a href="/blog/Baby-Blues-e-Depressão-pós-parto-não-são-a-mesma-coisa" class="titulo">
                             <h3 class="mb-3">Baby Blues e Depressão pós-parto não são a mesma coisa?
+
                                 <p class="data">1 de Junho de 2018</p>
                             </h3>
                         </a>
@@ -22,7 +23,7 @@
                 
                     <div class="card-body">
                         <p>
-                        A maternidade é comum a mulher se sentir frágil diante das mudanças corporais, hormonais e incertezas do futuro, ela também revela - da concepção ao... <a href="#link-post"><strong>[leia mais]</strong> </a>
+                        A maternidade é comum a mulher se sentir frágil diante das mudanças corporais, hormonais e incertezas do futuro, ela também revela - da concepção ao... <a href="/blog/Baby-Blues-e-Depressão-pós-parto-não-são-a-mesma-coisa"><strong>[leia mais]</strong> </a>
                         </p>
                     </div>
 
