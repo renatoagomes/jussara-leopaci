@@ -243,6 +243,16 @@ footer a.link-footer {
 }
 
 #header-home .container-texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh;
   font-family: 'Street Corner', sans-serif;
   margin-top: -1rem;
   color: #fff;
@@ -266,7 +276,7 @@ footer a.link-footer {
 }
 
 #header-home .container-texto h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1200px) {
@@ -281,7 +291,11 @@ footer a.link-footer {
   }
 }
 
-@media (min-width: 1200px) {
+#header-home .container-texto h4 {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 1600px) {
   #header-home .container-texto h4 {
     font-size: 1.5rem;
   }

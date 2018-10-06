@@ -2,12 +2,6 @@
 
 @section ('css')
     <link rel="stylesheet" href="/css/homepage.css" type="text/css" media="screen" title="no title" charset="utf-8">
-<style>
-    #header-home .container-texto h4 {
-        font-size:1.9rem;
-    }
-</style>
-    
 @endsection
 
 @section ('content')
