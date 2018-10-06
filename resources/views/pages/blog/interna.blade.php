@@ -3,7 +3,7 @@
         <div class="row mx-auto">
 
             <div class="col-12 mt-3">
-                <a href="/blog">< Voltar</a>
+                <a class="voltar" href="/blog">< Voltar</a>
             </div>
 
             <div class="col-12 post-header mt-3">
@@ -35,13 +35,14 @@
                 
                 <hr class="mt-5">
                 <a id="abnt" href="#"></a>
-                <p class="rodape-abnt">1 Estudo Fiocruz: <a target="_blank" href="//blog.saude.gov.br">blog.saude.gov.br</a> </p>
+                <p class="rodape-abnt">1 Estudo Fiocruz: <a target="_blank" href="http://blog.saude.gov.br">blog.saude.gov.br</a> </p>
     
             </div>
 
             <div class="post-footer col-12 text-right">
-                <i class="fa fa-heart"></i>
-                <i class="fa fa-share-alt"></i>
+                <a href="javascript:void(0);" onclick="sharePost()" target="_blank">
+                    <i class="fa fa-share-alt"></i>
+                </a>
             </div>
 
         </div>

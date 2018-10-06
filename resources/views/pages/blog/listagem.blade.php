@@ -4,7 +4,7 @@
         <div class="row mx-auto container-cards">
 
             @php
-                $Posts = [1,2,3,4];
+                $Posts = [1];
             @endphp
 
             @foreach($Posts as $post)
@@ -19,7 +19,7 @@
                         </a>
                     </div>
 
-                    <img class="img-responsive" src="https://res.cloudinary.com/tesseract/image/upload/v1535248012/jussara/r94CBE5.png" alt="">
+                    <img class="img-responsive" src="https://res.cloudinary.com/tesseract/image/upload/v1538796221/jussara/Texto_01_Depress%C3%A3o_Baby_blues.jpg" alt="">
                 
                     <div class="card-body">
                         <p>

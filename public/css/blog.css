@@ -378,6 +378,13 @@ footer a.link-footer {
   text-align: left;
 }
 
+#conteudo-post a.voltar {
+  font-family: 'Muli', sans-serif;
+  color: #6a5dc1;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 @media (min-width: 1200px) {
   #conteudo-post {
     padding: 0rem 6rem 3rem 6rem;

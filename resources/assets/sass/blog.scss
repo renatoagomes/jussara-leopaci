@@ -119,6 +119,13 @@ $cor-cinza-bg:#f2f2f4;
     text-align:center;
     padding-bottom: 2rem;
     text-align:left;
+
+    a.voltar {
+        font-family: 'Muli', sans-serif;
+        color:#6a5dc1;
+        font-weight: bold;
+        font-size: 14px;
+    }
     
     @include breakpoint(lg) {
         padding: 0rem 6rem 3rem 6rem;
