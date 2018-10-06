@@ -28,8 +28,9 @@
                     </div>
 
                     <div class="card-footer w-100 text-right">
-                        <i class="fa fa-heart"></i>
+                        <a href="javascript:void(0)" onclick="sharePost('/blog/Baby-Blues-e-Depressão-pós-parto-não-são-a-mesma-coisa')" target="_blank">
                         <i class="fa fa-share-alt"></i>
+                        </a>
                     </div>
 
                 </div>
