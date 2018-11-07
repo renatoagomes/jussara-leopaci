@@ -24,7 +24,7 @@
     </div>
 
     <div class="col-lg-7 col-md-12  mt-3">
-        <p>Palestras, grupos de apoio e orientação, rodas de conversa, são ferramentas que podem possibilitar um espaço de debate e reflexão, auxiliando um grupo de pessoas em eventos, empresas, hospitais. Ofereço esses serviços dentro das temáticas da perinatalidade e da saúde da mulher, tendo a psicanálise como referencial teórico. Para saber mais, entre em contato pelo e-mail abaixo.</p>
+        <p>Palestras, grupos de apoio e orientação, rodas de conversa, são ferramentas que podem possibilitar um espaço de debate e reflexão, auxiliando um grupo de pessoas em eventos, empresas, hospitais, escolas e berçários. Ofereço esses serviços dentro das temáticas da perinatalidade, constituição do sujeito e da saúde da mulher, tendo a psicanálise como referencial teórico. Para saber mais, entre em contato pelo e-mail abaixo.</p>
     </div>
 
 </div>

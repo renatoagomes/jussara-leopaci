@@ -18,7 +18,6 @@
     {{-- Incluindo Seção 'Como funciona' --}}
     @include('pages.perinatal.como_funciona')
     
-
     {{-- Incluindo Footer --}}
     @include('partials.footer')
 

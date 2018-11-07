@@ -8,7 +8,7 @@
 
             <div class="col-12 post-header mt-3">
                 <h1 class="mb-3">Baby Blues e Depressão pós-parto não são a mesma coisa?
-                    <p class="data mt-2">1 de Junho de 2018
+                    <p class="data mt-2">6 de Novembro de 2018
                     <span class="pull-right">
                         <a href="javascript:void(0);" onclick="sharePost()" target="_blank">
                             <i class="fa fa-share-alt"></i>

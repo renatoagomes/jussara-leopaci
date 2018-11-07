@@ -13,7 +13,7 @@
     <h3 class="mt-3">Psicologia Perinatal</h3>
 
     <p class="mt-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    A psicologia perinatal é o “campo de estudo dos fenômenos psíquicos ligados ao ciclo gravídico-puerperal (...) que não se restringe ao evento imediato do parto, mas inclui as estapas que o antecedem e o ultrapassam relativas à gestação e ao puerpério – como a infertilidade, entrega do recém-nascido, abortos e óbitos de bebês – e seus efeitos sobre a relação entre os pais e sua prole” <a href="#abnt">¹</a>.
+    A psicologia perinatal é o “campo de estudo dos fenômenos psíquicos ligados ao ciclo gravídico-puerperal (...) que não se restringe ao evento imediato do parto, mas inclui as etapas que o antecedem e o ultrapassam relativas à gestação e ao puerpério – como a infertilidade, entrega do recém-nascido, abortos e óbitos de bebês – e seus efeitos sobre a relação entre os pais e sua prole” <a href="#abnt">¹</a>.
     </p>
 
     <br>

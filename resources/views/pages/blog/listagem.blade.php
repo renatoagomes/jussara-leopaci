@@ -13,8 +13,7 @@
                     <div class="card-header">
                         <a href="/blog/Baby-Blues-e-Depressão-pós-parto-não-são-a-mesma-coisa" class="titulo">
                             <h3 class="mb-3">Baby Blues e Depressão pós-parto não são a mesma coisa?
-
-                                <p class="data">1 de Junho de 2018</p>
+                                <p class="data">6 de Novembro de 2018</p>
                             </h3>
                         </a>
                     </div>
@@ -23,7 +22,7 @@
                 
                     <div class="card-body">
                         <p>
-                        A maternidade é comum a mulher se sentir frágil diante das mudanças corporais, hormonais e incertezas do futuro, ela também revela - da concepção ao... <a href="/blog/Baby-Blues-e-Depressão-pós-parto-não-são-a-mesma-coisa"><strong>[leia mais]</strong> </a>
+                        Baby Blues e Depressão Pós-Parto são termos bastante difundidos nas redes sociais, sites e livros sobre maternidade, gravidez e ... <a href="/blog/Baby-Blues-e-Depressão-pós-parto-não-são-a-mesma-coisa"><strong>[leia mais]</strong> </a>
                         </p>
                     </div>
 
