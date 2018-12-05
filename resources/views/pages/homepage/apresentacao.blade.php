@@ -23,7 +23,7 @@
         </div>
         <div class="container-foto col-lg-4 col-md-12">
             <img class="foto-jussara" src="https://res.cloudinary.com/tesseract/image/upload/c_crop,g_center,h_2864,w_2000/c_scale,w_500/v1538533747/jussara/IMG_0122a.jpg" alt="Foto Jussara Leopaci">
-            <p class="subtitulo mt-2">Jussara Leopaci - Psicológa clínica</p>
+            <p class="subtitulo mt-2">Jussara Leopaci - Psicóloga clínica</p>
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 <h3 class="mt-5">Clínica Perinatal</h3>
 
-<p class="citacao mt-4">Atendimento clínico individual e/ou grupal oferecido para gestantes, puérperas, casais e díades pais/mães-bebês através do referencial psicanalítico</p>
+<p class="citacao mt-4">Atendimento clínico individual e/ou grupal oferecido para gestantes, puérperas, casais e díades pais/mães-bebês através do referencial psicanalítico.</p>
 
 <hr class="mt-4 mb-4">
 
