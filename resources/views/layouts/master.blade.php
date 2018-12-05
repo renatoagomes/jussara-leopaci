@@ -4,23 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
         <meta name="author" content="">
-        
+        <meta name="robots" content="follow"/>       
         <link rel="icon" type="image/png" href="/logo_favicon.png">
         <link rel="shortcut icon" href="/logo_favicon.png" type="image/x-icon" />
 
         <title>Jussara Leopaci</title>
-
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="icon" type="image/png" href="">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- CSS/SASS -->
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/font-awesome.css">
-        @yield('css')
 
         @if(env('APP_ENV') == 'production')
             <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -33,6 +22,20 @@ gtag('js', new Date());
 gtag('config', 'UA-61678141-7');
             </script>
         @endif
+
+
+
+
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="icon" type="image/png" href="">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- CSS/SASS -->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/font-awesome.css">
+        @yield('css')
+
 
 
     </head>
