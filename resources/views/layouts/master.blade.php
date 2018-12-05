@@ -21,6 +21,20 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/font-awesome.css">
         @yield('css')
+
+        @if(env('APP_ENV') == 'production')
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61678141-7"></script>
+            <script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-61678141-7');
+            </script>
+        @endif
+
+
     </head>
     <body>
         @yield('content')
