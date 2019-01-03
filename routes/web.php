@@ -11,22 +11,23 @@
 |
 */
 
-Auth::routes();
 
-Route::get('/', function () {
-    return view('pages.homepage');
-});
+// Rotas de login / logout
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/perinatal', function () {
-    return view('pages.perinatal');
-});
-
-Route::get('/blog', function () {
-    return view('pages.blog');
-});
-
-Route::get('/blog/{slug}', function () {
-    return view('pages.blog-interna');
-});
-
+/**
+ * Rotas Publicas
+ */
+Route::get('/', 'WelcomeController@index');
+Route::get('perinatal', 'PerinatalController@index');
+Route::get('blog', 'BlogController@index');
+Route::get('blog/{slug}', 'BlogController@show');
 Route::post('contato', 'ContatoController@postContato')->name('contato');
+
+
+/** * Aplicando middlewares para as rotas do webadmin - Aqui entram as rotas que precisa estar logado */
+Route::middleware(['auth'])->group(function () {
+
+});
