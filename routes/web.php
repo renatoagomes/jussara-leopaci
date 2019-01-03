@@ -26,8 +26,16 @@ Route::get('blog', 'BlogController@index');
 Route::get('blog/{slug}', 'BlogController@show');
 Route::post('contato', 'ContatoController@postContato')->name('contato');
 
-
 /** * Aplicando middlewares para as rotas do webadmin - Aqui entram as rotas que precisa estar logado */
 Route::middleware(['auth'])->group(function () {
 
+    Route::get('admin', function() { return view('home'); });
+
 });
+
+
+
+
+Route::resource('homepages', 'HomepageController');
+
+Route::resource('homepages', 'HomepageController');

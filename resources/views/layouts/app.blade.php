@@ -2,7 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>InfyOm Generator</title>
+    <title>Área administrativa - Jussara Leopaci</title>
+
+    <link rel="icon" type="image/png" href="/logo_favicon.png">
+    <link rel="shortcut icon" href="/logo_favicon.png" type="image/x-icon" />
+
+    <meta name="author" content="@renatoagomes">
+    <meta name="robots" content="noindex, nofollow"/>       
+
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <!-- Bootstrap 3.3.7 -->
@@ -37,15 +44,11 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b>InfyOm</b>
+                <b>Área admin</b>
             </a>
 
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
-                <!-- Sidebar toggle button-->
-                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                    <span class="sr-only">Toggle navigation</span>
-                </a>
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
@@ -54,7 +57,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
+                                <img src="/logo.png"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
@@ -62,22 +65,18 @@
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
+                                    <img src="/logo.png"
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {!! Auth::user()->name !!}
-                                        <small>Member since {!! Auth::user()->created_at->format('M. Y') !!}</small>
                                     </p>
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
-                                    <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                    </div>
-                                    <div class="pull-right">
+                                    <div class="text-center">
                                         <a href="{!! url('/logout') !!}" class="btn btn-default btn-flat"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                            Sign out
+                                            Sair
                                         </a>
                                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
@@ -98,11 +97,6 @@
             @yield('content')
         </div>
 
-        <!-- Main Footer -->
-        <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2016 <a href="#">Company</a>.</strong> All rights reserved.
-        </footer>
-
     </div>
 @else
     <nav class="navbar navbar-default navbar-static-top">
@@ -120,7 +114,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{!! url('/') !!}">
-                    InfyOm Generator
+                    Área admin
                 </a>
             </div>
 

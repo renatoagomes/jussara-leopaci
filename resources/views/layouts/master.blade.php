@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="">
+        <meta name="author" content="@renatoagomes">
         <meta name="robots" content="follow"/>       
         <link rel="icon" type="image/png" href="/logo_favicon.png">
         <link rel="shortcut icon" href="/logo_favicon.png" type="image/x-icon" />
@@ -15,11 +15,10 @@
             <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61678141-7"></script>
             <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-61678141-7');
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-61678141-7');
             </script>
         @endif
 

@@ -1,0 +1,246 @@
+[
+    {
+        "name": "id",
+        "dbType": "integer,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "frases_slider",
+        "dbType": "json:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "titulo_apresentacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "subtitulo_apresentacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "texto_apresentacao",
+        "dbType": "text:nullable",
+        "htmlType": "textarea",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "curriculum_json",
+        "dbType": "json:nullable",
+        "htmlType": "textarea",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "link_curriculum",
+        "dbType": "string:nullable",
+        "htmlType": "textarea",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "titulo_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+
+    {
+        "name": "titulo_aba_psic_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "intro_aba_psic_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "texto_aba_psic_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+
+    {
+        "name": "titulo_aba_social_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "intro_aba_social_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "texto_aba_social_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "titulo_aba_perinatal_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "intro_aba_perinatal_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "texto_aba_perinatal_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "titulo_aba_eventos_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "intro_aba_eventos_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "texto_aba_eventos_atuacao",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime",
+        "htmlType": "date",
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime",
+        "htmlType": "date",
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]
