@@ -2,22 +2,29 @@
 
 @section('content')
     <section class="content-header">
-        <h1 class="pull-left">Homepages</h1>
-        <h1 class="pull-right">
-           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('homepages.create') !!}">Add New</a>
-        </h1>
+        <h1>Informaçoes da Homepage</h1>
     </section>
     <div class="content">
         <div class="clearfix"></div>
 
         @include('flash::message')
-
         <div class="clearfix"></div>
+
         <div class="box box-primary">
+            <div class="box-header with-border ">
+                <h3 class="box-title">Slider Principal</h3>
+                <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div><!-- /.box-tools -->
+            </div><!-- /.box-header -->
             <div class="box-body">
-                    @include('homepages.table')
-            </div>
-        </div>
+
+
+
+
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
         <div class="text-center">
         
         </div>

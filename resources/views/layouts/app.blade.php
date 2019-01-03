@@ -43,9 +43,7 @@
         <header class="main-header">
 
             <!-- Logo -->
-            <a href="#" class="logo">
-                <b>Área admin</b>
-            </a>
+            <a href="#" class="logo"></a>
 
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -112,10 +110,6 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{!! url('/') !!}">
-                    Área admin
-                </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
