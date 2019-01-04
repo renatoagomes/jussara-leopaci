@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContatoRequest;
@@ -6,7 +7,7 @@ use App\Http\Requests\ContatoRequest;
 class ContatoController extends Controller
 {
     /**
-     * Metodo para disparar o email de contato
+     * Metodo para disparar o email de contato.
      *
      * @return void
      */
@@ -16,8 +17,6 @@ class ContatoController extends Controller
 
         \Mail::send(new \App\Mail\EmailContato($request->nome, $request->telefone, $request->mensagem));
 
-        return redirect("/#contato");
+        return redirect('/#contato');
     }
-    
-    
 }

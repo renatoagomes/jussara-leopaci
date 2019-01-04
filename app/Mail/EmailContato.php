@@ -5,7 +5,6 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class EmailContato extends Mailable
 {
@@ -22,9 +21,9 @@ class EmailContato extends Mailable
      */
     public function __construct($nome, $telefone, $mensagem)
     {
-        $this->nome =  $nome;
-        $this->telefone =  $telefone;
-        $this->mensagem =  $mensagem;
+        $this->nome = $nome;
+        $this->telefone = $telefone;
+        $this->mensagem = $mensagem;
     }
 
     /**
