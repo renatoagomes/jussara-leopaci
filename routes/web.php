@@ -30,12 +30,11 @@ Route::post('contato', 'ContatoController@postContato')->name('contato');
 Route::middleware(['auth'])->group(function () {
 
     Route::get('admin', function() { return view('home'); });
+    Route::resource('homepages', 'HomepageController');
 
 });
 
 
 
 
-Route::resource('homepages', 'HomepageController');
 
-Route::resource('homepages', 'HomepageController');

@@ -2,8 +2,12 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/homepage.css": "/css/homepage.css",
+    "/css/cropper-style.css": "/css/cropper-style.css",
     "/css/perinatal.css": "/css/perinatal.css",
     "/css/blog.css": "/css/blog.css",
     "/js/perinatal.js": "/js/perinatal.js",
-    "/js/homepage.js": "/js/homepage.js"
+    "/js/homepage.js": "/js/homepage.js",
+    "/js/cropper.js": "/js/cropper.js",
+    "/js/cropper_config.js": "/js/cropper_config.js",
+    "/summernote/summernote-custom.js": "/summernote/summernote-custom.js"
 }

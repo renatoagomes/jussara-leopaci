@@ -19,6 +19,7 @@
             </div><!-- /.box-header -->
             <div class="box-body">
 
+                @include('partials.edit-homepage')
 
 
 
