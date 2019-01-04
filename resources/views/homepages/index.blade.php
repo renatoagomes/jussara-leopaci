@@ -10,25 +10,46 @@
         @include('flash::message')
         <div class="clearfix"></div>
 
-        <div class="box box-primary">
-            <div class="box-header with-border ">
-                <h3 class="box-title">Slider Principal</h3>
-                <div class="box-tools pull-right">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                </div><!-- /.box-tools -->
-            </div><!-- /.box-header -->
-            <div class="box-body">
+        @include('homepages.box-citacoes')
 
-                @include('partials.edit-homepage')
+        @include('homepages.box-citacoes')
 
 
-
-            </div><!-- /.box-body -->
-        </div><!-- /.box -->
-    </div>
-        <div class="text-center">
-        
-        </div>
     </div>
 @endsection
 
+
+@section('scripts')
+
+    <script>
+
+function bindControles() {
+        $('.btnAdicionarCitacao').off('click');
+        $('.btnExcluirCitacao').off('click');
+        $('.btnAdicionarCitacao').on('click', adicionarCitacao);
+        $('.btnExcluirCitacao').on('click', function(event) {
+            excluirCitacao(event.target);
+        });
+}
+
+function adicionarCitacao() {
+    let novaCitacao = $('.linha-modelo').clone();
+    novaCitacao.removeClass('linha-modelo').removeClass('hide').addClass('linha');
+    $('.container-linhas').append(novaCitacao);
+    bindControles();
+}
+
+function excluirCitacao(btn) {
+    $(btn).parents('.linha').remove();
+}
+
+$(document).ready(function(){
+    bindControles();
+});
+
+
+    
+
+    </script>
+
+@endsection
