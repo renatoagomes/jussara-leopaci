@@ -3,8 +3,8 @@
 namespace App\DataTables;
 
 use App\Models\User;
-use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
+use Yajra\DataTables\Services\DataTable;
 
 class UserDataTable extends DataTable
 {
@@ -67,7 +67,7 @@ class UserDataTable extends DataTable
             'name',
             'email',
             'password',
-            'remember_token'
+            'remember_token',
         ];
     }
 
@@ -78,6 +78,6 @@ class UserDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'usersdatatable_' . time();
+        return 'usersdatatable_'.time();
     }
 }

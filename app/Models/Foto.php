@@ -3,10 +3,9 @@
 namespace App\Models;
 
 use Eloquent as Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class: Foto
+ * Class: Foto.
  *
  * @see Model
  */
@@ -14,7 +13,7 @@ class Foto extends Model
 {
     const TIPO_CAPA = 1;
     const TIPO_HOME_BG = 2;
-    
+
     public $table = 'fotos';
 
     protected $dates = ['deleted_at'];
@@ -26,7 +25,7 @@ class Foto extends Model
         'cloudinary_id',
         'tipo',
         'owner_id',
-        'owner_type'
+        'owner_type',
     ];
 
     /**
@@ -39,16 +38,16 @@ class Foto extends Model
         'image_path' => 'string',
         'image_extension' => 'string',
         'owner_id' => 'integer',
-        'owner_type' => 'string'
+        'owner_type' => 'string',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
     public static $rules = [
-        
+
     ];
 
     /**
@@ -59,16 +58,13 @@ class Foto extends Model
         parent::boot();
 
         static::deleting(function ($photo) {
-            
-            return $photo->cloudinary_id 
+            return $photo->cloudinary_id
                 ? \Cloudder::destroyImage($photo->cloudinary_id)
                 : true;
-
         });
 
         /** Deletando o arquivo do cloudinary e do filesystem se existir **/
         static::deleted(function ($photo) {
-
             if (\File::exists($photo->fullPath)) {
                 \File::delete($photo->fullPath);
             }
@@ -105,15 +101,14 @@ class Foto extends Model
     }
 
     /**
-     * Definindo um acessor para a URL da foto no cloudinary no tamanho maximo que irão aparecer 800 x 450
+     * Definindo um acessor para a URL da foto no cloudinary no tamanho maximo que irão aparecer 800 x 450.
      */
     public function getURLCloudinaryAttribute()
     {
-        return "//res.cloudinary.com/"
+        return '//res.cloudinary.com/'
             .env('CLOUDINARY_CLOUD_NAME')
-            ."/image/upload/"
-            .env('CLOUDINARY_CLOUD_FOLDER', '') 
+            .'/image/upload/'
+            .env('CLOUDINARY_CLOUD_FOLDER', '')
             ."/$this->cloudinary_id";
     }
-    
 }

@@ -5,14 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 /**
- * Class: BlogController - Serve a listagem de posts e a pagina interna de 1 Post
+ * Class: BlogController - Serve a listagem de posts e a pagina interna de 1 Post.
  *
  * @see Controller
  */
 class BlogController extends Controller
 {
     /**
-     * Serve a página /blog com a listagem das postagens
+     * Serve a página /blog com a listagem das postagens.
      *
      * @return void
      */
@@ -22,7 +22,7 @@ class BlogController extends Controller
     }
 
     /**
-     * Serve a página interna de uma postagem
+     * Serve a página interna de uma postagem.
      *
      * @return void
      */
@@ -30,5 +30,4 @@ class BlogController extends Controller
     {
         return view('pages.blog-interna');
     }
-    
 }
