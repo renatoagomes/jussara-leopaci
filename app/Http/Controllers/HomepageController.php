@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use Flash;
+use Response;
+use Illuminate\Http\Request;
+use App\Repositories\HomepageRepository;
 use App\Http\Requests\CreateHomepageRequest;
 use App\Http\Requests\UpdateHomepageRequest;
-use App\Repositories\HomepageRepository;
-use App\Http\Controllers\AppBaseController;
-use Illuminate\Http\Request;
-use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
-use Response;
 
 class HomepageController extends AppBaseController
 {
-    /** @var  HomepageRepository */
+    /** @var HomepageRepository */
     private $homepageRepository;
 
     public function __construct(HomepageRepository $homepageRepo)

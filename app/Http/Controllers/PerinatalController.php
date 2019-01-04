@@ -5,14 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 /**
- * Class: PerinatalController - Serve a pagina /perinatal
+ * Class: PerinatalController - Serve a pagina /perinatal.
  *
  * @see Controller
  */
 class PerinatalController extends Controller
 {
     /**
-     * Serve a página /perinatal
+     * Serve a página /perinatal.
      *
      * @return void
      */
@@ -20,5 +20,4 @@ class PerinatalController extends Controller
     {
         return view('pages.perinatal');
     }
-    
 }

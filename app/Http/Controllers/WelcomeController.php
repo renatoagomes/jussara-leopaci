@@ -11,8 +11,6 @@ use Illuminate\Http\Request;
  */
 class WelcomeController extends Controller
 {
-
-
     /**
      * Serve a homepage.
      *
@@ -22,5 +20,4 @@ class WelcomeController extends Controller
     {
         return view('pages.homepage');
     }
-
 }

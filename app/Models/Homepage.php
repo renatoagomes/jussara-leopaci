@@ -3,11 +3,9 @@
 namespace App\Models;
 
 use Eloquent as Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Homepage
- * @package App\Models
+ * Class Homepage.
  * @version January 3, 2019, 9:11 pm BRST
  *
  * @property json frases_slider
@@ -54,7 +52,7 @@ class Homepage extends Model
         'texto_aba_perinatal_atuacao',
         'titulo_aba_eventos_atuacao',
         'intro_aba_eventos_atuacao',
-        'texto_aba_eventos_atuacao'
+        'texto_aba_eventos_atuacao',
     ];
 
     /**
@@ -80,20 +78,15 @@ class Homepage extends Model
         'texto_aba_perinatal_atuacao' => 'string',
         'titulo_aba_eventos_atuacao' => 'string',
         'intro_aba_eventos_atuacao' => 'string',
-        'texto_aba_eventos_atuacao' => 'string'
+        'texto_aba_eventos_atuacao' => 'string',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
     public static $rules = [
-        
+
     ];
-
-
-
-
-    
 }

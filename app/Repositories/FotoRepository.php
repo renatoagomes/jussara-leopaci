@@ -11,11 +11,11 @@ class FotoRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        
+
     ];
 
     /**
-     * Configure the Model
+     * Configure the Model.
      **/
     public function model()
     {
@@ -34,8 +34,7 @@ class FotoRepository extends BaseRepository
         //Testando se o file é valido
         $file = $request['file'];
 
-        if ($file && !is_object($file)) {
-        
+        if ($file && ! is_object($file)) {
             $filename = time();
             $image = \Image::make($file);
             //Criando path inicial para direcionar o arquivo
@@ -47,7 +46,7 @@ class FotoRepository extends BaseRepository
             if ($upload_success) {
 
                 //adicionando as informações da foto na request
-                $request+=[
+                $request += [
                     'image_name' => $filename,
                     'image_path' => $destinationPath,
                     'image_extension' => $extension,
@@ -58,15 +57,13 @@ class FotoRepository extends BaseRepository
 
                 return $novaFoto;
 
-                // Se nao tiver funcionado, retornar false no success para o js se manisfestar
+            // Se nao tiver funcionado, retornar false no success para o js se manisfestar
             } else {
                 return [
                     'success' => false,
                 ];
             }
-        }
-
-        else {
+        } else {
 
             //Criando path inicial para direcionar o arquivo
             $destinationPath = public_path().'/uploads/';
@@ -82,7 +79,7 @@ class FotoRepository extends BaseRepository
             if ($upload_success) {
 
                 //adicionando as informações da foto na request
-                $request+=[
+                $request += [
                     'image_name' => $filename,
                     'image_path' => $destinationPath,
                     'image_extension' => $extension,
@@ -93,7 +90,7 @@ class FotoRepository extends BaseRepository
 
                 return $novaFoto;
 
-                // Se nao tiver funcionado, retornar false no success para o js se manisfestar
+            // Se nao tiver funcionado, retornar false no success para o js se manisfestar
             } else {
                 return [
                     'success' => false,
@@ -152,10 +149,9 @@ class FotoRepository extends BaseRepository
 
         return parent::delete($id);
     }
-    
 
     /**
-     * deleteLocal 
+     * deleteLocal.
      *
      * @param mixed $id
      */
@@ -167,7 +163,4 @@ class FotoRepository extends BaseRepository
             \File::delete($Foto->fullPath);
         }
     }
-
-
-
 }

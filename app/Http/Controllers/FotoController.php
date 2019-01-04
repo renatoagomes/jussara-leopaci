@@ -2,31 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Flash;
 use App\Http\Requests\FotoRequest;
 use App\Repositories\FotoRepository;
-use Flash;
 
 class FotoController extends Controller
 {
-
     /**
-     * fotoRepository 
+     * fotoRepository.
      * @var \App\Model\FotoRepository
      */
     public $fotoRepository;
 
     /**
-     * Construtor recebendo informacoes necessarias
+     * Construtor recebendo informacoes necessarias.
      * @param mixed FotoRepository $fotoRepository
      */
     public function __construct(FotoRepository $fotoRepository)
-    { 
+    {
         $this->fotoRepository = $fotoRepository;
     }
-    
+
     /**
-     * Metodo para trocar 1 foto
+     * Metodo para trocar 1 foto.
      *
      * @return void
      */
@@ -36,6 +34,7 @@ class FotoController extends Controller
 
         if (empty($foto)) {
             Flash::error('Foto não encontrada!');
+
             return redirect()->back();
         }
 
@@ -44,20 +43,19 @@ class FotoController extends Controller
 
             $foto = $this->fotoRepository->uploadAndCreate($request);
 
-            //Upload p/ Cloudinary e delete local 
-            $publicId = "shanti_foto_".time();
+            //Upload p/ Cloudinary e delete local
+            $publicId = 'shanti_foto_'.time();
             $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId);
             $this->fotoRepository->deleteLocal($foto->id);
         }
 
         Flash::success('Foto atualizada com sucesso!');
+
         return redirect()->back();
     }
 
-
-
     /**
-     * Store foto 
+     * Store foto.
      *
      * @return void
      */
@@ -66,20 +64,19 @@ class FotoController extends Controller
         if ($request->file) {
             $foto = $this->fotoRepository->uploadAndCreate($request);
 
-            //Upload p/ Cloudinary e delete local 
-            $publicId = "shanti_foto_".time();
+            //Upload p/ Cloudinary e delete local
+            $publicId = 'shanti_foto_'.time();
             $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId);
             $this->fotoRepository->deleteLocal($foto->id);
         }
 
         Flash::success('Foto adicionada com  sucesso!');
+
         return redirect()->back();
     }
-    
-
 
     /**
-     * undocumented function
+     * undocumented function.
      *
      * @return void
      */
@@ -89,12 +86,13 @@ class FotoController extends Controller
 
         if (empty($foto)) {
             Flash::error('Foto não encontrada!');
+
             return redirect()->back();
         }
 
         $foto->delete();
         Flash::success('Foto removida com sucesso!');
+
         return redirect()->back();
     }
-    
 }

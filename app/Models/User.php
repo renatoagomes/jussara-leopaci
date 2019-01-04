@@ -7,14 +7,14 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     public $table = 'users';
-    
+
     protected $dates = ['deleted_at'];
 
     public $fillable = [
         'name',
         'email',
         'password',
-        'remember_token'
+        'remember_token',
     ];
 
     /**
@@ -27,18 +27,16 @@ class User extends Authenticatable
         'name' => 'string',
         'email' => 'string',
         'password' => 'string',
-        'remember_token' => 'string'
+        'remember_token' => 'string',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
     public static $rules = [
-        'email' => 'required|unique,users'
-        
-    ];
+        'email' => 'required|unique,users',
 
-    
+    ];
 }
