@@ -14,7 +14,6 @@
 
         @include('homepages.box-citacoes')
 
-
     </div>
 @endsection
 
