@@ -12,7 +12,7 @@
 
         @include('homepages.box-citacoes')
 
-        @include('homepages.box-citacoes')
+        @include('homepages.box-apresentacao')
 
     </div>
 @endsection
@@ -46,8 +46,10 @@ $(document).ready(function(){
     bindControles();
 });
 
+function uploadFile(btn) {
+    $($(btn).parents('controles-cropper').find('input[type=file]')).click();
+}
 
-    
 
     </script>
 
