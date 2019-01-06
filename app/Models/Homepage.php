@@ -102,9 +102,9 @@ class Homepage extends Model
     }
 
     /**
-     * Relação entre ItemProgramacao e Foto de capa
+     * Foto de Fundo da Home
      */
-    public function fotoCapa()
+    public function fotoFundo()
     {
         return $this->fotos()->where('tipo', \App\Models\Foto::TIPO_HOME_BG);
     }

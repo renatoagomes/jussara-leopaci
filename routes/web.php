@@ -12,7 +12,10 @@
 */
 
 // Rotas de login / logout
-Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::get('login', function(){
+    return \Auth::check() ? redirect('/admin') : view('auth.login');
+})->name('login');
+
 Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 

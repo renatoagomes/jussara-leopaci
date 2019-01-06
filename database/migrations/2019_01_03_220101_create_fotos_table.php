@@ -15,6 +15,7 @@ class CreatefotosTable extends Migration
         Schema::create('fotos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('cloudinary_id')->nullable();
+            $table->integer('tipo')->nullable();
             $table->string('image_name')->nullable();
             $table->string('image_path')->nullable();
             $table->string('image_extension')->nullable();

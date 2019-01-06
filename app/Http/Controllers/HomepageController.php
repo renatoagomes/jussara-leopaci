@@ -6,6 +6,7 @@ use Flash;
 use Response;
 use Illuminate\Http\Request;
 use App\Repositories\HomepageRepository;
+use App\Repositories\FotoRepository;
 use App\Http\Requests\CreateHomepageRequest;
 use App\Http\Requests\UpdateHomepageRequest;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -15,9 +16,19 @@ class HomepageController extends AppBaseController
     /** @var HomepageRepository */
     private $homepageRepository;
 
-    public function __construct(HomepageRepository $homepageRepo)
+    /** @var FotoRepository */
+    private $fotoRepository;
+
+    /**
+     * __construct
+     *
+     * @param HomepageRepository $homepageRepo
+     * @param FotoRepository $fotoRepo
+     */
+    public function __construct(HomepageRepository $homepageRepo, FotoRepository $fotoRepo)
     {
         $this->homepageRepository = $homepageRepo;
+        $this->fotoRepository = $fotoRepo;
     }
 
     /**
@@ -159,26 +170,19 @@ class HomepageController extends AppBaseController
      */
     public function postTrocaFotoFundo(Request $request)
     {
-
-        dd('aqui');
-        $Homepage = $this->homepageRepository->findWithoutFail($id);
-
-        if (empty($Homepage)) {
-            Flash::error('Trabalho não encontrado!');
-            return redirect(route('Homepages.index'));
-        }
+        $Homepage = $this->homepageRepository->first();
 
         if ($request->file) {
-            if ($Homepage->fotoCapa()->first()) {
-                $Homepage->fotoCapa()->first()->delete();
+            if ($Homepage->fotoFundo()->first()) {
+                $Homepage->fotoFundo()->first()->delete();
             }
 
-            $request->request->add(['tipo' => \App\Models\Foto::TIPO_CAPA]);
+            $request->request->add(['tipo' => \App\Models\Foto::TIPO_HOME_BG]);
             $foto = $this->fotoRepository->uploadAndCreate($request);
-            $Homepage->fotoCapa()->save($foto);
+            $Homepage->fotoFundo()->save($foto);
 
             //Upload p/ Cloudinary e delete local
-            $publicId = "jussara_Homepage_".time();
+            $publicId = "jussara_homepage_".time();
             $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId);
             $this->fotoRepository->deleteLocal($foto->id);
         }
