@@ -8,7 +8,6 @@
     </div><!-- /.box-header -->
     <div class="box-body">
 
-
         <div class="col-xs-12">
             <div class="col-sm-12 text-center">
                 <div class="col-sm-4"></div>
@@ -101,9 +100,7 @@
             ])
         </div>
 
-        <div class="col-xs-12">
-            <br>
-        </div>
+        <div class="col-xs-12"><br></div>
 
         <!-- Link Curriculum Field -->
         <div class="form-group col-sm-12 col-lg-12">

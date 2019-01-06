@@ -25,7 +25,7 @@
                 'label' => 'Foto de perfil:',
                 'extraAttrs' => [
                     'class' =>  'btn btn-info btn-lg',
-                    'style' =>  'display:inline;' 
+                    'style' =>  'display:inline;'
                 ],
                 'comCropper' => true,
                 'aspectRatio' => 1,
@@ -34,28 +34,21 @@
             ])
         </div>
 
-
         <div class="col-xs-12"> <hr> </div>
-
 
         <div class="col-xs-12">
             <h3>Citações</h3>
             <br>
 
             <div class="linha-modelo hide">
-                <div class="col-xs-5">
+                <div class="col-xs-7">
                     {!! form::label('frase', 'Citação') !!}<br>
                     {!! form::text('frases_slider[citacao][]', null, ['class' => 'form-control']) !!}<br>
                 </div>
 
-                <div class="col-xs-3">
-                    {!! Form::label('frase', 'Autor') !!}<br>
-                    {!! Form::text('frases_slider[frases][]', null, ['class' => 'form-control']) !!}<br>
-                </div>
-
-                <div class="col-xs-1">
-                    {!! Form::label('frase', 'Ano') !!}<br>
-                    {!! Form::text('frases_slider[frases][]', null, ['class' => 'form-control']) !!}<br>
+                <div class="col-xs-2">
+                    {!! Form::label('frase', 'Autor / Ano') !!}<br>
+                    {!! Form::text('frases_slider[autor_ano][]', null, ['class' => 'form-control']) !!}<br>
                 </div>
 
                 <div class="col-xs-3">
@@ -73,19 +66,14 @@
 
             <div class="container-linhas">
                 <div class="linha">
-                    <div class="col-xs-5">
+                    <div class="col-xs-7">
                         {!! form::label('frase', 'Citação') !!}<br>
                         {!! form::text('frases_slider[citacao][]', null, ['class' => 'form-control']) !!}<br>
                     </div>
 
-                    <div class="col-xs-3">
-                        {!! Form::label('frase', 'Autor') !!}<br>
-                        {!! Form::text('frases_slider[frases][]', null, ['class' => 'form-control']) !!}<br>
-                    </div>
-
-                    <div class="col-xs-1">
-                        {!! Form::label('frase', 'Ano') !!}<br>
-                        {!! Form::text('frases_slider[frases][]', null, ['class' => 'form-control']) !!}<br>
+                    <div class="col-xs-2">
+                        {!! Form::label('frase', 'Autor / Ano') !!}<br>
+                        {!! Form::text('frases_slider[autor_ano][]', null, ['class' => 'form-control']) !!}<br>
                     </div>
 
                     <div class="col-xs-3">
