@@ -11,8 +11,7 @@ use Eloquent as Model;
  */
 class Foto extends Model
 {
-    const TIPO_CAPA = 1;
-    const TIPO_HOME_BG = 2;
+    const TIPO_HOME_BG = 1;
 
     public $table = 'fotos';
 

@@ -11,6 +11,7 @@
 
         @include('admin.homepage.box-citacoes')
         @include('admin.homepage.box-apresentacao')
+        @include('admin.homepage.box-atuacao')
 
     </div>
 @endsection
@@ -44,8 +45,20 @@ $(document).ready(function(){
     bindControles();
 });
 
+
 function uploadFile(btn) {
-    $($(btn).parents('controles-cropper').find('input[type=file]')).click();
+    $($(btn).parents('.controles-cropper').find('input[type=file]')).click();
+}
+
+function bindUploadFile() {
+    $('input[type=file]').on('change', function(el) {
+        swal({
+            title: 'Carregando...',
+            html: '<br><i class="fa fa-spin fa-spinner fa-3x"></i><br><br><br>',
+            showConfirmButton: false
+        });
+        $(el.target).parents('form').submit();
+    })
 }
 
 

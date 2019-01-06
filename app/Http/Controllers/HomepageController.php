@@ -151,4 +151,40 @@ class HomepageController extends AppBaseController
 
         return redirect(route('homepages.index'));
     }
+
+    /**
+     * Metodo para receber o post de trocar a foto de capa
+     *
+     * @return void
+     */
+    public function postTrocaFotoFundo(Request $request)
+    {
+
+        dd('aqui');
+        $Homepage = $this->homepageRepository->findWithoutFail($id);
+
+        if (empty($Homepage)) {
+            Flash::error('Trabalho não encontrado!');
+            return redirect(route('Homepages.index'));
+        }
+
+        if ($request->file) {
+            if ($Homepage->fotoCapa()->first()) {
+                $Homepage->fotoCapa()->first()->delete();
+            }
+
+            $request->request->add(['tipo' => \App\Models\Foto::TIPO_CAPA]);
+            $foto = $this->fotoRepository->uploadAndCreate($request);
+            $Homepage->fotoCapa()->save($foto);
+
+            //Upload p/ Cloudinary e delete local
+            $publicId = "jussara_Homepage_".time();
+            $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId);
+            $this->fotoRepository->deleteLocal($foto->id);
+        }
+
+        Flash::success('Foto de fundo atualizada com sucesso.');
+
+        return redirect()->back();
+    }
 }

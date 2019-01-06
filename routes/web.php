@@ -31,4 +31,10 @@ Route::middleware(['auth'])->group(function () {
         return view('home');
     });
     Route::resource('homepages', 'HomepageController');
+
+
+    Route::post('/admin/trocaFotoFundo', 'HomepageController@postTrocaFotoFundo')->name('homepage.trocaFotoFundo');
+
+
+
 });

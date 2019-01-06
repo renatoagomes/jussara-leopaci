@@ -89,4 +89,42 @@ class Homepage extends Model
     public static $rules = [
 
     ];
+
+
+    /**
+     * Relação de polimorfica com fotos
+     *
+     * @return void
+     */
+    public function fotos()
+    {
+        return $this->morphMany(\App\Models\Foto::class, 'owner');
+    }
+
+    /**
+     * Relação entre ItemProgramacao e Foto de capa
+     */
+    public function fotoCapa()
+    {
+        return $this->fotos()->where('tipo', \App\Models\Foto::TIPO_HOME_BG);
+    }
+
+    /**
+     * Definindo um acessor para a URL da foto no cloudinary no tamanho certo que irão aparecer ~1200max
+     */
+    public function getLinkFotoCapaAttribute()
+    {
+        if ($this->fotoCapa()->first()) {
+
+            return "//res.cloudinary.com/"
+                . env('CLOUDINARY_CLOUD_NAME')
+                . "/image/upload/c_scale,w_1200,q_auto/"
+                . $this->fotoCapa()->first()->cloudinary_id
+                . ".jpg";
+        }
+
+        return '//via.placeholder.com/1200x550';
+    }
+
+
 }
