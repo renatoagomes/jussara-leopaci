@@ -2,8 +2,8 @@
     <div class="col-xs-12 ">
         <h3>Foto de fundo</h3>
         <br>
-        @if (isset($Homepage) && $Homepage->linkFotoSlider)
-            <img id="foto-slider" class="img-responsive" src="{{$Homepage->linkFotoSlider}}" alt="Foto do slider"/>
+        @if (isset($Homepage) && $Homepage->fotoFundo)
+            <img id="foto-slider" class="img-responsive" src="{{$Homepage->linkFotoFundo}}" />
         @else
             <div class="text-center col-xs-12">
                 <strong>Adicione uma foto utilizando o botão abaixo. </strong>

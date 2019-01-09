@@ -40,10 +40,10 @@ class HomepageController extends AppBaseController
     public function index(Request $request)
     {
         $this->homepageRepository->pushCriteria(new RequestCriteria($request));
-        $homepages = $this->homepageRepository->all();
+        $homepages = $this->homepageRepository->first();
 
         return view('admin.homepage.index')
-            ->with('homepages', $homepages);
+            ->with('Homepage', $homepages);
     }
 
     /**

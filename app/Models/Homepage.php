@@ -112,18 +112,18 @@ class Homepage extends Model
     /**
      * Definindo um acessor para a URL da foto no cloudinary no tamanho certo que irão aparecer ~1200max
      */
-    public function getLinkFotoCapaAttribute()
+    public function getLinkFotoFundoAttribute()
     {
-        if ($this->fotoCapa()->first()) {
+        if ($this->fotoFundo()->first()) {
 
             return "//res.cloudinary.com/"
                 . env('CLOUDINARY_CLOUD_NAME')
-                . "/image/upload/c_scale,w_1200,q_auto/"
-                . $this->fotoCapa()->first()->cloudinary_id
+                . "/image/upload/q_auto/"
+                . $this->fotoFundo()->first()->cloudinary_id
                 . ".jpg";
         }
 
-        return '//via.placeholder.com/1200x550';
+        return '//via.placeholder.com/1920x1080';
     }
 
 
