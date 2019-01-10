@@ -4,12 +4,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="">
         <meta name="robots" content="follow"/>       
         <link rel="icon" type="image/png" href="/logo_favicon.png">
         <link rel="shortcut icon" href="/logo_favicon.png" type="image/x-icon" />
 
-        <title>Jussara Leopaci</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>Jussara Leopaci – Psicologia e Psicanálise</title>
+        <meta name="description" content="Atendimento em psicanálise. Neste espaço online, você encontra conteúdo produzido em torno da psicanálise e sobre mães, pais e bebês."/>       
+        <meta name="keywords" content="Psicologia, psicanalise, atendimento, bauru, parentalidade, perinatalidade, maternidade, paternidade, bebê"/>       
 
         @if(env('APP_ENV') == 'production')
             <!-- Global site tag (gtag.js) - Google Analytics -->
