@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use Flash;
+use Response;
+use Illuminate\Http\Request;
+use App\Repositories\PostRepository;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
-use App\Repositories\PostRepository;
-use App\Http\Controllers\AppBaseController;
-use Illuminate\Http\Request;
-use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
-use Response;
 
 class PostController extends AppBaseController
 {
-    /** @var  PostRepository */
+    /** @var PostRepository */
     private $postRepository;
 
     public function __construct(PostRepository $postRepo)
@@ -153,9 +152,8 @@ class PostController extends AppBaseController
         return redirect(route('posts.index'));
     }
 
-
     /**
-     * undocumented function
+     * undocumented function.
      *
      * @return void
      */
@@ -172,11 +170,4 @@ class PostController extends AppBaseController
         return view('pages.blog-interna')
             ->with('Post', $Post);
     }
-    
-
-
-
-
-
 }
-

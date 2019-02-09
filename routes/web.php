@@ -29,8 +29,6 @@ Route::get('/blog/{slug}', 'PostController@interna');
 
 Route::post('contato', 'ContatoController@postContato')->name('contato');
 
-
 Route::resource('posts', 'PostController');
-
 
 Route::resource('referenciaPosts', 'ReferenciaPostController');

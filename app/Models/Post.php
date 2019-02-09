@@ -6,8 +6,7 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Post
- * @package App\Models
+ * Class Post.
  * @version February 8, 2019, 10:23 pm -02
  *
  * @property string capa_url
@@ -21,17 +20,15 @@ class Post extends Model
     use SoftDeletes;
 
     public $table = 'posts';
-    
 
     protected $dates = ['deleted_at', 'data_publicacao'];
-
 
     public $fillable = [
         'capa_url',
         'slug',
         'titulo',
         'autor',
-        'conteudo'
+        'conteudo',
     ];
 
     /**
@@ -44,20 +41,20 @@ class Post extends Model
         'capa_url' => 'string',
         'slug' => 'string',
         'titulo' => 'string',
-        'autor' => 'string'
+        'autor' => 'string',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
     public static $rules = [
-        
+
     ];
 
     /**
-     * Relacao entre um post e suas referencias
+     * Relacao entre um post e suas referencias.
      *
      * @return void
      */
@@ -67,13 +64,12 @@ class Post extends Model
     }
 
     /**
-     * Acessor para 
+     * Acessor para.
      */
     public function getDataPublicacaoAttribute($value)
     {
-        setlocale (LC_TIME, 'pt_BR');
+        setlocale(LC_TIME, 'pt_BR');
+
         return (new \Carbon\Carbon($value))->formatLocalized('%d de %B de %Y');
     }
-    
-    
 }
