@@ -5,8 +5,7 @@ namespace App\Models;
 use Eloquent as Model;
 
 /**
- * Class ReferenciaPost
- * @package App\Models
+ * Class ReferenciaPost.
  * @version February 8, 2019, 11:12 pm -02
  *
  * @property string texto
@@ -15,14 +14,12 @@ use Eloquent as Model;
 class ReferenciaPost extends Model
 {
     public $table = 'referencia_posts';
-    
 
     protected $dates = ['deleted_at'];
 
-
     public $fillable = [
         'texto',
-        'link'
+        'link',
     ];
 
     /**
@@ -34,20 +31,20 @@ class ReferenciaPost extends Model
         'id' => 'integer',
         'post_id' => 'integer',
         'texto' => 'string',
-        'link' => 'string'
+        'link' => 'string',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
     public static $rules = [
-        
+
     ];
 
     /**
-     * Relação entre a referencia e o post
+     * Relação entre a referencia e o post.
      *
      * @return void
      */
@@ -55,6 +52,4 @@ class ReferenciaPost extends Model
     {
         return $this->belongsTo('App\Models\Post');
     }
-    
-    
 }

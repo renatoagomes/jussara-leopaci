@@ -6,14 +6,13 @@ use App\Models\Post;
 use InfyOm\Generator\Common\BaseRepository;
 
 /**
- * Class PostRepository
- * @package App\Repositories
+ * Class PostRepository.
  * @version February 8, 2019, 10:23 pm -02
  *
  * @method Post findWithoutFail($id, $columns = ['*'])
  * @method Post find($id, $columns = ['*'])
  * @method Post first($columns = ['*'])
-*/
+ */
 class PostRepository extends BaseRepository
 {
     /**
@@ -24,11 +23,11 @@ class PostRepository extends BaseRepository
         'slug',
         'titulo',
         'autor',
-        'conteudo'
+        'conteudo',
     ];
 
     /**
-     * Configure the Model
+     * Configure the Model.
      **/
     public function model()
     {
