@@ -25,8 +25,10 @@ Route::get('/blog', function () {
     return view('pages.blog');
 });
 
-Route::get('/blog/{slug}', function () {
-    return view('pages.blog-interna');
-});
+Route::get('/blog/{slug}', 'PostController@interna');
 
 Route::post('contato', 'ContatoController@postContato')->name('contato');
+
+Route::resource('posts', 'PostController');
+
+Route::resource('referenciaPosts', 'ReferenciaPostController');
