@@ -27,8 +27,10 @@
                 {!! $Post->conteudo !!}
                 
                 <hr class="mt-5">
-                <a id="abnt" href="#"></a>
-                <p class="rodape-abnt">1 Estudo Fiocruz: <a target="_blank" href="http://blog.saude.gov.br">blog.saude.gov.br</a> </p>
+                @foreach ($Post->referencias as $Referencia)
+                    <a id="abnt" href="#"></a>
+                    <p class="rodape-abnt">{{$Referencia->texto}} <a target="_blank" href="{{$Referencia->url}}">{{$Referencia->texto_link}}</a> </p>
+                @endforeach
     
             </div>
 

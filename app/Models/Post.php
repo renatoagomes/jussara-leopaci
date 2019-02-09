@@ -23,7 +23,7 @@ class Post extends Model
     public $table = 'posts';
     
 
-    protected $dates = ['deleted_at'];
+    protected $dates = ['deleted_at', 'data_publicacao'];
 
 
     public $fillable = [
@@ -56,5 +56,24 @@ class Post extends Model
         
     ];
 
+    /**
+     * Relacao entre um post e suas referencias
+     *
+     * @return void
+     */
+    public function referencias()
+    {
+        return $this->hasMany('App\Models\ReferenciaPost');
+    }
+
+    /**
+     * Acessor para 
+     */
+    public function getDataPublicacaoAttribute($value)
+    {
+        setlocale (LC_TIME, 'pt_BR');
+        return (new \Carbon\Carbon($value))->formatLocalized('%d de %B de %Y');
+    }
+    
     
 }
