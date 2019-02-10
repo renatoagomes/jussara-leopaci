@@ -37,7 +37,7 @@ class PostsSeeder extends Seeder
             'capa_url' => "https://res.cloudinary.com/tesseract/image/upload/c_crop,g_north,h_750,w_1500,y_50/c_scale,w_949/v1549677256/jussara/FILME-BIRD-BOX-08.jpg.jpg",
             'slug' => "Desvendando-Bird-Box-um-olhar-sobre-a-maternidade",
             'titulo' => "Desvendando Bird Box: um olhar sobre a maternidade",
-            'data_publicacao' => "10/02/2019",
+            'data_publicacao' => "2019-02-11",
             'conteudo' => "<p>A produção original Netflix “Bird Box” (2018) que traz Sandra Bullock como atriz principal e Susanne Bier na direção, suscitou discussões entre os telespectadores que tentaram revelar os mistérios das simbologias apresentadas no filme. Eu, assim como vários outros, ouvi muito sobre o filme antes de me interessar por ele, mas assumo que o comentário que me cativou foi “estão falando que é sobre maternidade” e foi com esse olhar que assisti e escrevo um pouco do que me provocou nessa temática1.  </p>
 <p> A composição da relação de Malorie durante a gestação (insatisfeita e deprimida) e posteriormente, com seus dois filhos, nos dá exemplos e possibilidades de análise sobre a construção do ser mãe2, apontando que a máxima “quando nasce um bebê, nasce uma mãe” pode não ser tão máxima assim.  </p>
 <p> As crianças não tinham nome (ela os chamava de Garota e Garoto), aquilo que nos identifica e nos diferencia, assim como ela própria também não conseguia – ao longo de quase toda trama – se nomear mãe. Não vemos cenas de brincadeiras durante o filme envolvendo Malorie e as crianças – atividade tão importante na constituição subjetiva na primeira infância. Pelo contrário, em dado momento, ela chega a interromper a história que Tom, seu companheiro, estaria contando a elas.  </p>
