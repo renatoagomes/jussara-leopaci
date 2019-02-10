@@ -64,12 +64,22 @@ class Post extends Model
     }
 
     /**
-     * Acessor para.
+     * Acessor para a data de publicacao ptbr 
      */
-    public function getDataPublicacaoAttribute($value)
+    public function getDataPublicacaoFormatadaAttribute()
     {
-        setlocale(LC_TIME, 'pt_BR');
-
-        return (new \Carbon\Carbon($value))->formatLocalized('%d de %B de %Y');
+        \Carbon\Carbon::setLocale('pt_BR');
+        $data = new \Carbon\Carbon($this->data_publicacao);
+        return $data->formatLocalized('%d de %B de %Y');
     }
+
+    /**
+     * Acessor para o prview do post
+     */
+    public function getPreviewAttribute()
+    {
+        $preview = substr($this->conteudo, 3, 100);
+        return $preview;
+    }
+    
 }
