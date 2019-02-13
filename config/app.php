@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'pt-BR',
+    'locale' => 'pt_BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -174,6 +174,8 @@ return [
         \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
 
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -237,6 +239,7 @@ return [
         'Flash'     => Laracasts\Flash\Flash::class,
 
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
     ],
 

@@ -33,11 +33,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin', function () {
         return view('home');
     });
+
     Route::resource('homepages', 'HomepageController');
-
-
     Route::post('/admin/trocaFotoFundo', 'HomepageController@postTrocaFotoFundo')->name('homepage.trocaFotoFundo');
 
-
-
 });
+
+Route::get('/blog/{slug}', 'PostController@interna');
+Route::post('contato', 'ContatoController@postContato')->name('contato');
+Route::resource('posts', 'PostController');
+Route::resource('referenciaPosts', 'ReferenciaPostController');

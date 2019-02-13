@@ -10,9 +10,7 @@
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <title>Jussara Leopaci – Psicologia e Psicanálise</title>
-        <meta name="description" content="Atendimento em psicanálise. Neste espaço online, você encontra conteúdo produzido em torno da psicanálise e sobre mães, pais e bebês."/>
-        <meta name="keywords" content="Psicologia, psicanalise, atendimento, bauru, parentalidade, perinatalidade, maternidade, paternidade, bebê"/>
+        {!! SEO::generate() !!}
 
         @if(env('APP_ENV') == 'production')
             <!-- Global site tag (gtag.js) - Google Analytics -->
