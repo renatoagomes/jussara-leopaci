@@ -420,9 +420,15 @@ footer a.link-footer {
 }
 
 #conteudo-post img {
-  height: 65vh;
+  height: 35vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  #conteudo-post img {
+    height: 65vh;
+  }
 }
 
 #conteudo-post .post-header,

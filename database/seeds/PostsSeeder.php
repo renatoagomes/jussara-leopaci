@@ -38,7 +38,7 @@ class PostsSeeder extends Seeder
             'titulo' => "Desvendando Bird Box: um olhar sobre a maternidade",
             'data_publicacao' => "2019-02-11",
             'conteudo' => "<p>A produção original Netflix “Bird Box” (2018) que traz Sandra Bullock como atriz principal e Susanne Bier na direção, suscitou discussões entre os telespectadores que tentaram revelar os mistérios das simbologias apresentadas no filme. Eu, assim como vários outros, ouvi muito sobre o filme antes de me interessar por ele, mas assumo que o comentário que me cativou foi “estão falando que é sobre maternidade” e foi com esse olhar que assisti e escrevo um pouco do que me provocou nessa temática1.  </p>
-<p> A composição da relação de Malorie durante a gestação (insatisfeita e deprimida) e posteriormente, com seus dois filhos, nos dá exemplos e possibilidades de análise sobre a construção do ser mãe2, apontando que a máxima “quando nasce um bebê, nasce uma mãe” pode não ser tão máxima assim.  </p>
+<p> A composição da relação de Malorie durante a gestação (insatisfeita e deprimida) e posteriormente, com seus dois filhos, nos dá exemplos e possibilidades de análise sobre a construção do ser mãe, apontando que a máxima “quando nasce um bebê, nasce uma mãe” pode não ser tão máxima assim.  </p>
 <p> As crianças não tinham nome (ela os chamava de Garota e Garoto), aquilo que nos identifica e nos diferencia, assim como ela própria também não conseguia – ao longo de quase toda trama – se nomear mãe. Não vemos cenas de brincadeiras durante o filme envolvendo Malorie e as crianças – atividade tão importante na constituição subjetiva na primeira infância. Pelo contrário, em dado momento, ela chega a interromper a história que Tom, seu companheiro, estaria contando a elas.  </p>
 <p> Malorie diz a Tom que tudo o que ela fez foi pelas crianças – e não está errada. Tudo o que ela havia feito até aquele momento, teria sido para manter as crianças fisicamente vivas, para que elas sobrevivessem em meio ao caos. A sobrevivência foi imperativa e norteou seu cuidado com os filhos. E foi à sua maneira, nas condições desastrosas em que se encontravam, que ela pode criar e cuidar das crianças.  </p>
 
@@ -51,7 +51,7 @@ class PostsSeeder extends Seeder
         $post->referencias()->create([
             'texto' => '1 Para análise de Bird Box por outro viés, recomendo o vídeo de Christian Dunker em seu canal no YouTube:',
             'texto_link' => 'https://www.youtube.com/watch?v=bgH59B4M5xg ',
-            'url' => 'blog.saude.gov.br',
+            'url' => 'https://www.youtube.com/watch?v=bgH59B4M5xg ',
         ]);
     }
 }

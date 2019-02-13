@@ -9,6 +9,7 @@ use App\Repositories\PostRepository;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use Prettus\Repository\Criteria\RequestCriteria;
+use SEO;
 
 class PostController extends AppBaseController
 {
@@ -159,13 +160,20 @@ class PostController extends AppBaseController
      */
     public function interna($slug)
     {
+        
         $Post = $this->postRepository->findByField('slug', $slug)->first();
 
         if (empty($Post)) {
             Flash::error('Post not found');
-
             return redirect(route('posts.index'));
         }
+
+        SEO::setTitle($Post->titulo);
+        SEO::addImages($Post->capa_url);
+        SEO::setDescription($Post->preview(130).'...');
+        SEO::opengraph()->setUrl(\URL::to('/blog/'.$Post->slug));
+        SEO::setCanonical(\URL::to('/blog/'.$Post->slug));
+        SEO::opengraph()->addProperty('type', 'articles');
 
         return view('pages.blog-interna')
             ->with('Post', $Post);
