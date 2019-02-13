@@ -16,3 +16,7 @@
     @include('partials.footer')
 
 @endsection
+
+@section('js')
+        <script src="/js/blog.js" ></script>
+@endsection
