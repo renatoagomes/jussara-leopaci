@@ -173,7 +173,6 @@ return [
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
         \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
 
-
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
 
         /*
@@ -239,7 +238,6 @@ return [
         'Flash'     => Laracasts\Flash\Flash::class,
 
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
-
 
     ],
 
