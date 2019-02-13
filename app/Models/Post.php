@@ -68,9 +68,8 @@ class Post extends Model
      */
     public function getDataPublicacaoFormatadaAttribute()
     {
-        \Carbon\Carbon::setLocale('pt_BR');
+        setLocale('pt_BR.UTF8');
         $data = new \Carbon\Carbon($this->data_publicacao);
-
         return $data->formatLocalized('%d de %B de %Y');
     }
 
