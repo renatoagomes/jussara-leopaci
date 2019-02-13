@@ -83,13 +83,14 @@ class Post extends Model
 
         return $preview;
     }
-    
+
     /**
-     * Metodo para o preview do post
+     * Metodo para o preview do post.
      */
     public function preview($limit)
     {
         $preview = substr($this->conteudo, 3, $limit);
+
         return $preview;
     }
 }

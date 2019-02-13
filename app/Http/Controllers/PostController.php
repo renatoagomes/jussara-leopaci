@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use SEO;
 use Flash;
 use Response;
 use Illuminate\Http\Request;
@@ -9,7 +10,6 @@ use App\Repositories\PostRepository;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use Prettus\Repository\Criteria\RequestCriteria;
-use SEO;
 
 class PostController extends AppBaseController
 {
@@ -160,11 +160,11 @@ class PostController extends AppBaseController
      */
     public function interna($slug)
     {
-        
         $Post = $this->postRepository->findByField('slug', $slug)->first();
 
         if (empty($Post)) {
             Flash::error('Post not found');
+
             return redirect(route('posts.index'));
         }
 
