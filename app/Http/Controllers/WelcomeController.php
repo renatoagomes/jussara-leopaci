@@ -18,6 +18,7 @@ class WelcomeController extends Controller
      */
     public function index(Request $request)
     {
-        return view('pages.homepage');
+        $Homepage = \App\Models\Homepage::first();
+        return view('pages.homepage')->with('Homepage', $Homepage);
     }
 }

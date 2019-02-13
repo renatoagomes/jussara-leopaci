@@ -108,6 +108,6 @@ class Foto extends Model
             .env('CLOUDINARY_CLOUD_NAME')
             .'/image/upload/'
             .env('CLOUDINARY_CLOUD_FOLDER', '')
-            ."/$this->cloudinary_id";
+            ."/$this->cloudinary_id.jpeg";
     }
 }

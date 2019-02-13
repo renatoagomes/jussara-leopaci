@@ -30,7 +30,7 @@
         margin-top:-1rem;
         color: $branco;
         text-align:center;
-        
+
         @include breakpoint(lg) {
             margin-top:8rem;
             text-align: right;
@@ -43,6 +43,7 @@
         }
 
         h2 {
+            text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
             font-size: 1.5rem;
             @include breakpoint(lg) {
                 font-size: 2.1rem;
@@ -53,6 +54,7 @@
         }
 
         h4 {
+            text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
             font-size: 0.9rem;
             @include breakpoint(lg) {
                 font-size: 1.5rem;
@@ -61,7 +63,7 @@
                 font-size: 2.5rem;
             }
         }
-        
+
         p {
             font-family: 'Muli', sans-serif;
         }
@@ -103,7 +105,7 @@
         }
     }
 
-    
+
 
     a.link-lattes {
         font-weight:bold;
@@ -119,15 +121,15 @@
     div.container-foto {
 
         text-align:center;
-        
-        p.subtitulo { 
-            text-align:center!important; 
+
+        p.subtitulo {
+            text-align:center!important;
         }
 
         @include breakpoint(lg) {
             text-align:inherit;
-            p.subtitulo { 
-                text-align:inherit!important; 
+            p.subtitulo {
+                text-align:inherit!important;
             }
         }
 
@@ -183,7 +185,7 @@
                     border-bottom: 2px solid #d2c4ed;
                 }
 
-                &.active {    
+                &.active {
                     color: $cor-roxo-atuacao;
                     border-bottom: 2px solid #3f00e1;
                     background-color: #e1d3f2;
@@ -244,11 +246,11 @@
             width: 50%;
         }
     }
-    
+
 
     p {
         text-align:center;
-    } 
+    }
 
     label {
         position: absolute;

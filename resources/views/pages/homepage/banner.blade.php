@@ -3,32 +3,20 @@
     @include ('partials.nav-principal', [
         'active' => 'home'
     ])
-
     <div>
         <div class="container">
-
             <div class="container-texto ">
-                <div class="slide active">
-                    <h2>"(...) mas afinal é preciso <br>começar a amar, para não adoecer" </h2>
-                    <br>
-                    <h4>(Freud, 1914)</h4>
-                </div>
-                <div class="slide" style="display:none">
-                    <h2>"A história não é o passado. A história é o passado na medida em que é historiado no presente - historiado no presente porque foi vivido no passado."</h2>
-                    <br>
-                    <h4>(Lacan, 1954)</h4>
-                </div>
-                <div class="slide" style="display:none">
-                    <h2>"Não existe essa coisa chamada bebê"</h2>
-                    <br>
-                    <h4>(Winnicott, 1958)</h4>
-                </div>
-                <div class="slide" style="display:none">
-                    <h2>"Falar de amor, com efeito, não se fala de outra coisa no discurso analítico"</h2>
-                    <br>
-                    <h4>(Lacan, 1972)</h4>
-                </div>
-                
+
+                @foreach ($Homepage->objFrasesSlider as $key => $citacao)
+                <div class="slide @if($key == 0) active @endif" data-duracao="{{$citacao->duracao}}" @if ($key != 0) style='display:none' @endif >
+
+                        <h2>{!! $citacao->frase !!}</h2>
+                        <br>
+                        <h4>{{$citacao->autor}}</h4>
+
+                    </div>
+                @endforeach
+
             </div>
         </div>
     </div>

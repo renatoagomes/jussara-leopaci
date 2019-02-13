@@ -92,6 +92,16 @@ class Homepage extends Model
 
 
     /**
+     * Acessor para
+     */
+    public function getObjFrasesSliderAttribute()
+    {
+        return json_decode($this->frases_slider);
+    }
+
+
+
+    /**
      * Relação de polimorfica com fotos
      *
      * @return void
