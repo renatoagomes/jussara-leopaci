@@ -162,5 +162,12 @@ class Homepage extends Model
         return json_decode($this->frases_slider);
     }
 
+    /**
+     * Acessor para o obj contendo cada um dos itens do curriculum
+     */
+    public function getObjListaCurriculumAttribute()
+    {
+        return json_decode($this->curriculum_json);
+    }
 
 }

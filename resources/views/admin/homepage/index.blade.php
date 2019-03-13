@@ -21,7 +21,7 @@
 
     <script>
 
-function bindControlesCitacoes() {
+function bindControlesCitacao() {
     $('.btnAdicionarCitacao').off('click');
     $('.btnExcluirCitacao').off('click');
     $('.btnAdicionarCitacao').on('click', adicionarCitacao);
@@ -35,15 +35,39 @@ function adicionarCitacao(ev) {
     let novaCitacao = $('.linha-modelo-citacao').clone();
     novaCitacao.removeClass('linha-modelo-citacao').removeClass('hide').addClass('linha');
     $('.container-linhas-citacao').append(novaCitacao);
-    bindControlesCitacoes();
+    bindControlesCitacao();
 }
 
 function excluirCitacao(btn) {
     $(btn).parents('.linha').remove();
 }
 
+
+
+function bindControlesItemCurriculum() {
+    $('.btnAdicionarItemCurriculum').off('click');
+    $('.btnExcluirItemCurriculum').off('click');
+    $('.btnAdicionarItemCurriculum').on('click', adicionarItemCurriculum);
+    $('.btnExcluirItemCurriculum').on('click', function(event) {
+        excluirItemCurriculum(event.target);
+    });
+}
+
+function adicionarItemCurriculum(ev) {
+    ev.preventDefault();
+    let novaItemCurriculum = $('.linha-modelo-curriculum').clone();
+    novaItemCurriculum.removeClass('linha-modelo-curriculum').removeClass('hide').addClass('linha');
+    $('.container-linhas-curriculum').append(novaItemCurriculum);
+    bindControlesItemCurriculum();
+}
+
+function excluirItemCurriculum(btn) {
+    $(btn).parents('.linha').remove();
+}
+
 $(document).ready(function(){
-    bindControlesCitacoes();
+    bindControlesCitacao();
+    bindControlesItemCurriculum();
 });
 
 
