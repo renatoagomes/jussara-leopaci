@@ -450,18 +450,6 @@ footer a.link-footer {
   text-indent: 2rem;
 }
 
-#conteudo-post .post-header a,
-#conteudo-post .post-footer a,
-#conteudo-post .post-body a {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-#conteudo-post .post-header a.titulo,
-#conteudo-post .post-footer a.titulo,
-#conteudo-post .post-body a.titulo {
-  color: inherit;
-}
-
 #conteudo-post .post-header .data,
 #conteudo-post .post-footer .data,
 #conteudo-post .post-body .data {

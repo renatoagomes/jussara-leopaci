@@ -65,7 +65,7 @@
 /************************************************************************/
 /******/ ({
 
-/***/ 3:
+/***/ 1:
 /***/ (function(module, exports) {
 
 
@@ -118,7 +118,7 @@ module.exports = __webpack_require__(48);
 
 
 //Dando require no JS de Smooth scroll to link
-__webpack_require__(3);
+__webpack_require__(1);
 
 /***/ })
 

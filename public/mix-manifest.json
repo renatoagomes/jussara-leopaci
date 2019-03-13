@@ -8,6 +8,7 @@
     "/js/perinatal.js": "/js/perinatal.js",
     "/js/homepage.js": "/js/homepage.js",
     "/js/cropper.js": "/js/cropper.js",
+    "/js/blog.js": "/js/blog.js",
     "/js/cropper_config.js": "/js/cropper_config.js",
     "/summernote/summernote-custom.js": "/summernote/summernote-custom.js"
 }

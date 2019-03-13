@@ -17,6 +17,7 @@ mix
     .js('resources/assets/js/cropper_config.js', 'public/js')
     .js('resources/assets/js/homepage.js', 'public/js')
     .js('resources/assets/js/perinatal.js', 'public/js')
+    .js('resources/assets/js/blog.js', 'public/js')
 
     .copy('resources/assets/js/summernote.js', 'public/summernote/summernote-custom.js')
 

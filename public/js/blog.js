@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 45);
+/******/ 	return __webpack_require__(__webpack_require__.s = 49);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -105,38 +105,20 @@ $(function () {
 
 /***/ }),
 
-/***/ 45:
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(46);
+module.exports = __webpack_require__(50);
 
 
 /***/ }),
 
-/***/ 46:
+/***/ 50:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 //Dando require no JS de Smooth scroll to link
 __webpack_require__(1);
-
-/** para trocar de textos na home **/
-window.trocaSlides = function trocaSlides() {
-    $('.slide.active').fadeOut();
-
-    setTimeout(function () {
-        var ativo = $('.slide.active');
-        ativo.removeClass("active");
-
-        var next = ativo.next().length ? ativo.next() : ativo.parent().find('.slide').first();
-        next.addClass('active').fadeIn();
-        setTimeout(trocaSlides, 7500);
-    }, 900);
-};
-
-$(function () {
-    setTimeout(trocaSlides, 6000);
-});
 
 /***/ })
 
