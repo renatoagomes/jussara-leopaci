@@ -13,7 +13,7 @@
 
     <!-- Foto da listagem Field -->
     <div class="col-xs-12 text-center" style="padding-top:2rem;">
-        {!! Form::open(['route' => 'homepage.trocaFotoFundo', 'files' => true]) !!}
+        {!! Form::open(['route' => 'homepage.trocaFotoFundo', 'files' => true, 'id' => 'form-foto-homepage']) !!}
 
         @include('fotos.partials.fields', [
             'extraAttrs' => [
@@ -22,9 +22,9 @@
 
             ],
             'comCropper' => true,
-            'aspectRatio' => 1,
-            'formID' => '#form-geral',
-            'previewID' => '#foto-listagem'
+            'aspectRatio' => 2,
+            'formID' => '#form-foto-homepage',
+            'previewID' => '#foto-slider'
         ])
 
 

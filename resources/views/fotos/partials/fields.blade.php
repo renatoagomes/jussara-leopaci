@@ -41,7 +41,7 @@
             data-formid="{{$formID}}"
             data-previewid="{{$previewID}}"
             class="btn btn-danger btnCancelCrop" style="display:none;">
-                <i class="glyphicon glyphicon-glyphicon-scissors"></i>  &nbsp; Cancelar
+                <i class="glyphicon glyphicon-remove"></i>  &nbsp; Cancelar
         </button>
 
     </div>

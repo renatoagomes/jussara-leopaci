@@ -43,6 +43,7 @@ window.bindCropperJS = function () {
 }
 
 function initCropper(previewID, aspectRatio, formID) {
+    console.log('formID' + formID);
     $(previewID).cropper({
         aspectRatio: aspectRatio
     });

@@ -12,6 +12,7 @@ use Eloquent as Model;
 class Foto extends Model
 {
     const TIPO_HOME_BG = 1;
+    const TIPO_HOME_APRES = 2;
 
     public $table = 'fotos';
 
@@ -106,8 +107,8 @@ class Foto extends Model
     {
         return '//res.cloudinary.com/'
             .env('CLOUDINARY_CLOUD_NAME')
-            .'/image/upload/'
+            .'/image/upload/f_auto/'
             .env('CLOUDINARY_CLOUD_FOLDER', '')
-            ."/$this->cloudinary_id.jpeg";
+            ."/$this->cloudinary_id";
     }
 }

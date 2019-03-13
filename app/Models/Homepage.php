@@ -120,7 +120,17 @@ class Homepage extends Model
     }
 
     /**
-     * Definindo um acessor para a URL da foto no cloudinary no tamanho certo que irão aparecer ~1200max
+     * Foto da secao Apresentacao da Home
+     */
+    public function fotoApresentacao()
+    {
+        return $this->fotos()->where('tipo', \App\Models\Foto::TIPO_HOME_APRES);
+    }
+
+    /**
+     * Acessor para a URL da foto no cloudinary com qualidade e formato automaticos || placeholder
+     *
+     * @return string - URL do cloudinary ou via.placeholder.com
      */
     public function getLinkFotoFundoAttribute()
     {
@@ -128,12 +138,31 @@ class Homepage extends Model
 
             return "//res.cloudinary.com/"
                 . env('CLOUDINARY_CLOUD_NAME')
-                . "/image/upload/q_auto/"
-                . $this->fotoFundo()->first()->cloudinary_id
-                . ".jpg";
+                . "/image/upload/q_auto,f_auto/"
+                . env('CLOUDINARY_CLOUD_FOLDER') . "/"
+                . $this->fotoFundo()->first()->cloudinary_id;
         }
 
-        return '//via.placeholder.com/1920x1080';
+        return '//via.placeholder.com/1900x800';
+    }
+
+    /**
+     * Acessor para a URL da foto no cloudinary com qualidade e formato automaticos || placeholder
+     *
+     * @return string - URL do cloudinary ou via.placeholder.com
+     */
+    public function getLinkFotoApresentacaoAttribute()
+    {
+        if ($this->fotoApresentacao()->first()) {
+
+            return "//res.cloudinary.com/"
+                . env('CLOUDINARY_CLOUD_NAME')
+                . "/image/upload/q_auto,f_auto/"
+                . env('CLOUDINARY_CLOUD_FOLDER') . "/"
+                . $this->fotoApresentacao()->first()->cloudinary_id;
+        }
+
+        return '//via.placeholder.com/500x750';
     }
 
 

@@ -183,11 +183,41 @@ class HomepageController extends AppBaseController
 
             //Upload p/ Cloudinary e delete local
             $publicId = "jussara_homepage_".time();
-            $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId);
+            $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
             $this->fotoRepository->deleteLocal($foto->id);
         }
 
         Flash::success('Foto de fundo atualizada com sucesso.');
+
+        return redirect()->back();
+    }
+
+
+    /**
+     * Metodo para receber o post de trocar a foto da secao Apresentacao
+     *
+     * @return void
+     */
+    public function postTrocaFotoApresentacao(Request $request)
+    {
+        $Homepage = $this->homepageRepository->first();
+
+        if ($request->file) {
+            if ($Homepage->fotoApresentacao()->first()) {
+                $Homepage->fotoApresentacao()->first()->delete();
+            }
+
+            $request->request->add(['tipo' => \App\Models\Foto::TIPO_HOME_APRES]);
+            $foto = $this->fotoRepository->uploadAndCreate($request);
+            $Homepage->fotoFundo()->save($foto);
+
+            //Upload p/ Cloudinary e delete local
+            $publicId = "homepage_apresentacao_".time();
+            $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
+            $this->fotoRepository->deleteLocal($foto->id);
+        }
+
+        Flash::success('Foto da seção apresentação atualizada com sucesso.');
 
         return redirect()->back();
     }

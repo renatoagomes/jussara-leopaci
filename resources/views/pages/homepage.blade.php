@@ -2,6 +2,14 @@
 
 @section ('css')
     <link rel="stylesheet" href="/css/homepage.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    <style>
+
+#header-home {
+    background-image: url({{ $Homepage->linkFotoFundo }});
+}
+
+    </style>
 @endsection
 
 @section ('content')
