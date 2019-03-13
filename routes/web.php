@@ -37,6 +37,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('homepages', 'HomepageController');
     Route::post('/admin/trocaFotoFundo', 'HomepageController@postTrocaFotoFundo')->name('homepage.trocaFotoFundo');
     Route::post('/admin/trocaFotoApresentacao', 'HomepageController@postTrocaFotoApresentacao')->name('homepage.trocaFotoApresentacao');
+    Route::post('/admin/atualizaCitacoesHome', 'HomepageController@postUpdateCitacoes')->name('homepage.atualizaCitacoes');
 
 });
 

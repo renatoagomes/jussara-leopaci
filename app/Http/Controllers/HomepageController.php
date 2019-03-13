@@ -221,4 +221,31 @@ class HomepageController extends AppBaseController
 
         return redirect()->back();
     }
+
+
+    /**
+     * Metodo para receber o post de atualizar as citacoes
+     *
+     * @return void
+     */
+    public function postUpdateCitacoes(Request $request)
+    {
+        $Homepage = $this->homepageRepository->first();
+        $arrFinal = [];
+
+        for ($i = 0; $i < count($request->frases_slider['citacao']); $i++) {
+            $arrFinal[] = [
+                'frase' => $request->frases_slider['citacao'][$i],
+                'autor' => $request->frases_slider['autor_ano'][$i],
+                'duracao' => $request->frases_slider['tempo'][$i],
+            ];
+        }
+
+        $Homepage->frases_slider = json_encode($arrFinal);
+        $Homepage->save();
+
+        Flash::success('Citações atualizadas com sucesso.');
+
+        return redirect()->back();
+    }
 }

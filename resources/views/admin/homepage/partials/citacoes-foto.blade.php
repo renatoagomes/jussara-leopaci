@@ -1,7 +1,5 @@
 <div class="col-xs-12">
     <div class="col-xs-12 ">
-        <h3>Foto de fundo</h3>
-        <br>
         @if (isset($Homepage) && $Homepage->fotoFundo)
             <img id="foto-slider" class="img-responsive" src="{{$Homepage->linkFotoFundo}}" />
         @else

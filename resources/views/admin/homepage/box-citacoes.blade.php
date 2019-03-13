@@ -1,7 +1,7 @@
 
 <div class="box box-primary">
     <div class="box-header with-border ">
-        <h2 class="box-title">Slider de citações</h2>
+        <h2 class="box-title">Primeira seção - Carrossel de citações</h2>
         <div class="box-tools pull-right">
             <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
         </div><!-- /.box-tools -->

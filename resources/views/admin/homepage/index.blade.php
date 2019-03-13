@@ -21,20 +21,21 @@
 
     <script>
 
-function bindControles() {
-        $('.btnAdicionarCitacao').off('click');
-        $('.btnExcluirCitacao').off('click');
-        $('.btnAdicionarCitacao').on('click', adicionarCitacao);
-        $('.btnExcluirCitacao').on('click', function(event) {
-            excluirCitacao(event.target);
-        });
+function bindControlesCitacoes() {
+    $('.btnAdicionarCitacao').off('click');
+    $('.btnExcluirCitacao').off('click');
+    $('.btnAdicionarCitacao').on('click', adicionarCitacao);
+    $('.btnExcluirCitacao').on('click', function(event) {
+        excluirCitacao(event.target);
+    });
 }
 
-function adicionarCitacao() {
-    let novaCitacao = $('.linha-modelo').clone();
-    novaCitacao.removeClass('linha-modelo').removeClass('hide').addClass('linha');
-    $('.container-linhas').append(novaCitacao);
-    bindControles();
+function adicionarCitacao(ev) {
+    ev.preventDefault();
+    let novaCitacao = $('.linha-modelo-citacao').clone();
+    novaCitacao.removeClass('linha-modelo-citacao').removeClass('hide').addClass('linha');
+    $('.container-linhas-citacao').append(novaCitacao);
+    bindControlesCitacoes();
 }
 
 function excluirCitacao(btn) {
@@ -42,7 +43,7 @@ function excluirCitacao(btn) {
 }
 
 $(document).ready(function(){
-    bindControles();
+    bindControlesCitacoes();
 });
 
 
@@ -62,7 +63,7 @@ function bindUploadFile() {
 }
 
 
-    </script>
+</script>
 
 
 

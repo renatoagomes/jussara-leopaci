@@ -90,17 +90,6 @@ class Homepage extends Model
 
     ];
 
-
-    /**
-     * Acessor para
-     */
-    public function getObjFrasesSliderAttribute()
-    {
-        return json_decode($this->frases_slider);
-    }
-
-
-
     /**
      * Relação de polimorfica com fotos
      *
@@ -163,6 +152,14 @@ class Homepage extends Model
         }
 
         return '//via.placeholder.com/500x750';
+    }
+
+    /**
+     * Acessor para o obj contendo cada uma das citacoes da homepage
+     */
+    public function getObjCitacoesAttribute()
+    {
+        return json_decode($this->frases_slider);
     }
 
 
