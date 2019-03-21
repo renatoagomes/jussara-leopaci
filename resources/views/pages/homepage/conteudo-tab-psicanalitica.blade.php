@@ -1,6 +1,6 @@
-<h3 class="mt-5">Clínica Psicanalítica</h3>
+<h3 class="mt-5">{{ $Homepage->titulo_aba_psic_atuacao }}</h3>
 
-<p class="citacao mt-4">Atendimentos individuais com duração média de 50 minutos e frequência mínima de uma vez por semana, tendo a psicanálise como referencial teórico.</p>
+<p class="citacao mt-4">{{ $Homepage->intro_aba_psic_atuacao }}</p>
 
 <hr class="mt-4 mb-4">
 
@@ -23,8 +23,7 @@
     </div>
 
     <div class="col-lg-7 col-md-12  mt-3">
-        <p>A entrevista é o procedimento que dá início ao processo analítico, sendo um espaço que possibilita a manifestação e o esclarecimento da demanda de quem procurou pelo atendimento e suas motivações para buscar esse processo. A entrevista pode se estender por mais de um encontro e também nesse momento, é estabelecido um contrato verbal, combinando horário, frequência, honorários, férias.</p>
-        <p> A dupla que se forma entre analista e analisando procura desvendar o universo psíquico daquele que buscou análise, compreendendo que cada ser é único e é este ser único que buscamos (re)conhecer.</p>
+        {!! $Homepage->texto_aba_psic_atuacao !!}
     </div>
 
 </div>

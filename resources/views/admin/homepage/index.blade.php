@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section ('css')
+    <link rel="stylesheet" href="/css/homepage.css" type="text/css" media="screen" title="no title" charset="utf-8">
+@endsection
+
 @section('content')
     <section class="content-header">
         <h1>Informaçoes da página inicial</h1>
@@ -89,6 +93,6 @@ function bindUploadFile() {
 
 </script>
 
-
+<script src="/js/homepage.js" ></script>
 
 @endsection

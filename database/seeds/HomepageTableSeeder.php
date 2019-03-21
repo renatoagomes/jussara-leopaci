@@ -60,7 +60,7 @@ class HomepageTableSeeder extends Seeder
 
             'titulo_aba_psic_atuacao'=>"CLÍNICA PSICANALÍTICA",
             'intro_aba_psic_atuacao'=>"Atendimentos individuais com duração média de 50 minutos e frequência mínima de uma vez por semana, tendo a psicanálise como referencial teórico.",
-            'texto_aba_psic_atuacao'=>" <p> A entrevista é o procedimento que dá início ao processo analítico, sendo um espaço que possibilita a manifestação e o esclarecimento da demanda de quem procurou pelo atendimento e suas motivações para buscar esse processo. A entrevista pode se estender por mais de um encontro e também nesse momento, é estabelecido um contrato verbal, combinando horário, frequência, honorários, férias.  </p> <p> A dupla que se forma entre analista e analisando procura desvendar o universo psíquico daquele que buscou análise, compreendendo que cada ser é único e é este ser único que buscamos (re)conhecer.  </p> ",
+            'texto_aba_psic_atuacao'=>" <p>A entrevista é o procedimento que dá início ao processo analítico, sendo um espaço que possibilita a manifestação e o esclarecimento da demanda de quem procurou pelo atendimento e suas motivações para buscar esse processo. A entrevista pode se estender por mais de um encontro e também nesse momento, é estabelecido um contrato verbal, combinando horário, frequência, honorários, férias.</p> <p> A dupla que se forma entre analista e analisando procura desvendar o universo psíquico daquele que buscou análise, compreendendo que cada ser é único e é este ser único que buscamos (re)conhecer.</p> ",
 
 
             'titulo_aba_social_atuacao'=>"CLÍNICA SOCIAL",
