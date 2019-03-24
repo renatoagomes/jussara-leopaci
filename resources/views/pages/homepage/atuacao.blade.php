@@ -8,17 +8,16 @@
         <div class="mt-4 text-center d-flex justify-content-center">
             <ul class="nav nav-tabs d-flex justify-content-between" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tab-psicanalitica" role="tab" aria-controls="tab-psicanalitica" aria-selected="true" >{{ $Homepage->titulo_aba_psic_atuacao }}</a>
+                    <a class="nav-link active" data-toggle="tab" href="#tab-psicanalitica" role="tab" aria-controls="tab-psicanalitica" aria-selected="true" >{{ mb_strtoupper($Homepage->titulo_aba_psic_atuacao) }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tab-social" role="tab" aria-controls="social" aria-selected="false">{{ $Homepage->titulo_aba_social_atuacao }}</a>
+                    <a class="nav-link" data-toggle="tab" href="#tab-social" role="tab" aria-controls="social" aria-selected="false">{{ mb_strtoupper($Homepage->titulo_aba_social_atuacao) }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tab-perinatal" role="tab" aria-controls="perinatal" aria-selected="false">{{ $Homepage->titulo_aba_perinatal_atuacao }}</a>
-
+                    <a class="nav-link" data-toggle="tab" href="#tab-perinatal" role="tab" aria-controls="perinatal" aria-selected="false">{{ mb_strtoupper($Homepage->titulo_aba_perinatal_atuacao) }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tab-eventos" role="tab" aria-controls="eventos" aria-selected="false">{{ $Homepage->titulo_aba_eventos_atuacao }}</a>
+                    <a class="nav-link" data-toggle="tab" href="#tab-eventos" role="tab" aria-controls="eventos" aria-selected="false">{{ mb_strtoupper($Homepage->titulo_aba_eventos_atuacao) }}</a>
                 </li>
             </ul>
         </div>

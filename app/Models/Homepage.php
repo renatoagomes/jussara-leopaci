@@ -44,15 +44,19 @@ class Homepage extends Model
         'titulo_aba_psic_atuacao',
         'intro_aba_psic_atuacao',
         'texto_aba_psic_atuacao',
+        'link_aba_psic_atuacao',
         'titulo_aba_social_atuacao',
         'intro_aba_social_atuacao',
         'texto_aba_social_atuacao',
+        'link_aba_social_atuacao',
         'titulo_aba_perinatal_atuacao',
         'intro_aba_perinatal_atuacao',
         'texto_aba_perinatal_atuacao',
+        'link_aba_perinatal_atuacao',
         'titulo_aba_eventos_atuacao',
         'intro_aba_eventos_atuacao',
         'texto_aba_eventos_atuacao',
+        'link_aba_eventos_atuacao',
     ];
 
     /**

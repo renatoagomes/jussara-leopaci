@@ -24,15 +24,19 @@ class CreateHomepagesTable extends Migration
             $table->string('titulo_aba_psic_atuacao')->nullable();
             $table->text('intro_aba_psic_atuacao')->nullable();
             $table->text('texto_aba_psic_atuacao')->nullable();
+            $table->text('link_aba_psic_atuacao')->nullable();
             $table->string('titulo_aba_social_atuacao')->nullable();
             $table->text('intro_aba_social_atuacao')->nullable();
             $table->text('texto_aba_social_atuacao')->nullable();
+            $table->text('link_aba_social_atuacao')->nullable();
             $table->string('titulo_aba_perinatal_atuacao')->nullable();
             $table->text('intro_aba_perinatal_atuacao')->nullable();
             $table->text('texto_aba_perinatal_atuacao')->nullable();
+            $table->text('link_aba_perinatal_atuacao')->nullable();
             $table->string('titulo_aba_eventos_atuacao')->nullable();
             $table->text('intro_aba_eventos_atuacao')->nullable();
             $table->text('texto_aba_eventos_atuacao')->nullable();
+            $table->text('link_aba_eventos_atuacao')->nullable();
             $table->timestamps();
         });
     }

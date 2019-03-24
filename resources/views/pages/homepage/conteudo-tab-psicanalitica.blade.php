@@ -23,7 +23,7 @@
     </div>
 
     <div class="col-lg-7 col-md-12  mt-3">
-        {!! $Homepage->texto_aba_psic_atuacao !!}
+        <p> {!! $Homepage->texto_aba_psic_atuacao !!} </p>
     </div>
 
 </div>

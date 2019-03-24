@@ -122,8 +122,9 @@ class HomepageController extends AppBaseController
      *
      * @return Response
      */
-    public function update($id, UpdateHomepageRequest $request)
+    public function update()
     {
+        $id=1;
         $homepage = $this->homepageRepository->findWithoutFail($id);
 
         if (empty($homepage)) {
@@ -132,7 +133,7 @@ class HomepageController extends AppBaseController
             return redirect(route('homepages.index'));
         }
 
-        $homepage = $this->homepageRepository->update($request->all(), $id);
+        $homepage = $this->homepageRepository->update(\Request::all(), $id);
 
         Flash::success('Homepage updated successfully.');
 
