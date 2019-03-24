@@ -5,13 +5,12 @@
     <div class="controles-cropper text-center">
         <button
             type="button"
-            class='btn btn-info'
             onclick='uploadFile(this);'
             data-aspectratio="{{$aspectRatio}}"
             data-formid="{{$formID}}"
             data-previewid="{{$previewID}}"
-            class="btn btn-lg btn-warning">
-                <i class="glyphicon glyphicon-upload"></i> &nbsp; <strong>Trocar Imagem</strong>
+            class="btn btn-info">
+                <i class="glyphicon glyphicon-upload"></i> &nbsp; <strong>Trocar</strong>
         </button>
         <div class="hide fileupload">
             {!! Form::file(isset($name) ? $name : 'file', isset($extraAttrs) ? $extraAttrs : null) !!}
@@ -23,7 +22,7 @@
             data-formid="{{$formID}}"
             data-previewid="{{$previewID}}"
             class="btn btn-warning btnStartCrop">
-            <i class="glyphicon glyphicon-scissors"></i> &nbsp;  Cortar Imagem
+            <i class="glyphicon glyphicon-scissors"></i> &nbsp;  Cortar
              </button>
 
         <button

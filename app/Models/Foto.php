@@ -14,6 +14,22 @@ class Foto extends Model
     const TIPO_HOME_BG = 1;
     const TIPO_HOME_APRES = 2;
 
+    const TIPO_HOME_ATUACAO_PSI_1 = 3;
+    const TIPO_HOME_ATUACAO_PSI_2 = 4;
+    const TIPO_HOME_ATUACAO_PSI_3 = 5;
+
+    const TIPO_HOME_ATUACAO_SOC_1 = 6;
+    const TIPO_HOME_ATUACAO_SOC_2 = 7;
+    const TIPO_HOME_ATUACAO_SOC_3 = 8;
+
+    const TIPO_HOME_ATUACAO_PER_1 = 9;
+    const TIPO_HOME_ATUACAO_PER_2 = 10;
+    const TIPO_HOME_ATUACAO_PER_3 = 11;
+
+    const TIPO_HOME_ATUACAO_EVE_1 = 12;
+    const TIPO_HOME_ATUACAO_EVE_2 = 13;
+    const TIPO_HOME_ATUACAO_EVE_3 = 14;
+
     public $table = 'fotos';
 
     protected $dates = ['deleted_at'];

@@ -249,4 +249,34 @@ class HomepageController extends AppBaseController
 
         return redirect()->back();
     }
+
+
+    /**
+     * Metodo para receber o post de trocar as fotos da seção Atuação
+     *
+     * @return void
+     */
+    public function postTrocaFotoAtuacao(Request $request)
+    {
+        $Homepage = $this->homepageRepository->first();
+
+        if ($request->file) {
+
+            if ($Homepage->fotos()->where('tipo', $request->tipo)->first()) {
+                $Homepage->fotos()->where('tipo', $request->tipo)->first()->delete();
+            }
+
+            $foto = $this->fotoRepository->uploadAndCreate($request);
+            $Homepage->fotos()->save($foto);
+
+            //Upload p/ Cloudinary e delete local
+            $publicId = "homepage_atuacao_".time();
+            $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
+            $this->fotoRepository->deleteLocal($foto->id);
+        }
+
+        Flash::success('Foto da seção atuação atualizada com sucesso!');
+
+        return redirect()->back();
+    }
 }
