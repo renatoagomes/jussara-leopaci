@@ -58,25 +58,25 @@ class HomepageTableSeeder extends Seeder
 
             'titulo_atuacao'=>"Atuação",
 
-            'titulo_aba_psic_atuacao'=>"CLÍNICA PSICANALÍTICA",
+            'titulo_aba_psic_atuacao'=>"Clínica Psicanalítica",
             'intro_aba_psic_atuacao'=>"Atendimentos individuais com duração média de 50 minutos e frequência mínima de uma vez por semana, tendo a psicanálise como referencial teórico.",
             'texto_aba_psic_atuacao'=> "A entrevista é o procedimento que dá início ao processo analítico, sendo um espaço que possibilita a manifestação e o esclarecimento da demanda de quem procurou pelo atendimento e suas motivações para buscar esse processo. A entrevista pode se estender por mais de um encontro e também nesse momento, é estabelecido um contrato verbal, combinando horário, frequência, honorários, férias.\n \n A dupla que se forma entre analista e analisando procura desvendar o universo psíquico daquele que buscou análise, compreendendo que cada ser é único e é este ser único que buscamos (re)conhecer. ",
 
 
-            'titulo_aba_social_atuacao'=>"CLÍNICA SOCIAL",
+            'titulo_aba_social_atuacao'=>"Clínica Social",
             'intro_aba_social_atuacao'=> "Atendimento clínico individual com duração média de 50 minutos oferecido para pessoas que necessitam de condições especiais de pagamento.",
             'texto_aba_social_atuacao'=> "A Clínica Social de Psicanálise Helio Pellegrino é uma organização que reúne profissionais da psicanálise que atuam em diferentes cidades do estado de São Paulo. Não se configura como instituição de caridade ou clínica de baixo custo, mas um espaço com o propósito de estabelecer contatos e relações justas entre os profissionais e quem procura atendimento, além da divulgação da psicanálise e da clínica psicanalítica. Para ser atendido, é necessário preencher a ficha de cadastro disponível no site da Clínica.  \n\n",
             'link_aba_social_atuacao' => 'https://www.clinicasocial.org/',
 
 
 
-            'titulo_aba_perinatal_atuacao'=>"CLÍNICA PERINATAL",
+            'titulo_aba_perinatal_atuacao'=>"Clínica Perinatal",
             'intro_aba_perinatal_atuacao'=>"Atendimento clínico individual e/ou grupal oferecido para gestantes, puérperas, casais e díades pais/mães-bebês através do referencial psicanalítico.",
             'texto_aba_perinatal_atuacao'=>" A perinatalidade é um conceito relacionado às questões da reprodução humana e que compreende os momentos que precedem e sucedem o surgimento de um filho (tentativas, concepção, gestação, parto, processo de adoção, fertilização, amamentação, lutos, etc). Desse modo, a Psicologia Perinatal é um campo de atuação e estudo das temáticas emocionais envolvidas nessa fase da vida para cada sujeito.\n",
             'link_aba_perinatal_atuacao' => '/perinatal',
 
 
-            'titulo_aba_eventos_atuacao'=>"EVENTOS",
+            'titulo_aba_eventos_atuacao'=>"Eventos",
             'intro_aba_eventos_atuacao'=>"Participação em eventos e palestras sobre área clínica, psicanálise e perinatalidade.",
             'texto_aba_eventos_atuacao'=>"Palestras, grupos de apoio e orientação, rodas de conversa, são ferramentas que podem possibilitar um espaço de debate e reflexão, auxiliando um grupo de pessoas em eventos, empresas, hospitais, escolas e berçários. Ofereço esses serviços dentro das temáticas da perinatalidade, constituição do sujeito e da saúde da mulher, tendo a psicanálise como referencial teórico. Para saber mais, entre em contato pelo e-mail abaixo.\n",
         ]);

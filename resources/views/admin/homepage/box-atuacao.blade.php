@@ -62,24 +62,16 @@
             </div>
 
             <div class="tab-pane fade" id="tab-social" role="tabpanel" aria-labelledby="tab-social-tab">
-                {{--
-                @include('pages.homepage.conteudo-tab-social')
-                --}}
+                @include('admin.homepage.conteudo-tab-social')
             </div>
 
             <div class="tab-pane fade" id="tab-perinatal" role="tabpanel" aria-labelledby="tab-perinatal-tab">
-                @include('pages.homepage.conteudo-tab-perinatal')
+                @include('admin.homepage.conteudo-tab-perinatal')
             </div>
 
             <div class="tab-pane fade" id="tab-eventos" role="tabpanel" aria-labelledby="tab-eventos-tab">
-                @include('pages.homepage.conteudo-tab-eventos')
+                @include('admin.homepage.conteudo-tab-eventos')
             </div>
         </div>
-
-
-
-
-
-
     </div><!-- /.box-body -->
 </div><!-- /.box -->

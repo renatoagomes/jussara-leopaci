@@ -329,7 +329,7 @@ class Homepage extends Model
                 . $this->fotoAtuacaoSocial1()->first()->cloudinary_id;
         }
 
-        return '//via.placeholder.com/500x600';
+        return '//via.placeholder.com/600x450';
     }
 
     /**
@@ -367,7 +367,7 @@ class Homepage extends Model
                 . $this->fotoAtuacaoSocial3()->first()->cloudinary_id;
         }
 
-        return '//via.placeholder.com/600x450';
+        return '//via.placeholder.com/500x600';
     }
 
     /**
@@ -443,7 +443,7 @@ class Homepage extends Model
                 . $this->fotoAtuacaoEventos1()->first()->cloudinary_id;
         }
 
-        return '//via.placeholder.com/500x600';
+        return '//via.placeholder.com/600x450';
     }
 
     /**
@@ -481,7 +481,7 @@ class Homepage extends Model
                 . $this->fotoAtuacaoEventos3()->first()->cloudinary_id;
         }
 
-        return '//via.placeholder.com/600x450';
+        return '//via.placeholder.com/500x600';
     }
 
 

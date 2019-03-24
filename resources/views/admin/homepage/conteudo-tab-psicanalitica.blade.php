@@ -16,7 +16,7 @@
 
 <div class="col-xs-12">
     <div class="col-xs-6">
-        {!! Form::button('<i class="glyphicon glyphicon-check"></i> &nbsp; <strong>Salvar</strong>', ['type' => 'submit', 'class' => 'btn btn-info btn-xs form-control btnSalvarCitacao']) !!}
+        {!! Form::button('<i class="glyphicon glyphicon-check"></i> &nbsp; <strong>Salvar</strong>', ['type' => 'submit', 'class' => 'btn btn-info btn-xs form-control ']) !!}
     </div>
 </div>
 
@@ -101,7 +101,7 @@
         </div>
 
         <div class="col-xs-12">
-            {!! Form::button('<i class="glyphicon glyphicon-check"></i> &nbsp; <strong>Salvar</strong>', ['type' => 'submit', 'class' => 'btn btn-info btn-xs form-control btnSalvarCitacao']) !!}
+            {!! Form::button('<i class="glyphicon glyphicon-check"></i> &nbsp; <strong>Salvar</strong>', ['type' => 'submit', 'class' => 'btn btn-info btn-xs form-control ']) !!}
         </div>
 
         {{ Form::close() }}

@@ -6,13 +6,13 @@
 
 <div class="d-flex row">
     <div class="col-lg-5 col-md-12">
-        <div class="row mt-3 container-img-landscape">
+        <div class="row container-img-landscape">
             <div class="col-12">
                 <img class="img-fluid" title="Foto atendimento clinica social" src="{{ $Homepage->linkFotoAtuacaoSoc1 }}" alt="">
             </div>
         </div>
-        <div class="row container-img-portrait">
-            <div class="col-7">
+        <div class="row mt-3 container-img-portrait">
+            <div class="col-6">
                 <img class="img-fluid" title="Foto atendimento clinica social" src="{{ $Homepage->linkFotoAtuacaoSoc2 }}" alt="">
             </div>
             <div class="col-6">
