@@ -1,22 +1,14 @@
 <table class="table table-responsive" id="posts-table">
     <thead>
         <tr>
-            <th>Capa Url</th>
-        <th>Slug</th>
         <th>Titulo</th>
-        <th>Autor</th>
-        <th>Conteudo</th>
             <th colspan="3">Action</th>
         </tr>
     </thead>
     <tbody>
     @foreach($posts as $post)
         <tr>
-            <td>{!! $post->capa_url !!}</td>
-            <td>{!! $post->slug !!}</td>
             <td>{!! $post->titulo !!}</td>
-            <td>{!! $post->autor !!}</td>
-            <td>{!! $post->conteudo !!}</td>
             <td>
                 {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

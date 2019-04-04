@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Eloquent as Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class Post.
@@ -17,8 +16,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Post extends Model
 {
-    use SoftDeletes;
-
     public $table = 'posts';
 
     protected $dates = ['deleted_at', 'data_publicacao'];
@@ -29,6 +26,7 @@ class Post extends Model
         'titulo',
         'autor',
         'conteudo',
+        'referencias_json',
     ];
 
     /**
@@ -53,14 +51,11 @@ class Post extends Model
 
     ];
 
-    /**
-     * Relacao entre um post e suas referencias.
-     *
-     * @return void
-     */
-    public function referencias()
+    public function getReferenciasAttribute()
     {
-        return $this->hasMany('App\Models\ReferenciaPost');
+        return $this->attributes['referencias_json']
+            ? json_decode($this->attributes['referencias_json'])
+            : [];
     }
 
     /**
@@ -92,5 +87,33 @@ class Post extends Model
         $preview = substr($this->conteudo, 3, $limit);
 
         return $preview;
+    }
+
+
+    /**
+     * Relacao com fotoCapa
+     */
+    public function fotoCapa()
+    {
+        return $this->morphOne(\App\Models\Foto::class, 'owner');
+    }
+
+    /**
+     * Acessor para a URL da foto no cloudinary com qualidade e formato automaticos || placeholder
+     *
+     * @return string - URL do cloudinary ou via.placeholder.com
+     */
+    public function getLinkFotoCapaAttribute()
+    {
+        if ($this->fotoCapa()->first()) {
+
+            return "//res.cloudinary.com/"
+                . env('CLOUDINARY_CLOUD_NAME')
+                . "/image/upload/q_auto,f_auto/"
+                . env('CLOUDINARY_CLOUD_FOLDER') . "/"
+                . $this->fotoCapa()->first()->cloudinary_id;
+        }
+
+        return '//via.placeholder.com/900x400';
     }
 }

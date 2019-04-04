@@ -20,8 +20,8 @@ class CreatePostsTable extends Migration
             $table->string('autor')->nullable();
             $table->datetime('data_publicacao')->nullable();
             $table->longtext('conteudo')->nullable();
+            $table->longtext('referencias_json')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

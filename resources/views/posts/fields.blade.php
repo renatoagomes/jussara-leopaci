@@ -1,35 +1,53 @@
-<!-- Capa Url Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('capa_url', 'Capa Url:') !!}
-    {!! Form::text('capa_url', null, ['class' => 'form-control']) !!}
-</div>
-
-<!-- Slug Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('slug', 'Slug:') !!}
-    {!! Form::text('slug', null, ['class' => 'form-control']) !!}
-</div>
-
 <!-- Titulo Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('titulo', 'Titulo:') !!}
     {!! Form::text('titulo', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Autor Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('autor', 'Autor:') !!}
-    {!! Form::text('autor', null, ['class' => 'form-control']) !!}
-</div>
+@if (\Route::is('*edit*'))
 
-<!-- Conteudo Field -->
-<div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('conteudo', 'Conteudo:') !!}
-    {!! Form::textarea('conteudo', null, ['class' => 'form-control']) !!}
-</div>
+    <!-- Slug Field -->
+    <div class="form-group col-sm-6">
+        {!! Form::label('slug', 'Endereço do post:') !!}
+        {!! Form::text('slug', null, ['class' => 'form-control']) !!}
+    </div>
+
+    <div class="col-xs-2">&nbsp;</div>
+    <div class="col-xs-8">
+        <img id="foto-capa" class="img-responsive" src="{{$post->linkFotoCapa}}" />
+    </div>
+    <div class="col-xs-2">&nbsp;</div>
+
+    <!-- Foto da listagem Field -->
+    <div class="col-xs-12 text-center" style="padding-top:2rem;">
+
+        @include('fotos.partials.fields', [
+            'extraAttrs' => [
+                'class' =>  'btn btn-info btn-xs',
+                'style' =>  'display:inline;'
+
+            ],
+            'comCropper' => true,
+            'aspectRatio' => 2,
+            'formID' => '#form-post',
+            'previewID' => '#foto-capa'
+        ])
+
+    </div>
+
+
+    <!-- Submit Field -->
+    <div class="form-group col-sm-12">
+        {!! Form::label('conteudo', 'Conteudo:') !!}
+        {!! Form::textarea('conteudo', null, ['class' => 'form-control summernote', 'id' => 'summernote', 'rows' => 4]) !!}
+    </div>
+
+@else
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('posts.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Proximo', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('posts.index') !!}" class="btn btn-default">Cancelar</a>
 </div>
+
+@endif

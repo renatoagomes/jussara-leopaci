@@ -10,13 +10,13 @@
         </div>
 
         <div class="d-flex flex-column mt-3">
-            <a class="link-footer" href="/">Home</a> 
-            <a class="link-footer" href="/apresentacao">Apresentação</a> 
-            <a class="link-footer" href="/atuacao">Atuação</a> 
-            <a class="link-footer" href="/perinatal">Perinatal</a> 
-            <a class="link-footer" href="/contato">Contato</a> 
-            <a class="link-footer" href="/blog">Blog</a> 
+            <a class="link-footer" href="/">Home</a>
+            <a class="link-footer" href="/#apresentacao">Apresentação</a>
+            <a class="link-footer" href="/#atuacao">Atuação</a>
+            <a class="link-footer" href="/perinatal">Perinatal</a>
+            <a class="link-footer" href="/#contato">Contato</a>
+            <a class="link-footer" href="/blog">Blog</a>
         </div>
     </div>
-    
+
 </footer>

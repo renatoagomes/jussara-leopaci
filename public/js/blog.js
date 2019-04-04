@@ -120,6 +120,12 @@ module.exports = __webpack_require__(50);
 //Dando require no JS de Smooth scroll to link
 __webpack_require__(1);
 
+$(function () {
+    $('.post-body').find('a[href="http://referencia"]').attr('href', '#rodape');
+    $('.post-body').find('a[href="http://referencias"]').attr('href', '#rodape');
+    $('.post-body').find('a[href="http://rodape"]').attr('href', '#rodape');
+});
+
 /***/ })
 
 /******/ });

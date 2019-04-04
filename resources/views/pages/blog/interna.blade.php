@@ -18,19 +18,19 @@
             </div>
 
             <div class="col-12">
-                <img class="w-100" src="{{ $Post->capa_url }}" alt="">
+                <img class="w-100" src="{{ $Post->linkFotoCapa }}" alt="">
             </div>
-        
+
             <div class="post-body col-12 pt-4">
 
                 {!! $Post->conteudo !!}
-                
+
                 <hr class="mt-5">
                 @foreach ($Post->referencias as $Referencia)
-                    <a id="abnt" href="#"></a>
-                    <p class="rodape-abnt">{{$Referencia->texto}} <a target="_blank" href="{{$Referencia->url}}">{{$Referencia->texto_link}}</a> </p>
+                    <a id="rodape" href="#"></a>
+                    <p class="rodape-abnt">{{$Referencia->texto}} <a target="_blank" href="{{$Referencia->link}}">{{$Referencia->link}}</a> </p>
                 @endforeach
-    
+
             </div>
 
             <div class="post-footer col-12 text-right">

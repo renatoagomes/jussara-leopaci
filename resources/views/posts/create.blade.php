@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Post
+            Criando um novo post
         </h1>
     </section>
     <div class="content">

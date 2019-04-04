@@ -7,6 +7,7 @@ use Flash;
 use Response;
 use Illuminate\Http\Request;
 use App\Repositories\PostRepository;
+use App\Repositories\FotoRepository;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -15,10 +16,12 @@ class PostController extends AppBaseController
 {
     /** @var PostRepository */
     private $postRepository;
+    private $fotoRepository;
 
-    public function __construct(PostRepository $postRepo)
+    public function __construct(PostRepository $postRepo, FotoRepository $fotoRepo)
     {
         $this->postRepository = $postRepo;
+        $this->fotoRepository = $fotoRepo;
     }
 
     /**
@@ -61,7 +64,7 @@ class PostController extends AppBaseController
 
         Flash::success('Post saved successfully.');
 
-        return redirect(route('posts.index'));
+        return redirect(route('posts.edit', $post));
     }
 
     /**
@@ -118,15 +121,30 @@ class PostController extends AppBaseController
 
         if (empty($post)) {
             Flash::error('Post not found');
-
             return redirect(route('posts.index'));
         }
 
         $post = $this->postRepository->update($request->all(), $id);
 
-        Flash::success('Post updated successfully.');
+        if ($request->file) {
 
-        return redirect(route('posts.index'));
+            if ($post->fotoCapa) {
+                $post->fotoCapa->delete();
+            }
+
+            $foto = $this->fotoRepository->uploadAndCreate($request);
+            $post->fotoCapa()->save($foto);
+
+            //Upload p/ Cloudinary e delete local
+            $publicId = "blog_".time();
+            $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
+            $this->fotoRepository->deleteLocal($foto->id);
+        }
+
+
+        Flash::success('Post atualizado com sucesso.');
+
+        return redirect(route('posts.edit', $post));
     }
 
     /**
