@@ -16,13 +16,12 @@ use Eloquent as Model;
  */
 class Post extends Model
 {
-
     const STATUS_EM_REVISAO = 0;
     const STATUS_PUBLICADO = 1;
 
     const arrTextosStatus = [
         self::STATUS_EM_REVISAO  => 'Pendente',
-        self::STATUS_PUBLICADO => 'Publicado'
+        self::STATUS_PUBLICADO => 'Publicado',
     ];
 
     public $table = 'posts';
@@ -61,13 +60,12 @@ class Post extends Model
 
     ];
 
-
     public $appends = [
-        'textoStatus'
+        'textoStatus',
     ];
 
     /**
-     * Scope para aplicar na query filtrando por posts publicados
+     * Scope para aplicar na query filtrando por posts publicados.
      */
     public function scopePublicados($query)
     {
@@ -75,7 +73,7 @@ class Post extends Model
     }
 
     /**
-     * Acessor para decodar o array de referencias
+     * Acessor para decodar o array de referencias.
      */
     public function getReferenciasAttribute()
     {
@@ -115,9 +113,8 @@ class Post extends Model
         return $preview;
     }
 
-
     /**
-     * Relacao com fotoCapa
+     * Relacao com fotoCapa.
      */
     public function fotoCapa()
     {
@@ -125,31 +122,28 @@ class Post extends Model
     }
 
     /**
-     * Acessor para a URL da foto no cloudinary com qualidade e formato automaticos || placeholder
+     * Acessor para a URL da foto no cloudinary com qualidade e formato automaticos || placeholder.
      *
      * @return string - URL do cloudinary ou via.placeholder.com
      */
     public function getLinkFotoCapaAttribute()
     {
         if ($this->fotoCapa()->first()) {
-
-            return "//res.cloudinary.com/"
-                . env('CLOUDINARY_CLOUD_NAME')
-                . "/image/upload/q_auto,f_auto/"
-                . env('CLOUDINARY_CLOUD_FOLDER') . "/"
-                . $this->fotoCapa()->first()->cloudinary_id;
+            return '//res.cloudinary.com/'
+                .env('CLOUDINARY_CLOUD_NAME')
+                .'/image/upload/q_auto,f_auto/'
+                .env('CLOUDINARY_CLOUD_FOLDER').'/'
+                .$this->fotoCapa()->first()->cloudinary_id;
         }
 
         return '//via.placeholder.com/900x400';
     }
 
     /**
-     * Acessor para obter o texto referente ao status do post
+     * Acessor para obter o texto referente ao status do post.
      */
     public function getTextoStatusAttribute()
     {
         return self::arrTextosStatus[$this->attributes['status']];
     }
-
-
 }

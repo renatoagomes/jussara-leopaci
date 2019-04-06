@@ -29,12 +29,11 @@ class PostsSeeder extends Seeder
     [
         'texto' => '1 Estudo Fiocruz:',
         'link' => 'http://blog.saude.gov.br',
-    ]
-])
+    ],
+]),
         ]);
 
-
-$post = \App\Models\Post::create([
+        $post = \App\Models\Post::create([
     'capa_url' => 'https://res.cloudinary.com/tesseract/image/upload/c_crop,g_north,h_750,w_1500,y_50/c_scale,w_949/v1549677256/jussara/FILME-BIRD-BOX-08.jpg.jpg',
     'slug' => 'Desvendando-Bird-Box-um-olhar-sobre-a-maternidade',
     'titulo' => 'Desvendando Bird Box: um olhar sobre a maternidade',
@@ -53,8 +52,8 @@ $post = \App\Models\Post::create([
     [
         'texto' => '1 Para análise de Bird Box por outro viés, recomendo o vídeo de Christian Dunker em seu canal no YouTube:',
         'link' => 'https://www.youtube.com/watch?v=bgH59B4M5xg ',
-    ]
-])
+    ],
+]),
 
         ]);
     }
