@@ -9,4 +9,3 @@
     <a href="{!! route('posts.index') !!}"><i class="fa fa-file-text"></i><span>Posts do blog</span></a>
 </li>
 
-

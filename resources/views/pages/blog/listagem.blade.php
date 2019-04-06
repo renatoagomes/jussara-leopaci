@@ -2,9 +2,9 @@
     <div class="container">
 
         <div class="row mx-auto container-cards">
-            @foreach(\App\Models\Post::orderBy('data_publicacao', 'desc')->get() as $post)
+            @foreach(\App\Models\Post::publicados()->orderBy('data_publicacao', 'desc')->get() as $post)
                 <div class="post-card card">
-                
+
                     <div class="card-header">
                         <a href="/blog/{{ $post->slug }}" class="titulo">
                             <h3 class="mb-3">{{$post->titulo}}
@@ -14,7 +14,7 @@
                     </div>
 
                     <img class="img-responsive" src="{{ $post->capa_url }}" alt="capa do post {{$post->titulo}}">
-                
+
                     <div class="card-body">
                         <p>
                         {{ $post->preview }} ... <a href="/blog/{{ $post->slug }}"><strong>[leia mais]</strong> </a>

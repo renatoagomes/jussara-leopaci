@@ -45,6 +45,8 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/blog/{slug}', 'PostController@interna');
+Route::post('/posts/{id}/listagem', 'PostController@trocaListagem');
 Route::post('contato', 'ContatoController@postContato')->name('contato');
 Route::resource('posts', 'PostController');
 Route::resource('referenciaPosts', 'ReferenciaPostController');
+

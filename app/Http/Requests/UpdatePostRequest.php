@@ -2,11 +2,12 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Post;
 use Illuminate\Foundation\Http\FormRequest;
+use App\Models\Post;
 
 class UpdatePostRequest extends FormRequest
 {
+
     /**
      * Determine if the user is authorized to make this request.
      *

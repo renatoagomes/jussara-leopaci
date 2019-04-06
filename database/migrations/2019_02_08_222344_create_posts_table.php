@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->datetime('data_publicacao')->nullable();
             $table->longtext('conteudo')->nullable();
             $table->longtext('referencias_json')->nullable();
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

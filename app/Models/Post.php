@@ -16,6 +16,15 @@ use Eloquent as Model;
  */
 class Post extends Model
 {
+
+    const STATUS_EM_REVISAO = 0;
+    const STATUS_PUBLICADO = 1;
+
+    const arrTextosStatus = [
+        self::STATUS_EM_REVISAO  => 'Pendente',
+        self::STATUS_PUBLICADO => 'Publicado'
+    ];
+
     public $table = 'posts';
 
     protected $dates = ['deleted_at', 'data_publicacao'];
@@ -27,6 +36,7 @@ class Post extends Model
         'autor',
         'conteudo',
         'referencias_json',
+        'status',
     ];
 
     /**
@@ -51,6 +61,22 @@ class Post extends Model
 
     ];
 
+
+    public $appends = [
+        'textoStatus'
+    ];
+
+    /**
+     * Scope para aplicar na query filtrando por posts publicados
+     */
+    public function scopePublicados($query)
+    {
+        return $query->where('status', self::STATUS_PUBLICADO);
+    }
+
+    /**
+     * Acessor para decodar o array de referencias
+     */
     public function getReferenciasAttribute()
     {
         return $this->attributes['referencias_json']
@@ -70,7 +96,7 @@ class Post extends Model
     }
 
     /**
-     * Acessor para o prview do post.
+     * Acessor para o preview do post.
      */
     public function getPreviewAttribute()
     {
@@ -116,4 +142,14 @@ class Post extends Model
 
         return '//via.placeholder.com/900x400';
     }
+
+    /**
+     * Acessor para obter o texto referente ao status do post
+     */
+    public function getTextoStatusAttribute()
+    {
+        return self::arrTextosStatus[$this->attributes['status']];
+    }
+
+
 }

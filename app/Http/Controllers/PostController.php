@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use SEO;
 use Flash;
 use Response;
+use App\Models\Post;
 use Illuminate\Http\Request;
+use App\DataTables\PostDataTable;
 use App\Repositories\PostRepository;
 use App\Repositories\FotoRepository;
 use App\Http\Requests\CreatePostRequest;
@@ -30,13 +32,9 @@ class PostController extends AppBaseController
      * @param Request $request
      * @return Response
      */
-    public function index(Request $request)
+    public function index(PostDataTable $dataTable)
     {
-        $this->postRepository->pushCriteria(new RequestCriteria($request));
-        $posts = $this->postRepository->all();
-
-        return view('posts.index')
-            ->with('posts', $posts);
+        return $dataTable->render('posts.index');
     }
 
     /**
@@ -196,4 +194,29 @@ class PostController extends AppBaseController
         return view('pages.blog-interna')
             ->with('Post', $Post);
     }
+
+
+
+    /**
+     * undocumented function
+     *
+     * @return void
+     */
+    public function trocaListagem($id)
+    {
+        $post = $this->postRepository->find($id);
+        $post->status = ($post->status == Post::STATUS_PUBLICADO)
+            ? Post::STATUS_EM_REVISAO
+            : Post::STATUS_PUBLICADO;
+
+        $post->save();
+
+        Flash::success('Post atualizado com sucesso');
+
+        return redirect(route('posts.index', $post));
+    }
+
+
+
+
 }
