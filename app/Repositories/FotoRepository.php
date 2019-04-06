@@ -105,7 +105,7 @@ class FotoRepository extends BaseRepository
      * @param mixed $fullPath
      * @param mixed $publicId
      */
-    public function sendToCloudinary($foto, $publicId, $pasta=null)
+    public function sendToCloudinary($foto, $publicId, $pasta = null)
     {
         $pasta = $pasta ? ['folder' => $pasta] : [];
 
