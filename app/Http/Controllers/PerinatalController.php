@@ -122,7 +122,7 @@ class PerinatalController extends AppBaseController
 
         Flash::success('Perinatal updated successfully.');
 
-        return redirect(route('perinatals.index'));
+        return redirect(route('perinatals.edit', $perinatal));
     }
 
     /**
