@@ -50,3 +50,11 @@ Route::post('contato', 'ContatoController@postContato')->name('contato');
 Route::resource('posts', 'PostController');
 Route::resource('referenciaPosts', 'ReferenciaPostController');
 
+
+Route::resource('perinatals', 'PerinatalController');
+
+
+
+
+
+
