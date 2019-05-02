@@ -8,7 +8,7 @@
 
             <div class="col-12 post-header mt-3">
                 <h1 class="mb-3">{{ $Post->titulo }} </h1>
-                <p class="data mt-2">{{ $Post->dataPublicacaoFormatada}}
+                <p class="data mt-2">{{ $Post->dataPublicacaoFormatada }} - {{ $Post->autor }}
                 <span class="pull-right">
                     <a href="javascript:void(0);" onclick="sharePost()" target="_blank">
                         <i class="fa fa-share-alt"></i>

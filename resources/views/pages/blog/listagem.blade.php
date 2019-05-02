@@ -7,9 +7,7 @@
 
                     <div class="card-header">
                         <a href="/blog/{{ $post->slug }}" class="titulo">
-                            <h3 class="mb-3">{{$post->titulo}}
-                                <p class="data">{{ $post->dataPublicacaoFormatada }}</p>
-                            </h3>
+                            <h3 class="">{{$post->titulo}} </h3>
                         </a>
                     </div>
 
@@ -17,11 +15,13 @@
 
                     <div class="card-body">
                         <p>
-                        {{ $post->preview }} ... <a href="/blog/{{ $post->slug }}"><strong>[leia mais]</strong> </a>
+                        {{ $post->preview_post ? $post->preview_post : $post->preview }} ... <a href="/blog/{{ $post->slug }}"><strong>[leia mais]</strong> </a>
                         </p>
                     </div>
 
-                    <div class="card-footer w-100 text-right">
+                    <div class="card-footer w-100 text-right pt-0 pb-1">
+
+                        <p class="rodape-post-card">{{ $post->dataPublicacaoFormatada }} - {{$post->autor}}</p>
                         <a href="javascript:void(0)" onclick="sharePost('/blog/{{ $post->slug }}')" target="_blank">
                         <i class="fa fa-share-alt"></i>
                         </a>

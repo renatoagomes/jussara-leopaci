@@ -33,6 +33,7 @@ class Post extends Model
         'slug',
         'titulo',
         'autor',
+        'preview_post',
         'conteudo',
         'referencias_json',
         'status',

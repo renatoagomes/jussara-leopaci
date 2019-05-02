@@ -347,6 +347,16 @@ footer a.link-footer {
   text-indent: 2rem;
 }
 
+#lista-posts .post-card .card-header p.rodape-post-card,
+#lista-posts .post-card .card-footer p.rodape-post-card,
+#lista-posts .post-card .card-body p.rodape-post-card {
+  position: relative;
+  float: left;
+  text-align: left;
+  text-indent: .5rem;
+  font-size: .8rem;
+}
+
 #lista-posts .post-card .card-header a,
 #lista-posts .post-card .card-footer a,
 #lista-posts .post-card .card-body a {
