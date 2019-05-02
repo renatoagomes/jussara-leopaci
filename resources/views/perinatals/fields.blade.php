@@ -30,20 +30,14 @@
 
 <div class="col-xs-12"><hr></div>
 
-<!-- Cor Secao 1 Field -->
-<div class="form-group col-sm-2">
-    {!! Form::label('cor_secao_1', 'Cor Secao 1:') !!}
-    {!! Form::input('color', 'cor_secao_1', null, ['class' => 'form-control']) !!}
-</div>
-
 <!-- Titulo Secao 1 Field -->
-<div class="form-group col-sm-5">
+<div class="form-group col-sm-6">
     {!! Form::label('titulo_secao_1', 'Titulo Secao 1:') !!}
     {!! Form::text('titulo_secao_1', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Subtitulo Secao 1 Field -->
-<div class="form-group col-sm-5">
+<div class="form-group col-sm-6">
     {!! Form::label('subtitulo_secao_1', 'Subtitulo Secao 1:') !!}
     {!! Form::text('subtitulo_secao_1', null, ['class' => 'form-control']) !!}
 </div>
@@ -57,20 +51,14 @@
 <div class="col-xs-12"><hr></div>
 
 
-<!-- Cor Secao 2 Field -->
-<div class="form-group col-sm-2">
-    {!! Form::label('cor_secao_2', 'Cor Secao 2:') !!}
-    {!! Form::input('color', 'cor_secao_2', null, ['class' => 'form-control']) !!}
-</div>
-
 <!-- Titulo Secao 2 Field -->
-<div class="form-group col-sm-5">
+<div class="form-group col-sm-6">
     {!! Form::label('titulo_secao_2', 'Titulo Secao 2:') !!}
     {!! Form::text('titulo_secao_2', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Subtitulo Secao 2 Field -->
-<div class="form-group col-sm-5">
+<div class="form-group col-sm-6">
     {!! Form::label('subtitulo_secao_2', 'Subtitulo Secao 2:') !!}
     {!! Form::text('subtitulo_secao_2', null, ['class' => 'form-control']) !!}
 </div>
@@ -83,20 +71,14 @@
 
 <div class="col-xs-12"><hr></div>
 
-<!-- Cor Secao 2 Field -->
-<div class="form-group col-sm-2">
-    {!! Form::label('cor_secao_3', 'Cor Secao 3:') !!}
-    {!! Form::input('color', 'cor_secao_3', null, ['class' => 'form-control']) !!}
-</div>
-
 <!-- Titulo Secao 2 Field -->
-<div class="form-group col-sm-5">
+<div class="form-group col-sm-6">
     {!! Form::label('titulo_secao_3', 'Titulo Secao 3:') !!}
     {!! Form::text('titulo_secao_3', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Subtitulo Secao 2 Field -->
-<div class="form-group col-sm-5">
+<div class="form-group col-sm-6">
     {!! Form::label('subtitulo_secao_3', 'Subtitulo Secao 3:') !!}
     {!! Form::text('subtitulo_secao_3', null, ['class' => 'form-control']) !!}
 </div>

@@ -12,16 +12,14 @@
     {{-- Incluindo Seção 'Um conexto sobre perinatalidade...' --}}
     @include('pages.perinatal.contexto')
 
-    @include('pages.perinatal.secao_interna')
-
-
-
-
     {{-- Incluindo Seção 'Em Que Momentos..' --}}
     @include('pages.perinatal.momentos')
 
     {{-- Incluindo Seção 'Como funciona' --}}
     @include('pages.perinatal.como_funciona')
+
+    {{-- Incluindo Referencias da pagina perinatal --}}
+    @include('pages.perinatal.referencias')
 
     {{-- Incluindo Footer --}}
     @include('partials.footer')
