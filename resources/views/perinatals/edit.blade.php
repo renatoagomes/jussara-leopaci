@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Perinatal
+            Editando as informaçoes da página perinatal
         </h1>
    </section>
    <div class="content">
@@ -12,7 +12,7 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($perinatal, ['route' => ['perinatals.update', $perinatal->id], 'method' => 'patch']) !!}
+                   {!! Form::model($perinatal, ['route' => ['perinatals.update', $perinatal->id], 'method' => 'patch', 'files' => true, 'id' => 'form-perinatal']) !!}
 
                         @include('perinatals.fields')
 

@@ -6,7 +6,7 @@
 
 @section('content')
     <section class="content-header">
-        <h1>Informaçoes da página inicial</h1>
+        <h1>Editando informações da página inicial</h1>
     </section>
     <div class="content">
         <div class="clearfix"></div>

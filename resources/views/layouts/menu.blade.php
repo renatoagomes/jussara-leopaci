@@ -10,11 +10,7 @@
 </li>
 
 <li class="{{ Request::is('perinatals*') ? 'active' : '' }}">
-    <a href="{!! route('perinatals.index') !!}"><i class="fa fa-heart"></i><span>Pagina perinatal</span></a>
+    <a href='/perinatals/1/edit'><i class="fa fa-heart"></i><span>Pagina perinatal</span></a>
 </li>
 
-
-<li class="{{ Request::is('perinatals*') ? 'active' : '' }}">
-    <a href="{!! route('perinatals.index') !!}"><i class="fa fa-edit"></i><span>Perinatals</span></a>
-</li>
 

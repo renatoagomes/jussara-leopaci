@@ -2,23 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\DataTables\PerinatalDataTable;
+use Flash;
+use Response;
 use App\Http\Requests;
+use App\Repositories\FotoRepository;
+use App\DataTables\PerinatalDataTable;
+use App\Repositories\PerinatalRepository;
+use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreatePerinatalRequest;
 use App\Http\Requests\UpdatePerinatalRequest;
-use App\Repositories\PerinatalRepository;
-use Flash;
-use App\Http\Controllers\AppBaseController;
-use Response;
 
 class PerinatalController extends AppBaseController
 {
     /** @var  PerinatalRepository */
     private $perinatalRepository;
+    private $fotoRepository;
 
-    public function __construct(PerinatalRepository $perinatalRepo)
+    public function __construct(PerinatalRepository $perinatalRepo, FotoRepository $fotoRepo)
     {
         $this->perinatalRepository = $perinatalRepo;
+        $this->fotoRepository = $fotoRepo;
     }
 
     /**
@@ -29,7 +32,8 @@ class PerinatalController extends AppBaseController
      */
     public function index()
     {
-        return view('pages.perinatal');
+        $perinatal = $this->perinatalRepository->first();
+        return view('pages.perinatal', compact('perinatal'));
     }
 
     /**
@@ -72,7 +76,7 @@ class PerinatalController extends AppBaseController
         $perinatal = $this->perinatalRepository->findWithoutFail($id);
 
         if (empty($perinatal)) {
-            Flash::error('Perinatal not found');
+            Flash::error('Página não encontrada');
 
             return redirect(route('perinatals.index'));
         }
@@ -92,7 +96,7 @@ class PerinatalController extends AppBaseController
         $perinatal = $this->perinatalRepository->findWithoutFail($id);
 
         if (empty($perinatal)) {
-            Flash::error('Perinatal not found');
+            Flash::error('Página não encontrada');
 
             return redirect(route('perinatals.index'));
         }
@@ -113,14 +117,31 @@ class PerinatalController extends AppBaseController
         $perinatal = $this->perinatalRepository->findWithoutFail($id);
 
         if (empty($perinatal)) {
-            Flash::error('Perinatal not found');
+            Flash::error('Página não encontrada');
 
             return redirect(route('perinatals.index'));
         }
 
         $perinatal = $this->perinatalRepository->update($request->all(), $id);
 
-        Flash::success('Perinatal updated successfully.');
+        //Se tiver foto de capa, remover anterior, criar nova, upar pro cloudinary e deletar local
+        if ($request->file) {
+
+            if ($perinatal->fotoCapa) {
+                $perinatal->fotoCapa->delete();
+            }
+
+            $foto = $this->fotoRepository->uploadAndCreate($request);
+            $perinatal->fotoCapa()->save($foto);
+
+            //Upload p/ Cloudinary e delete local
+            $publicId = "perinatal_capa_".time();
+            $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
+            $this->fotoRepository->deleteLocal($foto->id);
+        }
+
+
+        Flash::success('Página perinatal atualizada com sucesso.');
 
         return redirect(route('perinatals.edit', $perinatal));
     }
@@ -137,7 +158,7 @@ class PerinatalController extends AppBaseController
         $perinatal = $this->perinatalRepository->findWithoutFail($id);
 
         if (empty($perinatal)) {
-            Flash::error('Perinatal not found');
+            Flash::error('Página não encontrada');
 
             return redirect(route('perinatals.index'));
         }

@@ -1,6 +1,9 @@
-
-<h3>Foto da direita</h3>
 <br>
+<br>
+<br>
+<br>
+<br>
+
 @if (isset($Homepage) && $Homepage->linkFotoApresentacao)
     <img id="foto-apresentacao" class="img-responsive" src="{{$Homepage->linkFotoApresentacao}}" alt=""/>
 @else

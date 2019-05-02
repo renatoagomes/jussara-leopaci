@@ -110,7 +110,7 @@ class Perinatal extends Model
                 . $this->fotoCapa()->first()->cloudinary_id;
         }
 
-        return '//via.placeholder.com/900x400';
+        return '//via.placeholder.com/1900x800';
     }
 
 

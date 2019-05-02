@@ -1,6 +1,3 @@
-<h3>Citações</h3>
-<br>
-
 <div class="linha-modelo-citacao hide">
     <div class="col-xs-7">
         {!! form::label('frase', 'Citação') !!}<br>

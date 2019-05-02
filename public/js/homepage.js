@@ -127,15 +127,19 @@ window.trocaSlides = function trocaSlides() {
     setTimeout(function () {
         var ativo = $('.slide.active');
         ativo.removeClass("active");
+        var duracao = ativo.data('duracao') ? ativo.data('duracao') + '000' : 5000;
+
+        console.log('chamou trocaSlide, duracao: ' + duracao);
 
         var next = ativo.next().length ? ativo.next() : ativo.parent().find('.slide').first();
         next.addClass('active').fadeIn();
-        setTimeout(trocaSlides, 7500);
+        setTimeout(trocaSlides, duracao);
     }, 900);
 };
 
 $(function () {
-    setTimeout(trocaSlides, 6000);
+    var duracao = $('.slide.active').data('duracao') ? $('.slide.active').data('duracao') : 5000;
+    setTimeout(trocaSlides, duracao + '000');
 });
 
 /***/ })

@@ -12,10 +12,10 @@
     <div class="col-xs-2">
         <div class='btn-group' style="margin-top:3rem">
             <div class="col-xs-6">
-                {!! Form::button('<i class="glyphicon glyphicon-plus"></i>', ['type' => 'submit', 'class' => 'btn btn-success btn-xs btnAdicionarReferencia']) !!}
+                <a class="btn btn-success btn-xs btnAdicionarReferencia" href="javascript:void(0)"> <i class="glyphicon glyphicon-plus"></i></a>
             </div>
             <div class="col-xs-6">
-                {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs btnExcluirReferencia' ]) !!}
+                <a class="btn btn-danger btn-xs btnExcluirReferencia" href="javascript:void(0)"> <i class="glyphicon glyphicon-trash"></i></a>
             </div>
         </div>
     </div>
@@ -66,10 +66,10 @@
             <div class="col-xs-2">
                 <div class='btn-group' style="margin-top:3rem">
                     <div class="col-xs-6">
-                        {!! Form::button('<i class="glyphicon glyphicon-plus"></i>', ['type' => 'submit', 'class' => 'btn btn-success btn-xs btnAdicionarReferencia']) !!}
+                        <a class="btn btn-success btn-xs btnAdicionarReferencia" href="javascript:void(0)"> <i class="glyphicon glyphicon-plus"></i></a>
                     </div>
                     <div class="col-xs-6">
-                        {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs btnExcluirReferencia' ]) !!}
+                        <a class="btn btn-danger btn-xs btnExcluirReferencia" href="javascript:void(0)"> <i class="glyphicon glyphicon-trash"></i></a>
                     </div>
                 </div>
             </div>
