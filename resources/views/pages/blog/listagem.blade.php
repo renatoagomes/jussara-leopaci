@@ -11,7 +11,7 @@
                         </a>
                     </div>
 
-                    <img class="img-responsive" src="{{ $post->capa_url }}" alt="capa do post {{$post->titulo}}">
+                    <img class="img-responsive" src="{{ $post->linkFotoCapa }}" alt="capa do post {{$post->titulo}}">
 
                     <div class="card-body">
                         <p>

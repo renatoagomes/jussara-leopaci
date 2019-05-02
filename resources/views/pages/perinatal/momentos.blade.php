@@ -1,4 +1,4 @@
-<section id="momentos" class="row">
+<section id="momentos" class="row m-0">
     <div class="container">
 
         <div class="text-center pt-4">

@@ -19,7 +19,7 @@
     @include('pages.perinatal.como_funciona')
 
     {{-- Incluindo Referencias da pagina perinatal --}}
-    @include('pages.perinatal.referencias')
+    @include('pages.perinatal.referencias', ['Model' => $perinatal])
 
     {{-- Incluindo Footer --}}
     @include('partials.footer')

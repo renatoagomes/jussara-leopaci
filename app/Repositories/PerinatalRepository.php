@@ -42,4 +42,28 @@ class PerinatalRepository extends BaseRepository
     {
         return Perinatal::class;
     }
+
+    /**
+     * Override no update para montar o array de referencias.
+     *
+     * @param mixed $input
+     * @param mixed $id
+     */
+    public function update($input, $id)
+    {
+        if (! empty($input['referencias'])) {
+            $refs = $input['referencias'];
+            $arrFinal = [];
+            foreach ($refs['texto'] as $idx => $texto) {
+                $arrFinal[] = [
+                    'texto' => $texto,
+                    'link' => $refs['link'][$idx],
+                ];
+            }
+
+            $input['referencias_json'] = json_encode($arrFinal);
+        }
+
+        return parent::update($input, $id);
+    }
 }
