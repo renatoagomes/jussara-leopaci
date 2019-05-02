@@ -1,9 +1,10 @@
 <?php
 
 namespace App\DataTables;
+
 use App\Models\Post;
-use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
+use Yajra\DataTables\Services\DataTable;
 
 class PostDataTable extends DataTable
 {
@@ -51,7 +52,7 @@ class PostDataTable extends DataTable
                     ['extend' => 'create', 'className' => 'btn btn-default btn-sm no-corner', 'text' => '<i class="fa fa-plus"></i> Adicionar',],
                 ],
                 'language' => [
-                    'url' => url('//cdn.datatables.net/plug-ins/1.10.18/i18n/Portuguese-Brasil.json')
+                    'url' => url('//cdn.datatables.net/plug-ins/1.10.18/i18n/Portuguese-Brasil.json'),
                 ],
             ]);
     }
@@ -65,7 +66,7 @@ class PostDataTable extends DataTable
     {
         return [
             'titulo',
-            ['title' => 'Status', 'data' => 'textoStatus', 'orderable' => false, 'filterable' => false, 'searchable' => false, ]
+            ['title' => 'Status', 'data' => 'textoStatus', 'orderable' => false, 'filterable' => false, 'searchable' => false],
 
         ];
     }
@@ -77,6 +78,6 @@ class PostDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'postsdatatable_' . time();
+        return 'postsdatatable_'.time();
     }
 }

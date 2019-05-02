@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Flash;
 use Response;
 use Illuminate\Http\Request;
-use App\Repositories\HomepageRepository;
 use App\Repositories\FotoRepository;
+use App\Repositories\HomepageRepository;
 use App\Http\Requests\CreateHomepageRequest;
 use App\Http\Requests\UpdateHomepageRequest;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -20,7 +20,7 @@ class HomepageController extends AppBaseController
     private $fotoRepository;
 
     /**
-     * __construct
+     * __construct.
      *
      * @param HomepageRepository $homepageRepo
      * @param FotoRepository $fotoRepo
@@ -124,7 +124,7 @@ class HomepageController extends AppBaseController
      */
     public function update()
     {
-        $id=1;
+        $id = 1;
         $homepage = $this->homepageRepository->findWithoutFail($id);
 
         if (empty($homepage)) {
@@ -165,7 +165,7 @@ class HomepageController extends AppBaseController
     }
 
     /**
-     * Metodo para receber o post de trocar a foto de capa
+     * Metodo para receber o post de trocar a foto de capa.
      *
      * @return void
      */
@@ -183,7 +183,7 @@ class HomepageController extends AppBaseController
             $Homepage->fotoFundo()->save($foto);
 
             //Upload p/ Cloudinary e delete local
-            $publicId = "jussara_homepage_".time();
+            $publicId = 'jussara_homepage_'.time();
             $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
             $this->fotoRepository->deleteLocal($foto->id);
         }
@@ -193,9 +193,8 @@ class HomepageController extends AppBaseController
         return redirect()->back();
     }
 
-
     /**
-     * Metodo para receber o post de trocar a foto da secao Apresentacao
+     * Metodo para receber o post de trocar a foto da secao Apresentacao.
      *
      * @return void
      */
@@ -213,7 +212,7 @@ class HomepageController extends AppBaseController
             $Homepage->fotoFundo()->save($foto);
 
             //Upload p/ Cloudinary e delete local
-            $publicId = "homepage_apresentacao_".time();
+            $publicId = 'homepage_apresentacao_'.time();
             $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
             $this->fotoRepository->deleteLocal($foto->id);
         }
@@ -223,9 +222,8 @@ class HomepageController extends AppBaseController
         return redirect()->back();
     }
 
-
     /**
-     * Metodo para receber o post de atualizar as citacoes
+     * Metodo para receber o post de atualizar as citacoes.
      *
      * @return void
      */
@@ -250,9 +248,8 @@ class HomepageController extends AppBaseController
         return redirect()->back();
     }
 
-
     /**
-     * Metodo para receber o post de trocar as fotos da seção Atuação
+     * Metodo para receber o post de trocar as fotos da seção Atuação.
      *
      * @return void
      */
@@ -261,7 +258,6 @@ class HomepageController extends AppBaseController
         $Homepage = $this->homepageRepository->first();
 
         if ($request->file) {
-
             if ($Homepage->fotos()->where('tipo', $request->tipo)->first()) {
                 $Homepage->fotos()->where('tipo', $request->tipo)->first()->delete();
             }
@@ -270,7 +266,7 @@ class HomepageController extends AppBaseController
             $Homepage->fotos()->save($foto);
 
             //Upload p/ Cloudinary e delete local
-            $publicId = "homepage_atuacao_".time();
+            $publicId = 'homepage_atuacao_'.time();
             $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
             $this->fotoRepository->deleteLocal($foto->id);
         }
