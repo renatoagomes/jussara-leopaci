@@ -4,17 +4,15 @@ namespace App\Http\Controllers;
 
 use Flash;
 use Response;
-use App\Http\Requests;
 use App\Repositories\FotoRepository;
 use App\DataTables\PerinatalDataTable;
 use App\Repositories\PerinatalRepository;
-use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreatePerinatalRequest;
 use App\Http\Requests\UpdatePerinatalRequest;
 
 class PerinatalController extends AppBaseController
 {
-    /** @var  PerinatalRepository */
+    /** @var PerinatalRepository */
     private $perinatalRepository;
     private $fotoRepository;
 
@@ -33,6 +31,7 @@ class PerinatalController extends AppBaseController
     public function index()
     {
         $perinatal = $this->perinatalRepository->first();
+
         return view('pages.perinatal', compact('perinatal'));
     }
 
@@ -126,7 +125,6 @@ class PerinatalController extends AppBaseController
 
         //Se tiver foto de capa, remover anterior, criar nova, upar pro cloudinary e deletar local
         if ($request->file) {
-
             if ($perinatal->fotoCapa) {
                 $perinatal->fotoCapa->delete();
             }
@@ -135,11 +133,10 @@ class PerinatalController extends AppBaseController
             $perinatal->fotoCapa()->save($foto);
 
             //Upload p/ Cloudinary e delete local
-            $publicId = "perinatal_capa_".time();
+            $publicId = 'perinatal_capa_'.time();
             $retorno = $this->fotoRepository->sendToCloudinary($foto, $publicId, env('CLOUDINARY_CLOUD_FOLDER'));
             $this->fotoRepository->deleteLocal($foto->id);
         }
-
 
         Flash::success('Página perinatal atualizada com sucesso.');
 

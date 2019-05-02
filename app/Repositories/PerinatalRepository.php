@@ -6,14 +6,13 @@ use App\Models\Perinatal;
 use InfyOm\Generator\Common\BaseRepository;
 
 /**
- * Class PerinatalRepository
- * @package App\Repositories
+ * Class PerinatalRepository.
  * @version April 9, 2019, 6:53 am -03
  *
  * @method Perinatal findWithoutFail($id, $columns = ['*'])
  * @method Perinatal find($id, $columns = ['*'])
  * @method Perinatal first($columns = ['*'])
-*/
+ */
 class PerinatalRepository extends BaseRepository
 {
     /**
@@ -33,11 +32,11 @@ class PerinatalRepository extends BaseRepository
         'cor_secao_3',
         'titulo_secao_3',
         'subtitulo_secao_3',
-        'conteudo_secao_3'
+        'conteudo_secao_3',
     ];
 
     /**
-     * Configure the Model
+     * Configure the Model.
      **/
     public function model()
     {

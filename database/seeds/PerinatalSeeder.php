@@ -12,8 +12,7 @@ class PerinatalSeeder extends Seeder
     public function run()
     {
         $perinatal = \App\Models\Perinatal::create([
-            'titulo' => 'Perinatal'
+            'titulo' => 'Perinatal',
         ]);
-
     }
 }
