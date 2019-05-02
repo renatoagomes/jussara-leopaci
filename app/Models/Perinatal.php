@@ -5,8 +5,7 @@ namespace App\Models;
 use Eloquent as Model;
 
 /**
- * Class Perinatal
- * @package App\Models
+ * Class Perinatal.
  * @version April 9, 2019, 6:53 am -03
  *
  * @property string titulo
@@ -44,7 +43,7 @@ class Perinatal extends Model
         'cor_secao_3',
         'titulo_secao_3',
         'subtitulo_secao_3',
-        'conteudo_secao_3'
+        'conteudo_secao_3',
     ];
 
     /**
@@ -63,11 +62,11 @@ class Perinatal extends Model
         'subtitulo_secao_2' => 'string',
         'cor_secao_3' => 'string',
         'titulo_secao_3' => 'string',
-        'subtitulo_secao_3' => 'string'
+        'subtitulo_secao_3' => 'string',
     ];
 
     /**
-     * Validation rules
+     * Validation rules.
      *
      * @var array
      */
@@ -76,7 +75,7 @@ class Perinatal extends Model
     ];
 
     /**
-     * Acessor para decodar o array de referencias
+     * Acessor para decodar o array de referencias.
      */
     public function getReferenciasAttribute()
     {
@@ -85,9 +84,8 @@ class Perinatal extends Model
             : [];
     }
 
-
     /**
-     * Relacao com fotoCapa
+     * Relacao com fotoCapa.
      */
     public function fotoCapa()
     {
@@ -95,23 +93,20 @@ class Perinatal extends Model
     }
 
     /**
-     * Acessor para a URL da foto no cloudinary com qualidade e formato automaticos || placeholder
+     * Acessor para a URL da foto no cloudinary com qualidade e formato automaticos || placeholder.
      *
      * @return string - URL do cloudinary ou via.placeholder.com
      */
     public function getLinkFotoCapaAttribute()
     {
         if ($this->fotoCapa()->first()) {
-
-            return "//res.cloudinary.com/"
-                . env('CLOUDINARY_CLOUD_NAME')
-                . "/image/upload/q_auto,f_auto/"
-                . env('CLOUDINARY_CLOUD_FOLDER') . "/"
-                . $this->fotoCapa()->first()->cloudinary_id;
+            return '//res.cloudinary.com/'
+                .env('CLOUDINARY_CLOUD_NAME')
+                .'/image/upload/q_auto,f_auto/'
+                .env('CLOUDINARY_CLOUD_FOLDER').'/'
+                .$this->fotoCapa()->first()->cloudinary_id;
         }
 
         return '//via.placeholder.com/1900x800';
     }
-
-
 }

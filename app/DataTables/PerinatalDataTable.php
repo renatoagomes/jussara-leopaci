@@ -3,8 +3,8 @@
 namespace App\DataTables;
 
 use App\Models\Perinatal;
-use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
+use Yajra\DataTables\Services\DataTable;
 
 class PerinatalDataTable extends DataTable
 {
@@ -47,11 +47,11 @@ class PerinatalDataTable extends DataTable
                 'dom'     => 'Bfrtip',
                 'order'   => [[0, 'desc']],
                 'buttons' => [
-                    ['extend' => 'create', 'className' => 'btn btn-default btn-sm no-corner',],
-                    ['extend' => 'export', 'className' => 'btn btn-default btn-sm no-corner',],
-                    ['extend' => 'print', 'className' => 'btn btn-default btn-sm no-corner',],
-                    ['extend' => 'reset', 'className' => 'btn btn-default btn-sm no-corner',],
-                    ['extend' => 'reload', 'className' => 'btn btn-default btn-sm no-corner',],
+                    ['extend' => 'create', 'className' => 'btn btn-default btn-sm no-corner'],
+                    ['extend' => 'export', 'className' => 'btn btn-default btn-sm no-corner'],
+                    ['extend' => 'print', 'className' => 'btn btn-default btn-sm no-corner'],
+                    ['extend' => 'reset', 'className' => 'btn btn-default btn-sm no-corner'],
+                    ['extend' => 'reload', 'className' => 'btn btn-default btn-sm no-corner'],
                 ],
             ]);
     }
@@ -77,7 +77,7 @@ class PerinatalDataTable extends DataTable
             'cor_secao_3',
             'titulo_secao_3',
             'subtitulo_secao_3',
-            'conteudo_secao_3'
+            'conteudo_secao_3',
         ];
     }
 
@@ -88,6 +88,6 @@ class PerinatalDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'perinatalsdatatable_' . time();
+        return 'perinatalsdatatable_'.time();
     }
 }
