@@ -1,4 +1,4 @@
-<section id="header-blog">
+<section id="header-blog" style="background-image: url({{$Blog->linkFotoCapa}});">
     {{-- Incluindo o menu principal --}}
     @include ('partials.nav-principal', [
         'active' => 'blog'

@@ -38,14 +38,18 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('/admin/update-home', 'HomepageController@update')->name('homepage.update');
     Route::post('/admin/trocaFotoFundo', 'HomepageController@postTrocaFotoFundo')->name('homepage.trocaFotoFundo');
+    Route::get('/admin/blog/foto', 'BlogController@getTrocaFotoCapa');
+    Route::post('/admin/blog/trocaFotoCapa', 'BlogController@postTrocaFotoCapa')->name('blog.trocaFotoCapa');
     Route::post('/admin/trocaFotoApresentacao', 'HomepageController@postTrocaFotoApresentacao')->name('homepage.trocaFotoApresentacao');
     Route::post('/admin/trocaFotoAtuacao', 'HomepageController@postTrocaFotoAtuacao')->name('homepage.trocaFotoAtuacao');
     Route::post('/admin/atualizaCitacoesHome', 'HomepageController@postUpdateCitacoes')->name('homepage.atualizaCitacoes');
+
 });
 
 Route::get('/blog/{slug}', 'PostController@interna');
 Route::post('/posts/{id}/listagem', 'PostController@trocaListagem');
 Route::post('contato', 'ContatoController@postContato')->name('contato');
+
 Route::resource('posts', 'PostController');
 Route::resource('referenciaPosts', 'ReferenciaPostController');
 Route::resource('perinatals', 'PerinatalController');

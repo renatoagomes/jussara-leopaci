@@ -1,4 +1,4 @@
-<section id="header-perinatal">
+<section id="header-perinatal" style="background-image: url({{$perinatal->linkFotoCapa}});">
     {{-- Incluindo o menu principal --}}
     @include ('partials.nav-principal', [
         'active' => 'perinatal'

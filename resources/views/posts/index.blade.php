@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="content-header">
-        <h1>Listagem de todos os posts do blog  </h1>
+        <h1>Posts do blog  </h1>
     </section>
     <div class="content">
         <div class="clearfix"></div>
@@ -12,7 +12,8 @@
         <div class="clearfix"></div>
         <div class="box box-primary">
             <div class="box-body">
-                    @include('posts.table')
+
+                @include('posts.table')
             </div>
         </div>
         <div class="text-center">

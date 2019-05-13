@@ -33,7 +33,11 @@ class PostController extends AppBaseController
      */
     public function index(PostDataTable $dataTable)
     {
-        return $dataTable->render('posts.index');
+        $Blog = \App\Models\Blog::first();
+
+        return $dataTable->render('posts.index', [
+            'Blog' => $Blog
+        ]);
     }
 
     /**
