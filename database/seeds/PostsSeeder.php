@@ -62,7 +62,6 @@ class PostsSeeder extends Seeder
                 ],
             ]),
 
-
         ]);
         $post->fotoCapa()->create(['cloudinary_id' => 'FILME-BIRD-BOX-08.jpg.jpg']);
     }
