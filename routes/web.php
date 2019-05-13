@@ -43,7 +43,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/admin/trocaFotoApresentacao', 'HomepageController@postTrocaFotoApresentacao')->name('homepage.trocaFotoApresentacao');
     Route::post('/admin/trocaFotoAtuacao', 'HomepageController@postTrocaFotoAtuacao')->name('homepage.trocaFotoAtuacao');
     Route::post('/admin/atualizaCitacoesHome', 'HomepageController@postUpdateCitacoes')->name('homepage.atualizaCitacoes');
-
 });
 
 Route::get('/blog/{slug}', 'PostController@interna');

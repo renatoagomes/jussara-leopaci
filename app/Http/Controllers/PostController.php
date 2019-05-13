@@ -36,7 +36,7 @@ class PostController extends AppBaseController
         $Blog = \App\Models\Blog::first();
 
         return $dataTable->render('posts.index', [
-            'Blog' => $Blog
+            'Blog' => $Blog,
         ]);
     }
 

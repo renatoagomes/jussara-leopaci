@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Repositories\FotoRepository;
-use App\Repositories\BlogRepository;
 use Flash;
+use Illuminate\Http\Request;
+use App\Repositories\BlogRepository;
+use App\Repositories\FotoRepository;
 
 /**
  * Class: BlogController - Serve a listagem de posts e a pagina interna de 1 Post.
@@ -14,10 +14,8 @@ use Flash;
  */
 class BlogController extends Controller
 {
-
     private $blogRepository;
     private $fotoRepository;
-
 
     /**
      * @param BlogRepository $blogRepository
@@ -27,7 +25,6 @@ class BlogController extends Controller
         $this->blogRepository = $blogRepository;
         $this->fotoRepository = $fotoRepository;
     }
-    
 
     /**
      * Serve a página /blog com a listagem das postagens.
@@ -37,6 +34,7 @@ class BlogController extends Controller
     public function index(Request $param)
     {
         $Blog = $this->blogRepository->first();
+
         return view('pages.blog')->with('Blog', $Blog);
     }
 
@@ -50,9 +48,8 @@ class BlogController extends Controller
         return view('pages.blog-interna');
     }
 
-
     /**
-     * undocumented function
+     * undocumented function.
      *
      * @return void
      */
@@ -60,9 +57,8 @@ class BlogController extends Controller
     {
         $Blog = $this->blogRepository->first();
 
-        return view ("admin.blog.index")->with('Blog', $Blog);
+        return view('admin.blog.index')->with('Blog', $Blog);
     }
-    
 
     /**
      * Metodo para receber o post de trocar a foto de capa.

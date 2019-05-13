@@ -8,7 +8,7 @@ class Blog extends Model
 {
     public $table = 'blogs';
 
-    public $fillable = [ ];
+    public $fillable = [];
 
     /**
      * The attributes that should be casted to native types.
