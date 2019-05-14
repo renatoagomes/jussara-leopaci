@@ -8,9 +8,9 @@ use Response;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\DataTables\PostDataTable;
+use App\Repositories\BlogRepository;
 use App\Repositories\FotoRepository;
 use App\Repositories\PostRepository;
-use App\Repositories\BlogRepository;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 

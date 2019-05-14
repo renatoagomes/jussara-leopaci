@@ -48,8 +48,8 @@ class BlogController extends Controller
         $Blog = $this->blogRepository->first();
 
         dd($Blog);
+
         return view('pages.blog-interna')->with('Blog', $Blog);
-        
     }
 
     /**
