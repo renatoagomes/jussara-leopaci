@@ -45,7 +45,11 @@ class BlogController extends Controller
      */
     public function show(Request $param)
     {
-        return view('pages.blog-interna');
+        $Blog = $this->blogRepository->first();
+
+        dd($Blog);
+        return view('pages.blog-interna')->with('Blog', $Blog);
+        
     }
 
     /**

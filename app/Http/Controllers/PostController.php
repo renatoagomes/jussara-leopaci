@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\DataTables\PostDataTable;
 use App\Repositories\FotoRepository;
 use App\Repositories\PostRepository;
+use App\Repositories\BlogRepository;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 
@@ -19,8 +20,9 @@ class PostController extends AppBaseController
     private $postRepository;
     private $fotoRepository;
 
-    public function __construct(PostRepository $postRepo, FotoRepository $fotoRepo)
+    public function __construct(BlogRepository $blogRepo, PostRepository $postRepo, FotoRepository $fotoRepo)
     {
+        $this->blogRepository = $blogRepo;
         $this->postRepository = $postRepo;
         $this->fotoRepository = $fotoRepo;
     }
@@ -179,6 +181,7 @@ class PostController extends AppBaseController
     public function interna($slug)
     {
         $Post = $this->postRepository->findByField('slug', $slug)->first();
+        $Blog = $this->blogRepository->first();
 
         if (empty($Post)) {
             Flash::error('Post not found');
@@ -194,7 +197,8 @@ class PostController extends AppBaseController
         SEO::opengraph()->addProperty('type', 'articles');
 
         return view('pages.blog-interna')
-            ->with('Post', $Post);
+            ->with('Post', $Post)
+            ->with('Blog', $Blog);
     }
 
     /**
