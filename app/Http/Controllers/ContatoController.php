@@ -13,7 +13,7 @@ class ContatoController extends Controller
      */
     public function postContato(ContatoRequest $request)
     {
-        \Flash::success('Muito obrigado. Em breve entratei em contato.');
+        \Flash::success('Muito obrigado. Em breve entrarei em contato.');
 
         \Mail::send(new \App\Mail\EmailContato($request->nome, $request->telefone, $request->mensagem));
 
