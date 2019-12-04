@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Flash;
 use App\Http\Requests\FotoRequest;
 use App\Repositories\FotoRepository;
+use Flash;
 
 class FotoController extends Controller
 {
