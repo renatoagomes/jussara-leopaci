@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use SEO;
-use Flash;
-use Response;
-use App\Models\Post;
-use Illuminate\Http\Request;
 use App\DataTables\PostDataTable;
+use App\Http\Requests\CreatePostRequest;
+use App\Http\Requests\UpdatePostRequest;
+use App\Models\Post;
 use App\Repositories\BlogRepository;
 use App\Repositories\FotoRepository;
 use App\Repositories\PostRepository;
-use App\Http\Requests\CreatePostRequest;
-use App\Http\Requests\UpdatePostRequest;
+use Flash;
+use Illuminate\Http\Request;
+use Response;
+use SEO;
 
 class PostController extends AppBaseController
 {
