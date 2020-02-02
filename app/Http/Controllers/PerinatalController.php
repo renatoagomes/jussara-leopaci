@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Flash;
-use Response;
-use App\Repositories\FotoRepository;
 use App\DataTables\PerinatalDataTable;
-use App\Repositories\PerinatalRepository;
 use App\Http\Requests\CreatePerinatalRequest;
 use App\Http\Requests\UpdatePerinatalRequest;
+use App\Repositories\FotoRepository;
+use App\Repositories\PerinatalRepository;
+use Flash;
+use Response;
 
 class PerinatalController extends AppBaseController
 {

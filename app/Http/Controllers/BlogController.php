@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Flash;
-use Illuminate\Http\Request;
 use App\Repositories\BlogRepository;
 use App\Repositories\FotoRepository;
+use Flash;
+use Illuminate\Http\Request;
 
 /**
  * Class: BlogController - Serve a listagem de posts e a pagina interna de 1 Post.
