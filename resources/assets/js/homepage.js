@@ -24,5 +24,13 @@ window.trocaSlides = function trocaSlides() {
 $(function () {
     let duracao = $('.slide.active').data('duracao') ? $('.slide.active').data('duracao') : 5000 ;
     setTimeout(trocaSlides, duracao+'000');
-});
 
+    //Ao mostrar menu, trocar classe e esconder slides
+    $("#navbarNavAltMarkup").on('show.bs.collapse', function() {
+        $(".container-slides-home").hide();
+    });
+    //Ao mostrar menu, trocar classe e esconder slides
+    $("#navbarNavAltMarkup").on('hide.bs.collapse', function() {
+        $(".container-slides-home").show();
+    });
+});

@@ -3,7 +3,7 @@
     @include ('partials.nav-principal', [
         'active' => 'home'
     ])
-    <div>
+    <div class="container-slides-home">
         <div class="container">
             <div class="container-texto ">
 

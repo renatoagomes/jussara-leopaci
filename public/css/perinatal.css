@@ -1,1 +1,369 @@
-@import url(https://fonts.googleapis.com/css?family=Muli:400,600,800);@font-face{font-family:Street Corner;src:url("/fonts/StreetCornerBold.woff2") format("woff2"),url("/fonts/StreetCornerBold.woff") format("woff");font-weight:700;font-style:normal}@font-face{font-family:Palatino;src:url("/fonts/Palatino-Italic.woff2") format("woff2"),url("/fonts/Palatino-Italic.woff") format("woff");font-weight:500;font-style:italic}a,h1,p,span{letter-spacing:.2px}a.sem-respiro,h1.sem-respiro,p.sem-respiro,span.sem-respiro{letter-spacing:0}a.subtitulo,h1.subtitulo,p.subtitulo,span.subtitulo{font-size:14px}a.citacao,h1.citacao,p.citacao,span.citacao{font-family:Palatino,sans-serif;color:rgba(0,0,0,.5)}h2,h3{letter-spacing:.25px}h2.sem-respiro,h3.sem-respiro{letter-spacing:0}h2.subtitulo,h3.subtitulo{font-size:14px}p{font-size:1.1rem}h3{font-size:1.45rem}nav#menu-principal .navbar-nav{margin-top:-40px;width:100%;text-align:center}@media (min-width:992px){nav#menu-principal .navbar-nav{margin-top:0}}@media (min-width:1200px){nav#menu-principal .navbar-nav{width:90%}}nav#menu-principal .navbar-toggler{height:42px;border:1px solid #fff!important;color:#fff!important}nav#menu-principal a{text-shadow:1px 2px 5px rgba(0,0,0,.55);font-size:.9rem;height:25px;padding:0;margin:2rem auto auto;max-width:100px;color:#fff;font-style:italic;font-family:Muli,sans-serif}nav#menu-principal a.active,nav#menu-principal a:hover{border-bottom:2px solid #fff5ad;text-decoration:none}nav#menu-principal a.active:hover{border-bottom:2px solid #fff;text-decoration:none}nav#menu-principal .container-links{width:60%}footer{font-family:Muli,sans-serif;font-style:italic;color:#fff;border-top:20px solid #fff5ad;background-color:#9e97cb;padding:2rem 0}footer a{font-size:.8rem;color:#fff}footer a.link-footer{width:100px}#header-perinatal{background-image:url(https://res.cloudinary.com/tesseract/image/upload/v1535248072/jussara/perinatal_header_bg.png);background-size:cover;height:65vh;max-width:100vw;background-position-x:80%}@media (min-width:1600px){#header-perinatal{height:45vh}}#header-perinatal .container{padding:0 5rem}#header-perinatal .container-texto{font-family:Street Corner,sans-serif;text-align:left;margin-top:5rem;color:#fff}#header-perinatal .container-texto h2{font-size:2.5rem}@media (min-width:1200px){#header-perinatal .container-texto h2{font-size:3.5rem}}#contexto{font-family:Muli,sans-serif;text-align:center;padding-bottom:2rem}@media (min-width:992px){#contexto{text-align:inherit}}@media (min-width:1200px){#contexto{padding:0 5rem 3rem}}#contexto .detalhe-top{color:rgba(0,0,0,.2)}#contexto h2,#contexto h3{font-family:Street Corner,sans-serif;color:#000}#contexto li,#contexto p,#contexto span{line-height:1.8rem;color:rgba(0,0,0,.5);text-align:justify}#momentos{background-color:#f2f2f4;font-family:Muli,sans-serif;padding-bottom:1rem}@media (min-width:1200px){#momentos .container{padding:0 5rem 3rem}}#momentos .detalhe-top{color:rgba(0,0,0,.2)}#momentos h2,#momentos h3{font-family:Street Corner,sans-serif;color:#000}#momentos li,#momentos p,#momentos span{line-height:1.8rem;color:rgba(0,0,0,.5);text-align:justify}#momentos li{line-height:2.5rem;font-size:1.1rem}#momentos .rodape-abnt{font-size:.9rem}#momentos .rodape-abnt a{color:inherit}#como-funciona{font-family:Muli,sans-serif;padding-bottom:2rem}@media (min-width:1200px){#como-funciona{padding:0 5rem 3rem}}#como-funciona .detalhe-top{color:rgba(0,0,0,.2)}#como-funciona h2,#como-funciona h3{font-family:Street Corner,sans-serif;color:#000}#como-funciona li,#como-funciona p,#como-funciona span{line-height:1.8rem;color:rgba(0,0,0,.5);text-align:justify}
+@import url(https://fonts.googleapis.com/css?family=Muli:400,600,800);@charset "UTF-8";
+
+/** Fontes **/
+
+@font-face {
+  font-family: 'Street Corner';
+  src: url("/fonts/StreetCornerBold.woff2") format("woff2"), url("/fonts/StreetCornerBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Palatino';
+  src: url("/fonts/Palatino-Italic.woff2") format("woff2"), url("/fonts/Palatino-Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/** Cores e variaveis **/
+
+/* Estilos Gerais */
+
+h1,
+p,
+span,
+a {
+  letter-spacing: 0.2px;
+}
+
+h1.sem-respiro,
+p.sem-respiro,
+span.sem-respiro,
+a.sem-respiro {
+  letter-spacing: 0px;
+}
+
+h1.subtitulo,
+p.subtitulo,
+span.subtitulo,
+a.subtitulo {
+  font-size: 14px;
+}
+
+h1.citacao,
+p.citacao,
+span.citacao,
+a.citacao {
+  font-family: 'Palatino', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h2,
+h3 {
+  letter-spacing: 0.25px;
+}
+
+h2.sem-respiro,
+h3.sem-respiro {
+  letter-spacing: 0px;
+}
+
+h2.subtitulo,
+h3.subtitulo {
+  font-size: 14px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+/** Breakpoints para a responsividade  - Mobile First (usar breakpoints para exções do desktop) **/
+
+/** Fontes **/
+
+@font-face {
+  font-family: 'Street Corner';
+  src: url("/fonts/StreetCornerBold.woff2") format("woff2"), url("/fonts/StreetCornerBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Palatino';
+  src: url("/fonts/Palatino-Italic.woff2") format("woff2"), url("/fonts/Palatino-Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/** Cores e variaveis **/
+
+/* Estilos Gerais */
+
+h1,
+p,
+span,
+a {
+  letter-spacing: 0.2px;
+}
+
+h1.sem-respiro,
+p.sem-respiro,
+span.sem-respiro,
+a.sem-respiro {
+  letter-spacing: 0px;
+}
+
+h1.subtitulo,
+p.subtitulo,
+span.subtitulo,
+a.subtitulo {
+  font-size: 14px;
+}
+
+h1.citacao,
+p.citacao,
+span.citacao,
+a.citacao {
+  font-family: 'Palatino', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h2,
+h3 {
+  letter-spacing: 0.25px;
+}
+
+h2.sem-respiro,
+h3.sem-respiro {
+  letter-spacing: 0px;
+}
+
+h2.subtitulo,
+h3.subtitulo {
+  font-size: 14px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+/** Breakpoints para a responsividade  - Mobile First (usar breakpoints para exções do desktop) **/
+
+/** Estilos do Menu principal **/
+
+nav#menu-principal .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  nav#menu-principal .navbar-nav {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav#menu-principal .navbar-nav {
+    width: 90%;
+  }
+}
+
+nav#menu-principal .navbar-toggler {
+  height: 42px;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+
+nav#menu-principal a {
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  font-size: 0.9rem;
+  height: 25px;
+  padding: 0;
+  margin: 2rem auto auto auto;
+  max-width: 100px;
+  color: #fff;
+  font-style: italic;
+  font-family: 'Muli', sans-serif;
+}
+
+nav#menu-principal a:hover {
+  border-bottom: 2px solid #fff5ad;
+  text-decoration: none;
+}
+
+nav#menu-principal a.active {
+  border-bottom: 2px solid #fff5ad;
+  text-decoration: none;
+}
+
+nav#menu-principal a.active:hover {
+  border-bottom: 2px solid #fff;
+  text-decoration: none;
+}
+
+nav#menu-principal .container-links {
+  width: 60%;
+}
+
+footer {
+  font-family: 'Muli', sans-serif;
+  font-style: italic;
+  color: #fff;
+  border-top: 20px solid #fff5ad;
+  background-color: #9e97cb;
+  padding: 2rem 0;
+}
+
+footer a {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+footer a.link-footer {
+  width: 100px;
+}
+
+/** HEADER / Banner **/
+
+#header-perinatal {
+  background-image: url(https://res.cloudinary.com/tesseract/image/upload/v1535248072/jussara/perinatal_header_bg.png);
+  background-size: cover;
+  height: 65vh;
+  max-width: 100vw;
+  background-position-x: 80%;
+}
+
+@media (min-width: 1600px) {
+  #header-perinatal {
+    height: 45vh;
+  }
+}
+
+#header-perinatal .container {
+  padding: 0 5rem;
+}
+
+#header-perinatal .container-texto {
+  font-family: 'Street Corner', sans-serif;
+  text-align: left;
+  margin-top: 5rem;
+  color: #fff;
+}
+
+#header-perinatal .container-texto h2 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  #header-perinatal .container-texto h2 {
+    font-size: 3.5rem;
+  }
+}
+
+#contexto {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  #contexto {
+    text-align: inherit;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contexto {
+    padding: 0rem 5rem 3rem 5rem;
+  }
+}
+
+#contexto .detalhe-top {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#contexto h2,
+#contexto h3 {
+  font-family: 'Street Corner', sans-serif;
+  color: #000;
+}
+
+#contexto span,
+#contexto p,
+#contexto li {
+  line-height: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+
+#momentos {
+  background-color: #f2f2f4;
+  font-family: 'Muli', sans-serif;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 1200px) {
+  #momentos .container {
+    padding: 0rem 5rem 3rem 5rem;
+  }
+}
+
+#momentos .detalhe-top {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#momentos h2,
+#momentos h3 {
+  font-family: 'Street Corner', sans-serif;
+  color: #000;
+}
+
+#momentos span,
+#momentos p,
+#momentos li {
+  line-height: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+
+#momentos li {
+  line-height: 2.5rem;
+  font-size: 1.1rem;
+}
+
+#momentos .rodape-abnt {
+  font-size: 0.9rem;
+}
+
+#momentos .rodape-abnt a {
+  color: inherit;
+}
+
+#como-funciona {
+  font-family: 'Muli', sans-serif;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+  #como-funciona {
+    padding: 0rem 5rem 3rem 5rem;
+  }
+}
+
+#como-funciona .detalhe-top {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#como-funciona h2,
+#como-funciona h3 {
+  font-family: 'Street Corner', sans-serif;
+  color: #000;
+}
+
+#como-funciona span,
+#como-funciona p,
+#como-funciona li {
+  line-height: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+
