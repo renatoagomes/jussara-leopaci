@@ -19,4 +19,30 @@ body {
 #result {
     margin-top: 5rem;
 }
-  
+
+
+.main-sidebar {
+    transform: none;
+
+    &.escondido {
+        transform: translate(-230px, 0);
+    }
+}
+
+
+
+div.container-admin-btn-sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    padding: 10px;
+
+    .menu-admin-toggler {
+        background: transparent;
+        border: 2px;
+        color: #b8c7ce;
+    }
+}
+
+

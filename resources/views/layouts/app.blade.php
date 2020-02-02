@@ -50,13 +50,26 @@
         <!-- Main Header -->
         <header class="main-header">
 
-            <!-- Logo -->
-            <a href="#" class="logo"></a>
-
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
+
+
+                <div class="container-admin-btn-sidebar ">
+                    <button onclick="javascript:toggleSidebar()" class="menu-admin-toggler" type="button">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+                </div>
+                <script>
+function toggleSidebar(){
+    $('#sidebar-wrapper').toggleClass('escondido');
+}
+
+                </script>
+
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
+
+
                     <ul class="nav navbar-nav">
                         <!-- User Account Menu -->
                         <li class="dropdown user user-menu">

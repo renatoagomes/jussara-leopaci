@@ -72,4 +72,6 @@ $(function () {
         });
         $(el.target).parents('form').submit();
     })
+
+
 });
