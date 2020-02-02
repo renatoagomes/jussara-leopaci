@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/logo_favicon.png" type="image/x-icon" />
 
     <meta name="author" content="@renatoagomes">
-    <meta name="robots" content="noindex, nofollow"/>       
+    <meta name="robots" content="noindex, nofollow"/>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -34,7 +34,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ url('/home') }}"> <img src="/logo.png" alt=""> </a>
+        <a href="#"> <img src="/logo.png" alt=""> </a>
     </div>
 
     <!-- /.login-logo -->

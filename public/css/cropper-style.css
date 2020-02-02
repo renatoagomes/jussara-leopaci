@@ -24,3 +24,33 @@ body {
   margin-top: 5rem;
 }
 
+.main-sidebar {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.main-sidebar.escondido {
+  -webkit-transform: translate(-230px, 0);
+          transform: translate(-230px, 0);
+}
+
+div.container-admin-btn-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  padding: 10px;
+}
+
+div.container-admin-btn-sidebar .menu-admin-toggler {
+  background: transparent;
+  border: 2px;
+  color: #b8c7ce;
+}
+
