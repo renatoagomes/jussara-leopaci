@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Flash;
-use Response;
-use Illuminate\Http\Request;
-use App\Repositories\ReferenciaPostRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Http\Requests\CreateReferenciaPostRequest;
 use App\Http\Requests\UpdateReferenciaPostRequest;
+use App\Repositories\ReferenciaPostRepository;
+use Flash;
+use Illuminate\Http\Request;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Response;
 
 class ReferenciaPostController extends AppBaseController
 {
