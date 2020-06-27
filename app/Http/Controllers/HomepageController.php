@@ -69,7 +69,7 @@ class HomepageController extends AppBaseController
 
         $homepage = $this->homepageRepository->create($input);
 
-        Flash::success('Homepage saved successfully.');
+        Flash::success('Homepage saved com sucesso.');
 
         return redirect(route('homepages.index'));
     }
@@ -86,7 +86,7 @@ class HomepageController extends AppBaseController
         $homepage = $this->homepageRepository->findWithoutFail($id);
 
         if (empty($homepage)) {
-            Flash::error('Homepage not found');
+            Flash::error('Homepage não encontrada');
 
             return redirect(route('homepages.index'));
         }
@@ -106,7 +106,7 @@ class HomepageController extends AppBaseController
         $homepage = $this->homepageRepository->findWithoutFail($id);
 
         if (empty($homepage)) {
-            Flash::error('Homepage not found');
+            Flash::error('Homepage não encontrada');
 
             return redirect(route('homepages.index'));
         }
@@ -127,15 +127,22 @@ class HomepageController extends AppBaseController
         $id = 1;
         $homepage = $this->homepageRepository->findWithoutFail($id);
 
-        if (empty($homepage)) {
-            Flash::error('Homepage not found');
+        $input = \Request::all();
 
+        if (\Request::has('curriculum_json')) {
+            $curriculum_json = \Request::get('curriculum_json');
+            array_shift($curriculum_json);
+            $input['curriculum_json'] = json_encode($curriculum_json);
+        }
+
+        if (empty($homepage)) {
+            Flash::error('Homepage não encontrada');
             return redirect(route('homepages.index'));
         }
 
-        $homepage = $this->homepageRepository->update(\Request::all(), $id);
+        $homepage = $this->homepageRepository->update($input, $id);
 
-        Flash::success('Homepage updated successfully.');
+        Flash::success('Página inicial atualizada com sucesso.');
 
         return redirect(route('homepages.index'));
     }
@@ -152,14 +159,14 @@ class HomepageController extends AppBaseController
         $homepage = $this->homepageRepository->findWithoutFail($id);
 
         if (empty($homepage)) {
-            Flash::error('Homepage not found');
+            Flash::error('Homepage não encontrada');
 
             return redirect(route('homepages.index'));
         }
 
         $this->homepageRepository->delete($id);
 
-        Flash::success('Homepage deleted successfully.');
+        Flash::success('Homepage deleted com sucesso.');
 
         return redirect(route('homepages.index'));
     }

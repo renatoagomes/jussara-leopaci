@@ -23,7 +23,7 @@
     </div>
 
     <div class="col-lg-7 col-md-12  mt-3">
-        <p> {!! $Homepage->texto_aba_social_atuacao !!} </p>
+        <p> {!! nl2br($Homepage->texto_aba_social_atuacao) !!} </p>
 
         @if ($Homepage->link_aba_social_atuacao)
             <a href="{{$Homepage->link_aba_social_atuacao}}">SAIBA MAIS</a>

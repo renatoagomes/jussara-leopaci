@@ -37,7 +37,7 @@
         {!! Form::close() !!}
 
         <div class="col-xs-12">
-            <div class="mt-3 text-center">
+            <div class="mt-3 mb-3 text-center">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item col-xs-3">
                         <a class="nav-link active" data-toggle="tab" href="#tab-psicanalitica" role="tab" aria-controls="tab-psicanalitica" aria-selected="true" >{{ mb_strtoupper($Homepage->titulo_aba_psic_atuacao) }}</a>

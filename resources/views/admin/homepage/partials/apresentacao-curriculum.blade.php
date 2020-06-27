@@ -1,5 +1,8 @@
 <br>
 
+<div class="form-group col-sm-12">
+    {!! Form::label('curriculum', 'Itens do curriculum:') !!}
+</div>
 
 <div class="linha-modelo-curriculum hide">
     <div class="col-xs-11">
@@ -7,7 +10,7 @@
     </div>
     <div class="col-xs-1">
         <div class='btn-group'>
-            {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs btnExcluirItemCurriculum', 'style' => 'margin-top:4rem' ]) !!}
+            {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs btnExcluirItemCurriculum', 'style' => 'margin-top:50%' ]) !!}
         </div>
     </div>
 </div>
@@ -21,7 +24,7 @@
             </div>
             <div class="col-xs-1">
                 <div class='btn-group'>
-                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs btnExcluirItemCurriculum', 'style' => 'margin-top:4rem' ]) !!}
+                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs btnExcluirItemCurriculum', 'style' => 'margin-top:50%' ]) !!}
                 </div>
             </div>
         </div>
@@ -32,7 +35,7 @@
             </div>
             <div class="col-xs-1">
                 <div class='btn-group'>
-                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs btnExcluirItemCurriculum', 'style' => 'margin-top:4rem' ]) !!}
+                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs btnExcluirItemCurriculum', 'style' => 'margin-top:50%' ]) !!}
                 </div>
             </div>
         </div>

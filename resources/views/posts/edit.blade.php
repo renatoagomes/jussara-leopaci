@@ -79,7 +79,20 @@ function excluirReferencia(btn) {
 
 $(document).ready(function(){
     bindControlesReferencia();
+
+    $('.datetime').datetimepicker({
+        format: 'DD/MM/YYYY',
+        locale: 'pt-br',
+        useCurrent: true,
+        icons: {
+            up: "icon-arrow-up-circle icons font-2xl",
+            down: "icon-arrow-down-circle icons font-2xl"
+        },
+        sideBySide: true
+    })
 });
+
+
 
 </script>
 @endsection

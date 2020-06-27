@@ -128,7 +128,15 @@ class PostController extends AppBaseController
             return redirect(route('posts.index'));
         }
 
-        $post = $this->postRepository->update($request->all(), $id);
+        $input = \Request::all();
+
+        if (\Request::has('data_publicacao')) {
+            $data_publicacao = \Request::get('data_publicacao');
+            $data_publicacao = \Carbon\Carbon::createFromFormat('d/m/Y', $data_publicacao);
+            $input['data_publicacao'] = $data_publicacao;
+        }
+
+        $post = $this->postRepository->update($input, $id);
 
         if ($request->file) {
             if ($post->fotoCapa) {

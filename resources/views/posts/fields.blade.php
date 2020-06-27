@@ -12,8 +12,21 @@
         {!! Form::text('autor', null, ['class' => 'form-control']) !!}
     </div>
 
+    @php
+        $data_publicacao = $post->data_publicacao
+        ? $post->data_publicacao->format('d/m/Y')
+        : \Carbon\Carbon::now()->format('d/m/Y');
+    @endphp
+
+    <!-- Data Field -->
+    <div class="form-group col-sm-3">
+        {!! Form::label('data_publicacao', 'Data da publicação:') !!}
+        {!! Form::text('data_publicacao', $data_publicacao, ['class' => 'form-control datetime']) !!}
+    </div>
+
+
     <!-- Slug Field -->
-    <div class="form-group col-sm-12">
+    <div class="form-group col-sm-9">
         {!! Form::label('slug', 'Link do post: https://jussaraleopaci.com.br/blog/') !!}<span style="color:red">{link-do-post}</span>
         {!! Form::text('slug', null, ['class' => 'form-control']) !!}
     </div>
@@ -62,4 +75,9 @@
     <a href="{!! route('posts.index') !!}" class="btn btn-default">Cancelar</a>
 </div>
 
+
 @endif
+
+
+<script>
+</script>

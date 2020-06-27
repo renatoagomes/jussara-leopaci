@@ -8,14 +8,19 @@
     </div><!-- /.box-header -->
     <div class="box-body">
         <div class="col-xs-12">
+
+            {!! Form::open(['route' => 'homepage.update']) !!}
             @include('admin.homepage.partials.apresentacao-geral')
+            {!! Form::close() !!}
         </div>
 
         <div class="col-xs-12"> <hr> </div>
 
 
         <div class="col-xs-8">
+            {!! Form::open(['route' => 'homepage.update']) !!}
             @include('admin.homepage.partials.apresentacao-curriculum')
+            {!! Form::close() !!}
         </div>
 
         <div class="col-xs-4">

@@ -37,6 +37,7 @@ class Post extends Model
         'conteudo',
         'referencias_json',
         'status',
+        'data_publicacao',
     ];
 
     /**
@@ -93,6 +94,7 @@ class Post extends Model
 
         return $data->formatLocalized('%d de %B de %Y');
     }
+
 
     /**
      * Acessor para o preview do post.

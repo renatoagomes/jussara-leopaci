@@ -72,6 +72,7 @@ function excluirItemCurriculum(btn) {
 $(document).ready(function(){
     bindControlesCitacao();
     bindControlesItemCurriculum();
+
 });
 
 

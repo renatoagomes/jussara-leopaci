@@ -41,6 +41,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
 
 
+
     @yield('css')
 </head>
 
@@ -53,22 +54,8 @@
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
 
-
-                <div class="container-admin-btn-sidebar ">
-                    <button onclick="javascript:toggleSidebar()" class="menu-admin-toggler" type="button">
-                        <i class="fa fa-bars fa-2x"></i>
-                    </button>
-                </div>
-                <script>
-function toggleSidebar(){
-    $('#sidebar-wrapper').toggleClass('escondido');
-}
-
-                </script>
-
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
-
 
                     <ul class="nav navbar-nav">
                         <!-- User Account Menu -->
@@ -120,20 +107,7 @@ function toggleSidebar(){
 @else
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
-            <div class="navbar-header">
-
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+            <div class="navbar" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{!! url('/home') !!}">Home</a></li>
@@ -163,6 +137,11 @@ function toggleSidebar(){
     <!-- jQuery 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/pt-br.js" integrity="sha256-aIToY7VLU5x+toAJcyINV0WEogFBCIVeeWhyUbCaYiQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha256-5YmaxAwMjIpMrVlK84Y/+NjCpKnFYa8bWWBbUHSBGfU=" crossorigin="anonymous"></script>
 
     <!-- AdminLTE App -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.2/js/adminlte.min.js"></script>
