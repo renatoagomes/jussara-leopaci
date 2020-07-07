@@ -137,6 +137,7 @@ class HomepageController extends AppBaseController
 
         if (empty($homepage)) {
             Flash::error('Homepage não encontrada');
+
             return redirect(route('homepages.index'));
         }
 
