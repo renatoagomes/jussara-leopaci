@@ -25,7 +25,7 @@ class PerinatalController extends AppBaseController
     /**
      * Display a listing of the Perinatal.
      *
-     * @param PerinatalDataTable $perinatalDataTable
+     * @param  PerinatalDataTable  $perinatalDataTable
      * @return Response
      */
     public function index()
@@ -48,8 +48,7 @@ class PerinatalController extends AppBaseController
     /**
      * Store a newly created Perinatal in storage.
      *
-     * @param CreatePerinatalRequest $request
-     *
+     * @param  CreatePerinatalRequest  $request
      * @return Response
      */
     public function store(CreatePerinatalRequest $request)
@@ -66,8 +65,7 @@ class PerinatalController extends AppBaseController
     /**
      * Display the specified Perinatal.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function show($id)
@@ -86,8 +84,7 @@ class PerinatalController extends AppBaseController
     /**
      * Show the form for editing the specified Perinatal.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function edit($id)
@@ -106,9 +103,8 @@ class PerinatalController extends AppBaseController
     /**
      * Update the specified Perinatal in storage.
      *
-     * @param  int              $id
-     * @param UpdatePerinatalRequest $request
-     *
+     * @param  int  $id
+     * @param  UpdatePerinatalRequest  $request
      * @return Response
      */
     public function update($id, UpdatePerinatalRequest $request)
@@ -146,8 +142,7 @@ class PerinatalController extends AppBaseController
     /**
      * Remove the specified Perinatal from storage.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function destroy($id)

@@ -6,6 +6,7 @@ use Eloquent as Model;
 
 /**
  * Class Homepage.
+ *
  * @version January 3, 2019, 9:11 pm BRST
  *
  * @property json frases_slider
@@ -488,6 +489,7 @@ class Homepage extends Model
      * Metodo para obter o nome do metodo que guarda a relacao de determinado tipo.
      *
      * @PS WTF foi essa brisa? fotos()->where('tipo', $tipo) faz a mesma coisa ¬¬
+     *
      * @return string com o nome da relacao || false (se o indice nao existir)
      */
     public function getRelacaoParaFotoPorTipo($tipo)
