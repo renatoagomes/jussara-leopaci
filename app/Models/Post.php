@@ -6,6 +6,7 @@ use Eloquent as Model;
 
 /**
  * Class Post.
+ *
  * @version February 8, 2019, 10:23 pm -02
  *
  * @property string capa_url

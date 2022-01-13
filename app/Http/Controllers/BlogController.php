@@ -18,7 +18,7 @@ class BlogController extends Controller
     private $fotoRepository;
 
     /**
-     * @param BlogRepository $blogRepository
+     * @param  BlogRepository  $blogRepository
      */
     public function __construct(BlogRepository $blogRepository, FotoRepository $fotoRepository)
     {

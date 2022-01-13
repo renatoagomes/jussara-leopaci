@@ -22,8 +22,8 @@ class HomepageController extends AppBaseController
     /**
      * __construct.
      *
-     * @param HomepageRepository $homepageRepo
-     * @param FotoRepository $fotoRepo
+     * @param  HomepageRepository  $homepageRepo
+     * @param  FotoRepository  $fotoRepo
      */
     public function __construct(HomepageRepository $homepageRepo, FotoRepository $fotoRepo)
     {
@@ -34,7 +34,7 @@ class HomepageController extends AppBaseController
     /**
      * Display a listing of the Homepage.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @return Response
      */
     public function index(Request $request)
@@ -59,8 +59,7 @@ class HomepageController extends AppBaseController
     /**
      * Store a newly created Homepage in storage.
      *
-     * @param CreateHomepageRequest $request
-     *
+     * @param  CreateHomepageRequest  $request
      * @return Response
      */
     public function store(CreateHomepageRequest $request)
@@ -77,8 +76,7 @@ class HomepageController extends AppBaseController
     /**
      * Display the specified Homepage.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function show($id)
@@ -97,8 +95,7 @@ class HomepageController extends AppBaseController
     /**
      * Show the form for editing the specified Homepage.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function edit($id)
@@ -117,9 +114,8 @@ class HomepageController extends AppBaseController
     /**
      * Update the specified Homepage in storage.
      *
-     * @param  int              $id
-     * @param UpdateHomepageRequest $request
-     *
+     * @param  int  $id
+     * @param  UpdateHomepageRequest  $request
      * @return Response
      */
     public function update()
@@ -151,8 +147,7 @@ class HomepageController extends AppBaseController
     /**
      * Remove the specified Homepage from storage.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function destroy($id)

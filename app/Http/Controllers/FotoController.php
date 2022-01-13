@@ -10,12 +10,14 @@ class FotoController extends Controller
 {
     /**
      * fotoRepository.
+     *
      * @var \App\Model\FotoRepository
      */
     public $fotoRepository;
 
     /**
      * Construtor recebendo informacoes necessarias.
+     *
      * @param mixed FotoRepository $fotoRepository
      */
     public function __construct(FotoRepository $fotoRepository)
