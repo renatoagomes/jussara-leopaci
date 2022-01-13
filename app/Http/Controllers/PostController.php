@@ -30,7 +30,7 @@ class PostController extends AppBaseController
     /**
      * Display a listing of the Post.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @return Response
      */
     public function index(PostDataTable $dataTable)
@@ -55,8 +55,7 @@ class PostController extends AppBaseController
     /**
      * Store a newly created Post in storage.
      *
-     * @param CreatePostRequest $request
-     *
+     * @param  CreatePostRequest  $request
      * @return Response
      */
     public function store(CreatePostRequest $request)
@@ -73,8 +72,7 @@ class PostController extends AppBaseController
     /**
      * Display the specified Post.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function show($id)
@@ -93,8 +91,7 @@ class PostController extends AppBaseController
     /**
      * Show the form for editing the specified Post.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function edit($id)
@@ -113,9 +110,8 @@ class PostController extends AppBaseController
     /**
      * Update the specified Post in storage.
      *
-     * @param  int              $id
-     * @param UpdatePostRequest $request
-     *
+     * @param  int  $id
+     * @param  UpdatePostRequest  $request
      * @return Response
      */
     public function update($id, UpdatePostRequest $request)
@@ -160,8 +156,7 @@ class PostController extends AppBaseController
     /**
      * Remove the specified Post from storage.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function destroy($id)
