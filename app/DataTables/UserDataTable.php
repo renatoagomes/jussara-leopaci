@@ -11,7 +11,7 @@ class UserDataTable extends DataTable
     /**
      * Build DataTable class.
      *
-     * @param mixed $query Results from query() method.
+     * @param  mixed  $query  Results from query() method.
      * @return \Yajra\DataTables\DataTableAbstract
      */
     public function dataTable($query)
@@ -24,7 +24,7 @@ class UserDataTable extends DataTable
     /**
      * Get query source of dataTable.
      *
-     * @param \App\Models\Post $model
+     * @param  \App\Models\Post  $model
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function query(User $model)
