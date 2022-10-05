@@ -7,6 +7,7 @@ use InfyOm\Generator\Common\BaseRepository;
 
 /**
  * Class PostRepository.
+ *
  * @version February 8, 2019, 10:23 pm -02
  *
  * @method Post findWithoutFail($id, $columns = ['*'])
@@ -49,8 +50,8 @@ class PostRepository extends BaseRepository
     /**
      * Override no update para montar o array de referencias.
      *
-     * @param mixed $input
-     * @param mixed $id
+     * @param  mixed  $input
+     * @param  mixed  $id
      */
     public function update($input, $id)
     {

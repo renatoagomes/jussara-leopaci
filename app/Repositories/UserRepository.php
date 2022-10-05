@@ -7,6 +7,7 @@ use InfyOm\Generator\Common\BaseRepository;
 
 /**
  * Class UserRepository.
+ *
  * @version March 14, 2018, 3:23 pm BRT
  *
  * @method User findWithoutFail($id, $columns = ['*'])
