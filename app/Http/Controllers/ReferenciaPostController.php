@@ -23,7 +23,7 @@ class ReferenciaPostController extends AppBaseController
     /**
      * Display a listing of the ReferenciaPost.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @return Response
      */
     public function index(Request $request)
@@ -48,8 +48,7 @@ class ReferenciaPostController extends AppBaseController
     /**
      * Store a newly created ReferenciaPost in storage.
      *
-     * @param CreateReferenciaPostRequest $request
-     *
+     * @param  CreateReferenciaPostRequest  $request
      * @return Response
      */
     public function store(CreateReferenciaPostRequest $request)
@@ -66,8 +65,7 @@ class ReferenciaPostController extends AppBaseController
     /**
      * Display the specified ReferenciaPost.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function show($id)
@@ -86,8 +84,7 @@ class ReferenciaPostController extends AppBaseController
     /**
      * Show the form for editing the specified ReferenciaPost.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function edit($id)
@@ -106,9 +103,8 @@ class ReferenciaPostController extends AppBaseController
     /**
      * Update the specified ReferenciaPost in storage.
      *
-     * @param  int              $id
-     * @param UpdateReferenciaPostRequest $request
-     *
+     * @param  int  $id
+     * @param  UpdateReferenciaPostRequest  $request
      * @return Response
      */
     public function update($id, UpdateReferenciaPostRequest $request)
@@ -131,8 +127,7 @@ class ReferenciaPostController extends AppBaseController
     /**
      * Remove the specified ReferenciaPost from storage.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function destroy($id)
