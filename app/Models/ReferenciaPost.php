@@ -6,6 +6,7 @@ use Eloquent as Model;
 
 /**
  * Class ReferenciaPost.
+ *
  * @version February 8, 2019, 11:12 pm -02
  *
  * @property string texto
