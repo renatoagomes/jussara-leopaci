@@ -22,7 +22,7 @@ class UserController extends AppBaseController
     /**
      * Display a listing of the User.
      *
-     * @param UserDataTable $userDataTable
+     * @param  UserDataTable  $userDataTable
      * @return Response
      */
     public function index(UserDataTable $userDataTable)
@@ -43,8 +43,7 @@ class UserController extends AppBaseController
     /**
      * Store a newly created User in storage.
      *
-     * @param CreateUserRequest $request
-     *
+     * @param  CreateUserRequest  $request
      * @return Response
      */
     public function store(CreateUserRequest $request)
@@ -61,8 +60,7 @@ class UserController extends AppBaseController
     /**
      * Display the specified User.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function show($id)
@@ -81,8 +79,7 @@ class UserController extends AppBaseController
     /**
      * Show the form for editing the specified User.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function edit($id)
@@ -101,9 +98,8 @@ class UserController extends AppBaseController
     /**
      * Update the specified User in storage.
      *
-     * @param  int              $id
-     * @param UpdateUserRequest $request
-     *
+     * @param  int  $id
+     * @param  UpdateUserRequest  $request
      * @return Response
      */
     public function update($id, UpdateUserRequest $request)
@@ -126,8 +122,7 @@ class UserController extends AppBaseController
     /**
      * Remove the specified User from storage.
      *
-     * @param  int $id
-     *
+     * @param  int  $id
      * @return Response
      */
     public function destroy($id)

@@ -7,6 +7,7 @@ use InfyOm\Generator\Common\BaseRepository;
 
 /**
  * Class HomepageRepository.
+ *
  * @version January 3, 2019, 9:11 pm BRST
  *
  * @method Homepage findWithoutFail($id, $columns = ['*'])
