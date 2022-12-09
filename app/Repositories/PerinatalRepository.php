@@ -7,6 +7,7 @@ use InfyOm\Generator\Common\BaseRepository;
 
 /**
  * Class PerinatalRepository.
+ *
  * @version April 9, 2019, 6:53 am -03
  *
  * @method Perinatal findWithoutFail($id, $columns = ['*'])
@@ -46,8 +47,8 @@ class PerinatalRepository extends BaseRepository
     /**
      * Override no update para montar o array de referencias.
      *
-     * @param mixed $input
-     * @param mixed $id
+     * @param  mixed  $input
+     * @param  mixed  $id
      */
     public function update($input, $id)
     {

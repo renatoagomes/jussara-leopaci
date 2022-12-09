@@ -7,6 +7,7 @@ use InfyOm\Generator\Common\BaseRepository;
 
 /**
  * Class ReferenciaPostRepository.
+ *
  * @version February 8, 2019, 11:12 pm -02
  *
  * @method ReferenciaPost findWithoutFail($id, $columns = ['*'])

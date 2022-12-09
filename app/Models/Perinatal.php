@@ -6,6 +6,7 @@ use Eloquent as Model;
 
 /**
  * Class Perinatal.
+ *
  * @version April 9, 2019, 6:53 am -03
  *
  * @property string titulo
