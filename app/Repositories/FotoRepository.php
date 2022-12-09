@@ -25,7 +25,7 @@ class FotoRepository extends BaseRepository
     /**
      * uploadAndCreate - Guarda o arquivo no /uploads/ e cria a Foto.
      *
-     * @param mixed $request
+     * @param  mixed  $request
      */
     public function uploadAndCreate($request)
     {
@@ -102,8 +102,8 @@ class FotoRepository extends BaseRepository
     /**
      * sendToCloudinary.
      *
-     * @param mixed $fullPath
-     * @param mixed $publicId
+     * @param  mixed  $fullPath
+     * @param  mixed  $publicId
      */
     public function sendToCloudinary($foto, $publicId, $pasta = null)
     {
@@ -124,8 +124,8 @@ class FotoRepository extends BaseRepository
     /**
      * removeFromCloudinary.
      *
-     * @param mixed $fullPath
-     * @param mixed $publicId
+     * @param  mixed  $fullPath
+     * @param  mixed  $publicId
      */
     public function removeFromCloudinary($fotoID)
     {
@@ -140,7 +140,6 @@ class FotoRepository extends BaseRepository
      * Delete a entity in repository by id.
      *
      * @param $id
-     *
      * @return int
      */
     public function delete($id)
@@ -154,7 +153,7 @@ class FotoRepository extends BaseRepository
     /**
      * deleteLocal.
      *
-     * @param mixed $id
+     * @param  mixed  $id
      */
     public function deleteLocal($id)
     {
